@@ -2,9 +2,9 @@ import * as chai from "chai";
 import {expect} from "chai";
 import * as fs from "fs-extra";
 import * as chaiAsPromised from "chai-as-promised";
-import {InsightDataset, InsightDatasetKind, InsightError, NotFoundError, } from "../../../Desktop/project_team192/src/controller/IInsightFacade";
-import InsightFacade from "../../../Desktop/project_team192/src/controller/InsightFacade";
-import Log from "../../../Desktop/project_team192/src/Util";
+import {InsightDataset, InsightDatasetKind, InsightError, NotFoundError, } from "../src/controller/IInsightFacade";
+import InsightFacade from "../src/controller/InsightFacade";
+import Log from "../src/Util";
 import TestUtil from "./TestUtil";
 // import { NotFoundError } from "restify";
 

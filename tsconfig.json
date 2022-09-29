@@ -17,7 +17,8 @@
     },
     "include": [
         "src/**/*.ts",
-        "test/**/*.ts"
+        "test/**/*.ts",
+        "node_modules/@types/mocha/index.d.ts"
     ],
     "exclude": [
       "../../Desktop/project_team192/node_modules"
