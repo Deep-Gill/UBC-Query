@@ -1,0 +1,202 @@
+{
+    "title": "Valid, uses instructor key",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "belleville, patrice"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 66.34
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 67.16
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "261",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 68.22
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 68.94
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 69.4
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 69.95
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 70.92
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 70.95
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 71.24
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 71.28
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "261",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 71.45
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 71.62
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 71.94
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 72.19
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 72.53
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.09
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.31
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.36
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.49
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.62
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "313",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 73.83
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 74.04
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "420",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 74.06
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 74.26
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 74.29
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 75.34
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 76.06
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 76.65
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 79
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "121",
+            "courses_instructor": "belleville, patrice",
+            "courses_avg": 83.41
+        }
+    ]
+}

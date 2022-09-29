@@ -1,0 +1,28 @@
+{
+    "title": "Valid, uses uuid key",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "90559"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "320",
+            "courses_uuid": "90559",
+            "courses_avg": 66.76
+        }
+    ]
+}

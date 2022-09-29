@@ -1,0 +1,92 @@
+{
+    "title": "Valid, uses Asterik's",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "courses_id": "*3*"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "courses_id": "3*"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "courses_id": "*3"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "epse",
+            "courses_id": "534",
+            "courses_avg": 97.41
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "532",
+            "courses_avg": 97.48
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "532",
+            "courses_avg": 97.48
+        },
+        {
+            "courses_dept": "epse",
+            "courses_id": "534",
+            "courses_avg": 97.78
+        },
+        {
+            "courses_dept": "spph",
+            "courses_id": "300",
+            "courses_avg": 98.98
+        },
+        {
+            "courses_dept": "spph",
+            "courses_id": "300",
+            "courses_avg": 98.98
+        }
+    ]
+}

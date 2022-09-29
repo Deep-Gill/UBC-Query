@@ -1,0 +1,37 @@
+{
+    "title": "Excess keys in query.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept"
+                ]
+            }
+        },
+        "GROUP": [
+            "courses_dept",
+            "courses_id"
+        ]
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

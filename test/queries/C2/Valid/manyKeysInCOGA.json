@@ -1,0 +1,4576 @@
+{
+    "title": "uses 4 keys for COLUMNS, and ORDER and 3 keys for APPLY",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "c*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "minimumAvg",
+                "courses_dept",
+                "yearsOffered"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_id",
+                    "yearsOffered",
+                    "courses_dept",
+                    "minimumAvg"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "maximumAvg": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "minimumAvg": {
+                        "MIN": "courses_avg"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_id": "300",
+            "minimumAvg": 77.74,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 78.62,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 78.73,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 81.2,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 71.5,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 73.18,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 75.41,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 75.8,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 75.95,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 78.71,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 79.44,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 82,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 79.55,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 78.73,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 73.67,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 74.9,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "300",
+            "minimumAvg": 76.36,
+            "courses_dept": "cogs",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 68.4,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 71.52,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 72.46,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 75.21,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 75.83,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 80.43,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 80.74,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 90.11,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 81.68,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 84.59,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 84.6,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 73.07,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 73.07,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 71,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 72.4,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 72.4,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 75.83,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 70.33,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 74.88,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 79.73,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 83.8,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 65.5,
+            "courses_dept": "caps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 71,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 76.76,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 82.05,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 73.91,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 71.52,
+            "courses_dept": "chem",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "301",
+            "minimumAvg": 68.33,
+            "courses_dept": "clst",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 69.86,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 81.29,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 81.29,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 73.18,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 77.95,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 69.86,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 72.53,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 68.64,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 74.46,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 71.27,
+            "courses_dept": "chem",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "302",
+            "minimumAvg": 73.62,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 79,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 79,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 88.14,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 88.86,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 82.17,
+            "courses_dept": "chin",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 89.38,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 89.42,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 77.38,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 74.59,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 74.59,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 77.71,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 74.23,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 73.79,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 72.54,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 77.45,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 76.51,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 76.8,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 76.8,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 78.08,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 68.35,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 70.92,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 72.69,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 68.35,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 74.14,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "303",
+            "minimumAvg": 71.69,
+            "courses_dept": "cogs",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 67.27,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 85.38,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 78.47,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 76.43,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 76.91,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 73.69,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 85.38,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 76.03,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 76.03,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 78.47,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 78.89,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 72.15,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 71.89,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 72.15,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 73.28,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 67.27,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "304",
+            "minimumAvg": 72.77,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 74.62,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 82.05,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 73.67,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 76.73,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 78.56,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 78.56,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 74.62,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 76.31,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 70.89,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 77.78,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 79.94,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 83.84,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 76.31,
+            "courses_dept": "chin",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 77.78,
+            "courses_dept": "cohr",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 74.7,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "305",
+            "minimumAvg": 77.82,
+            "courses_dept": "chin",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "306",
+            "minimumAvg": 76.61,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "306",
+            "minimumAvg": 74.82,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 83.19,
+            "courses_dept": "cens",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 76.49,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 76.49,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 77.19,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 77.74,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 78.46,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 72.99,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 83.19,
+            "courses_dept": "cens",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 75.33,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 76,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 76.11,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 76.11,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 77.5,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 77.63,
+            "courses_dept": "cohr",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 79,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "307",
+            "minimumAvg": 71.78,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "309",
+            "minimumAvg": 64.93,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "309",
+            "minimumAvg": 68.1,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "309",
+            "minimumAvg": 68.1,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "309",
+            "minimumAvg": 64.93,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 62.99,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 67.78,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 74.45,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 75.57,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 76.31,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 78.69,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 80.24,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 81.17,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 67.78,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 75.14,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 77.13,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 72.27,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "310",
+            "minimumAvg": 62.99,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 64.41,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 77.01,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 72.66,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 75.31,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 80.02,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 78.64,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 84.18,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 72.64,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 75.4,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 74.06,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 75,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 78.24,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 84.39,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 73.82,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 73.68,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 72.5,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 82,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 72.83,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 55.75,
+            "courses_dept": "civl",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 72.66,
+            "courses_dept": "clst",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 78.64,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 74.58,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 64.41,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 74.42,
+            "courses_dept": "civl",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "311",
+            "minimumAvg": 71.29,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 55.31,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 55.31,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 63.49,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 76.23,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 77.58,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 77.79,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 80.1,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 80.97,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 76.52,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 76.84,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 76.93,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 63.49,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 76.52,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 65.75,
+            "courses_dept": "chem",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 72.61,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "312",
+            "minimumAvg": 78.72,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 68.97,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 70.46,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 71.44,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 73.04,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 70.76,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 75.57,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 72.86,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 70.5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 70.92,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 68.97,
+            "courses_dept": "chem",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "313",
+            "minimumAvg": 73,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 78.7,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 67.85,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 73.93,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 74.22,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 76.17,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 79.24,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 77.81,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "314",
+            "minimumAvg": 73.33,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 53,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 67.36,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 71.35,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 73.54,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 73.93,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 76.77,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 72.72,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 72.72,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 67.5,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 75.14,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 42.5,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 66.56,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "315",
+            "minimumAvg": 76.43,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "316",
+            "minimumAvg": 78.63,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "316",
+            "minimumAvg": 74.34,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "316",
+            "minimumAvg": 74.34,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "316",
+            "minimumAvg": 76.89,
+            "courses_dept": "civl",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 70.55,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 70.29,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 77.43,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 73.74,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 71.27,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 72.79,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 72.95,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 70.55,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 74,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 76.9,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "317",
+            "minimumAvg": 68.54,
+            "courses_dept": "cpsc",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "318",
+            "minimumAvg": 66.7,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "318",
+            "minimumAvg": 68.04,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "318",
+            "minimumAvg": 71.81,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "318",
+            "minimumAvg": 74.9,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "318",
+            "minimumAvg": 66.7,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 87.93,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 70,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 75.76,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 78.93,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 83.13,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 70,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "319",
+            "minimumAvg": 78.93,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 84.33,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 84.33,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 82.14,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 83.02,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 68.33,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 69.59,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 71.02,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 72.78,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 72.05,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 66.76,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 67.76,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 68.07,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 66.34,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "320",
+            "minimumAvg": 72.05,
+            "courses_dept": "civl",
+            "yearsOffered": 9
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 81.38,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 81.75,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 80.87,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 80.87,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 73.25,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 74.67,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 74.71,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "321",
+            "minimumAvg": 76.3,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 73.79,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 74.88,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 75.23,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 69,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 72.21,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 74.86,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 69.91,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "322",
+            "minimumAvg": 67.48,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "323",
+            "minimumAvg": 76.56,
+            "courses_dept": "chin",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "323",
+            "minimumAvg": 65.45,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "323",
+            "minimumAvg": 71.08,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "323",
+            "minimumAvg": 72.26,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "323",
+            "minimumAvg": 72.31,
+            "courses_dept": "chin",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "325",
+            "minimumAvg": 68.37,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "325",
+            "minimumAvg": 69.2,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "325",
+            "minimumAvg": 69.77,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "325",
+            "minimumAvg": 78,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "325",
+            "minimumAvg": 60.5,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 70.36,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 71.66,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 73.35,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 73.47,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 74.68,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 77.24,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 72.57,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 73.69,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 67.36,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 71.89,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "329",
+            "minimumAvg": 70.51,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 58.75,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 73.11,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 69.31,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 74.24,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 77.54,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 69.31,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 74.24,
+            "courses_dept": "cons",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "330",
+            "minimumAvg": 58.75,
+            "courses_dept": "chem",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 68.94,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 82.61,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 68.23,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 68.23,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 70.5,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 72.26,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 74.98,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 69.41,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 69.41,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 68.94,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 74.78,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 69.45,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "331",
+            "minimumAvg": 78.53,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 68.75,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 70,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 70,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 77.03,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 68.75,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "332",
+            "minimumAvg": 69.78,
+            "courses_dept": "civl",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 67.5,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 67.5,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 71.38,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 74.44,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 73.85,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 73.96,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 80.17,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 86.9,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 86.9,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 71.26,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 71.26,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "333",
+            "minimumAvg": 70.08,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "334",
+            "minimumAvg": 73.6,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "334",
+            "minimumAvg": 78.81,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "334",
+            "minimumAvg": 73.6,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 72.4,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 73.61,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 75.81,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 75.48,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 74.8,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 77.23,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 80.33,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 73.4,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "335",
+            "minimumAvg": 74.08,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "336",
+            "minimumAvg": 74.3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "336",
+            "minimumAvg": 75.53,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "336",
+            "minimumAvg": 78.72,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "336",
+            "minimumAvg": 72.69,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "336",
+            "minimumAvg": 75.88,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 74.29,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 76.58,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 80.11,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 68.4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 76.75,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 70.65,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 71.4,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 68.4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 72.94,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 80.29,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 72.65,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 70.65,
+            "courses_dept": "civl",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "340",
+            "minimumAvg": 71.4,
+            "courses_dept": "cons",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "341",
+            "minimumAvg": 71.78,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "341",
+            "minimumAvg": 71.78,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 70.17,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 75.58,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 80.11,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 80.24,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 81.18,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 63.9,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 73.3,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 63.9,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "344",
+            "minimumAvg": 75.91,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 66.18,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 72.24,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 73.32,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 73.14,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 73.98,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 77.33,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 66.18,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 72.53,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 68,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "345",
+            "minimumAvg": 73.01,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 69.12,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 69.74,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 69.95,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 71.32,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 75.77,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 75.95,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 69.12,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "346",
+            "minimumAvg": 70.66,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "351",
+            "minimumAvg": 68.13,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "351",
+            "minimumAvg": 76.17,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "351",
+            "minimumAvg": 62.75,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "351",
+            "minimumAvg": 65.16,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 69.63,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 68.51,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 73.36,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 73.7,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 74.17,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 74.24,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 71.78,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 70.95,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 69.63,
+            "courses_dept": "clst",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 74.27,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "353",
+            "minimumAvg": 71.41,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "354",
+            "minimumAvg": 69.88,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "354",
+            "minimumAvg": 73.43,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "354",
+            "minimumAvg": 72.93,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "354",
+            "minimumAvg": 74.05,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "354",
+            "minimumAvg": 70.11,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 72.12,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 70.95,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 72.84,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 72.12,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 76.79,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 81.59,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "355",
+            "minimumAvg": 63.92,
+            "courses_dept": "comm",
+            "yearsOffered": 9
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 67.95,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 70.35,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 81.44,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 66.6,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 66.6,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 67.95,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 73.71,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "356",
+            "minimumAvg": 72.84,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 72.55,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.89,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 80.86,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 83.74,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.2,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 80.92,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 82.6,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 82.92,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 83.38,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 83.81,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 83.87,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 84.25,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 84.45,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 84.93,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.08,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.08,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.25,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.38,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.42,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.53,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.57,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.93,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 86.57,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 86.67,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 86.85,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.43,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.53,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.54,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.67,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.73,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.87,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 88.31,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 88.4,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 89.67,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 90.19,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 91.8,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 74.46,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.34,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.49,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.77,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 76.22,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 76.74,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 77.47,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 77.57,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 77.83,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 79.28,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 79.3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 77.22,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 84.82,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.4,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 87.93,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.38,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 76.12,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 80.93,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 84.81,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 86.57,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 74.38,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 77.22,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 79.73,
+            "courses_dept": "cnps",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 83.73,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 85.42,
+            "courses_dept": "cnps",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "362",
+            "minimumAvg": 75.67,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 79.11,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 81.19,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 82.07,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 82.77,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 82.88,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 84,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 86.63,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 88.41,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 88.91,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 89.19,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 89.21,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 90.69,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 74.68,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 74.97,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 76.79,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 77.24,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 80.24,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 81.9,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 84.7,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 85.41,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 91.24,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 74.88,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 79.92,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 80.3,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 80.42,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 74.16,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 75,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 84.89,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "363",
+            "minimumAvg": 72.43,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 77.65,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 87.35,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 78.26,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 86.65,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 86.79,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 77.65,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 89,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 80.8,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 82.37,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 77.95,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 85.88,
+            "courses_dept": "cnps",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "364",
+            "minimumAvg": 80,
+            "courses_dept": "cnps",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 79.03,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 79.03,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 83.86,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 81.09,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 82.18,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 83.68,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 84.21,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 86,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 86.79,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 87.16,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 89.57,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 90.75,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 91,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 91.13,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 71.13,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 75.39,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 76.95,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 77.81,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 76.88,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 80.56,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 66.09,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 76.19,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 75.13,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 78.24,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 72.29,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 74.09,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 76.88,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "365",
+            "minimumAvg": 72.69,
+            "courses_dept": "cnps",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "366",
+            "minimumAvg": 79.71,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "366",
+            "minimumAvg": 79.71,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "366",
+            "minimumAvg": 84.79,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "366",
+            "minimumAvg": 84.79,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "366",
+            "minimumAvg": 81.06,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 71.3,
+            "courses_dept": "cnrs",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 64.51,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 67.67,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 68.98,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 70.74,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 72.72,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 73.39,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 73.71,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 73.82,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 74.69,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 74.89,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 75.05,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 75.38,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 76.14,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 77.31,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 77.44,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 77.85,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 77.88,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 78.34,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 83.56,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 90.21,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 71.3,
+            "courses_dept": "cnrs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 71.89,
+            "courses_dept": "cnrs",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 72.65,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 73.15,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 76.3,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 78.12,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 82.24,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 70,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 75.45,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 71,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 71.02,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 72.27,
+            "courses_dept": "cnrs",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 73.29,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "370",
+            "minimumAvg": 78.34,
+            "courses_dept": "cons",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 78.39,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 71.76,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 73.53,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 73.6,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 75,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 75.61,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 75.89,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 76.18,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 76.9,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 77.24,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 78.13,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 78.55,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 78.61,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 82.34,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 87.05,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 73.34,
+            "courses_dept": "coec",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 70.09,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 72.6,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 77.12,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 77.78,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 79.02,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 72.55,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "371",
+            "minimumAvg": 73.44,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "373",
+            "minimumAvg": 74.2,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "373",
+            "minimumAvg": 67.97,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "373",
+            "minimumAvg": 67.97,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "373",
+            "minimumAvg": 68.93,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 72.5,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 73.72,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 73.88,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 74.95,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 75.54,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 75.95,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 76.37,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 77.17,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 77.3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 77.95,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 78.76,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 78.93,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 81.82,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 70.1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 71.91,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 74.31,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 74.34,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "374",
+            "minimumAvg": 78.56,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "376",
+            "minimumAvg": 82.47,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "376",
+            "minimumAvg": 74.68,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "376",
+            "minimumAvg": 74.68,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "376",
+            "minimumAvg": 80.45,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 74.02,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 76.71,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 74.89,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 82.8,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 75.77,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "377",
+            "minimumAvg": 74.43,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "381",
+            "minimumAvg": 70.56,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "381",
+            "minimumAvg": 70.56,
+            "courses_dept": "chbe",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "382",
+            "minimumAvg": 75.83,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "382",
+            "minimumAvg": 75.83,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "387",
+            "minimumAvg": 74.36,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "387",
+            "minimumAvg": 74.36,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "387",
+            "minimumAvg": 81.9,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 79.67,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 79.8,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 80.31,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 81.53,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 82.3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 82.91,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 86.1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 80.79,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "388",
+            "minimumAvg": 78.5,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "389",
+            "minimumAvg": 77.43,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "389",
+            "minimumAvg": 77.43,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "389",
+            "minimumAvg": 81.53,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "389",
+            "minimumAvg": 79,
+            "courses_dept": "clch",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "389",
+            "minimumAvg": 81.53,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.34,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.7,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.06,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.25,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 76.6,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 76.88,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.34,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 74.45,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 70.57,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 78.9,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 69.7,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 71.89,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 73.11,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 75.58,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 66.6,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 70.06,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "390",
+            "minimumAvg": 70.2,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 69.53,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 74.78,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 83.88,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 84.76,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 69.53,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "391",
+            "minimumAvg": 69.71,
+            "courses_dept": "caps",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "393",
+            "minimumAvg": 75.21,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "393",
+            "minimumAvg": 67.1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "393",
+            "minimumAvg": 69.02,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "393",
+            "minimumAvg": 68.04,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "393",
+            "minimumAvg": 64.98,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 76.11,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 76.74,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 71.8,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.81,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.84,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 75.55,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 76.31,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 78.03,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 72.24,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 73.22,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 73.25,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 72.93,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 73.87,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.24,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.65,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 76.11,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 71.24,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.33,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 74.41,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 68.12,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "394",
+            "minimumAvg": 73.63,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 74.15,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 75.7,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 76.46,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 74.32,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 75.13,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 75.36,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 70.84,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 75,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "395",
+            "minimumAvg": 76.78,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 75.35,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 77.1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 77.1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 78,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 78.63,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 79.15,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 80.78,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 77.42,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 76.24,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 77.63,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "398",
+            "minimumAvg": 80.47,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "courses_id": "399",
+            "minimumAvg": 73.86,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "courses_id": "399",
+            "minimumAvg": 73.86,
+            "courses_dept": "clch",
+            "yearsOffered": 2
+        }
+    ]
+}

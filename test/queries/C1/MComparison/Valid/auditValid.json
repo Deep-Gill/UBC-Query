@@ -1,0 +1,140 @@
+{
+    "title": "Valid, uses audit key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_audit": 10
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_audit"
+            ],
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 11
+        },
+        {
+            "courses_dept": "frst",
+            "courses_audit": 11
+        },
+        {
+            "courses_dept": "frst",
+            "courses_audit": 11
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_audit": 11
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "fren",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "biol",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "biol",
+            "courses_audit": 12
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 13
+        },
+        {
+            "courses_dept": "cnto",
+            "courses_audit": 13
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 14
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_audit": 14
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 15
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 15
+        },
+        {
+            "courses_dept": "cons",
+            "courses_audit": 15
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 17
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 18
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_audit": 18
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 19
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 19
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 19
+        },
+        {
+            "courses_dept": "frst",
+            "courses_audit": 19
+        },
+        {
+            "courses_dept": "frst",
+            "courses_audit": 19
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 20
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 21
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_audit": 21
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_audit": 23
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Missing WHERE and ORDER.",
+    "query": {
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

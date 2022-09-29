@@ -1,0 +1,53 @@
+{
+    "title": "Invalid key courses_address in IS.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_address": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_name": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_address",
+                "courses_name",
+                "years Offered"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_address",
+                    "courses_name"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_address",
+                "courses_name"
+            ],
+            "APPLY": [
+                {
+                    "overall average": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "years Offered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

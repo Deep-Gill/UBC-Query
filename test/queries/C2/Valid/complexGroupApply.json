@@ -1,0 +1,5379 @@
+{
+    "title": "complex: 2 keys, 2 groups, 3 applyTokens",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_dept",
+                "overallAvg",
+                "maximumAvg",
+                "minimumAvg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_instructor"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "maximumAvg": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "minimumAvg": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_instructor": "",
+            "courses_dept": "aanb",
+            "overallAvg": 94.44,
+            "maximumAvg": 94.44,
+            "minimumAvg": 94.44
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "adhe",
+            "overallAvg": 90.73,
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.02
+        },
+        {
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_dept": "adhe",
+            "overallAvg": 91.83,
+            "maximumAvg": 96.11,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "falk, clifford",
+            "courses_dept": "adhe",
+            "overallAvg": 90.18,
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "courses_instructor": "vanwynsberghe, robert",
+            "courses_dept": "adhe",
+            "overallAvg": 90.16,
+            "maximumAvg": 90.16,
+            "minimumAvg": 90.16
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "anat",
+            "overallAvg": 91.83,
+            "maximumAvg": 92,
+            "minimumAvg": 91.67
+        },
+        {
+            "courses_instructor": "krebs, claudia",
+            "courses_dept": "anat",
+            "overallAvg": 91.83,
+            "maximumAvg": 92,
+            "minimumAvg": 91.67
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "anth",
+            "overallAvg": 91.61,
+            "maximumAvg": 92.29,
+            "minimumAvg": 90.92
+        },
+        {
+            "courses_instructor": "kamat, vinay ramnath",
+            "courses_dept": "anth",
+            "overallAvg": 92.14,
+            "maximumAvg": 92.29,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "menzies, charles",
+            "courses_dept": "anth",
+            "overallAvg": 90.92,
+            "maximumAvg": 90.92,
+            "minimumAvg": 90.92
+        },
+        {
+            "courses_instructor": "rushen, jeffrey",
+            "courses_dept": "apbi",
+            "overallAvg": 91.86,
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "apsc",
+            "overallAvg": 91.72,
+            "maximumAvg": 92.74,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "wassink, berend",
+            "courses_dept": "apsc",
+            "overallAvg": 92.63,
+            "maximumAvg": 96,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "arst",
+            "overallAvg": 93.57,
+            "maximumAvg": 96.94,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "broadley, louise;olsen, anne",
+            "courses_dept": "arst",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "robinson, maria",
+            "courses_dept": "arst",
+            "overallAvg": 91.63,
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "arst",
+            "overallAvg": 93.4,
+            "maximumAvg": 94,
+            "minimumAvg": 92.8
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "arth",
+            "overallAvg": 91.55,
+            "maximumAvg": 93,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "astr",
+            "overallAvg": 91.35,
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "sossi, vesna",
+            "courses_dept": "astr",
+            "overallAvg": 91.25,
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "atsc",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "stull, roland",
+            "courses_dept": "atsc",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "audi",
+            "overallAvg": 92.06,
+            "maximumAvg": 96.9,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "adelman, sharon",
+            "courses_dept": "audi",
+            "overallAvg": 93.45,
+            "maximumAvg": 96.9,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "adelman, sharon;hicks, darlene",
+            "courses_dept": "audi",
+            "overallAvg": 91.91,
+            "maximumAvg": 92.85,
+            "minimumAvg": 91.29
+        },
+        {
+            "courses_instructor": "adelman, sharon;macleod, elizabeth d",
+            "courses_dept": "audi",
+            "overallAvg": 93.91,
+            "maximumAvg": 93.91,
+            "minimumAvg": 93.91
+        },
+        {
+            "courses_instructor": "adler-bock, marcy;avery, lisa ann",
+            "courses_dept": "audi",
+            "overallAvg": 90.43,
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "avery, lisa ann",
+            "courses_dept": "audi",
+            "overallAvg": 91.73,
+            "maximumAvg": 91.73,
+            "minimumAvg": 91.73
+        },
+        {
+            "courses_instructor": "avery, lisa ann;rammage, linda;reynolds, cindy",
+            "courses_dept": "audi",
+            "overallAvg": 90.38,
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "avery, lisa ann;taylor, sandra lynn",
+            "courses_dept": "audi",
+            "overallAvg": 90.57,
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.41
+        },
+        {
+            "courses_instructor": "avery, lisa ann;tba",
+            "courses_dept": "audi",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "bernhardt, barbara",
+            "courses_dept": "audi",
+            "overallAvg": 90.8,
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "bernhardt, barbara;rammage, linda;small, jeff alan",
+            "courses_dept": "audi",
+            "overallAvg": 90.12,
+            "maximumAvg": 90.12,
+            "minimumAvg": 90.12
+        },
+        {
+            "courses_instructor": "brown, sasha",
+            "courses_dept": "audi",
+            "overallAvg": 91.75,
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "courses_instructor": "dillon, lisa",
+            "courses_dept": "audi",
+            "overallAvg": 90.77,
+            "maximumAvg": 90.77,
+            "minimumAvg": 90.77
+        },
+        {
+            "courses_instructor": "duke, wendy",
+            "courses_dept": "audi",
+            "overallAvg": 91.1,
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "courses_instructor": "hatton, jennifer;herdman, anthony",
+            "courses_dept": "audi",
+            "overallAvg": 93.09,
+            "maximumAvg": 93.09,
+            "minimumAvg": 93.09
+        },
+        {
+            "courses_instructor": "herdman, anthony",
+            "courses_dept": "audi",
+            "overallAvg": 92.55,
+            "maximumAvg": 94,
+            "minimumAvg": 91.08
+        },
+        {
+            "courses_instructor": "marcoux, caroline;poirier, brigitte",
+            "courses_dept": "audi",
+            "overallAvg": 93.75,
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "courses_instructor": "purves, barbara",
+            "courses_dept": "audi",
+            "overallAvg": 92.29,
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "courses_instructor": "reynolds, cindy",
+            "courses_dept": "audi",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "shahnaz, navid",
+            "courses_dept": "audi",
+            "overallAvg": 90.82,
+            "maximumAvg": 91,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "small, jeff alan",
+            "courses_dept": "audi",
+            "overallAvg": 93.2,
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "courses_instructor": "small, susan",
+            "courses_dept": "audi",
+            "overallAvg": 92.44,
+            "maximumAvg": 93.54,
+            "minimumAvg": 91.08
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "audi",
+            "overallAvg": 91.7,
+            "maximumAvg": 92.45,
+            "minimumAvg": 90.95
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "babs",
+            "overallAvg": 91.38,
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "babs",
+            "overallAvg": 91.38,
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "bams",
+            "overallAvg": 90.85,
+            "maximumAvg": 91.47,
+            "minimumAvg": 90.23
+        },
+        {
+            "courses_instructor": "atkins, derek",
+            "courses_dept": "bams",
+            "overallAvg": 90.23,
+            "maximumAvg": 90.23,
+            "minimumAvg": 90.23
+        },
+        {
+            "courses_instructor": "zhang, zhe",
+            "courses_dept": "bams",
+            "overallAvg": 91.47,
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "bioc",
+            "overallAvg": 90.31,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "cullis, pieter",
+            "courses_dept": "bioc",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "cullis, pieter;duong van hoa, franck;molday, robert",
+            "courses_dept": "bioc",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "cullis, pieter;molday, robert",
+            "courses_dept": "bioc",
+            "overallAvg": 90.25,
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "biof",
+            "overallAvg": 92.24,
+            "maximumAvg": 93.45,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "jones, steven j",
+            "courses_dept": "biof",
+            "overallAvg": 92.24,
+            "maximumAvg": 93.45,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "biol",
+            "overallAvg": 91.43,
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "blake, robert wm;ganders, fred r",
+            "courses_dept": "biol",
+            "overallAvg": 90.3,
+            "maximumAvg": 90.42,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "bohlmann, jorg",
+            "courses_dept": "biol",
+            "overallAvg": 91.9,
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.63
+        },
+        {
+            "courses_instructor": "cronk, quentin charles",
+            "courses_dept": "biol",
+            "overallAvg": 91.21,
+            "maximumAvg": 91.21,
+            "minimumAvg": 91.21
+        },
+        {
+            "courses_instructor": "douglas, carl;schulte, patricia",
+            "courses_dept": "biol",
+            "overallAvg": 91.33,
+            "maximumAvg": 92.19,
+            "minimumAvg": 90.48
+        },
+        {
+            "courses_instructor": "ellis, shona margaret",
+            "courses_dept": "biol",
+            "overallAvg": 91.21,
+            "maximumAvg": 92,
+            "minimumAvg": 90.42
+        },
+        {
+            "courses_instructor": "mizumoto, kota",
+            "courses_dept": "biol",
+            "overallAvg": 92.36,
+            "maximumAvg": 92.36,
+            "minimumAvg": 92.36
+        },
+        {
+            "courses_instructor": "singh, santokh",
+            "courses_dept": "biol",
+            "overallAvg": 90.92,
+            "maximumAvg": 90.92,
+            "minimumAvg": 90.92
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "bmeg",
+            "overallAvg": 93.01,
+            "maximumAvg": 95.15,
+            "minimumAvg": 90.9
+        },
+        {
+            "courses_instructor": "abolmaesumi, purang",
+            "courses_dept": "bmeg",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "dumont, guy a",
+            "courses_dept": "bmeg",
+            "overallAvg": 95,
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "courses_instructor": "hodgson, antony",
+            "courses_dept": "bmeg",
+            "overallAvg": 95.15,
+            "maximumAvg": 95.15,
+            "minimumAvg": 95.15
+        },
+        {
+            "courses_instructor": "van der loos, hendrik;wilson, david",
+            "courses_dept": "bmeg",
+            "overallAvg": 90.9,
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.9
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "bota",
+            "overallAvg": 91.24,
+            "maximumAvg": 92,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "bohlmann, jorg",
+            "courses_dept": "bota",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "ng, david",
+            "courses_dept": "bota",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "zhang, yuelin",
+            "courses_dept": "bota",
+            "overallAvg": 90.71,
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "ccst",
+            "overallAvg": 93.67,
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "courses_instructor": "watson, scott",
+            "courses_dept": "ccst",
+            "overallAvg": 93.67,
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "ceen",
+            "overallAvg": 91.78,
+            "maximumAvg": 92.61,
+            "minimumAvg": 90.4
+        },
+        {
+            "courses_instructor": "mazzi, eric",
+            "courses_dept": "ceen",
+            "overallAvg": 92.62,
+            "maximumAvg": 94.27,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "prodanovic, vladan zoran",
+            "courses_dept": "ceen",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "cell",
+            "overallAvg": 91.85,
+            "maximumAvg": 94.4,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "haas, kurt",
+            "courses_dept": "cell",
+            "overallAvg": 91.76,
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.56
+        },
+        {
+            "courses_instructor": "kieffer, tim",
+            "courses_dept": "cell",
+            "overallAvg": 92.4,
+            "maximumAvg": 92.4,
+            "minimumAvg": 92.4
+        },
+        {
+            "courses_instructor": "loewen, christopher;nabi, ivan robert",
+            "courses_dept": "cell",
+            "overallAvg": 92.03,
+            "maximumAvg": 94.4,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "underhill, tully michael",
+            "courses_dept": "cell",
+            "overallAvg": 90.79,
+            "maximumAvg": 91,
+            "minimumAvg": 90.58
+        },
+        {
+            "courses_instructor": "vogl, a wayne",
+            "courses_dept": "cell",
+            "overallAvg": 92.14,
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "chbe",
+            "overallAvg": 91.75,
+            "maximumAvg": 95.54,
+            "minimumAvg": 90.21
+        },
+        {
+            "courses_instructor": "englezos, peter",
+            "courses_dept": "chbe",
+            "overallAvg": 92.75,
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "feng, james jingtao",
+            "courses_dept": "chbe",
+            "overallAvg": 90.84,
+            "maximumAvg": 91.38,
+            "minimumAvg": 90.21
+        },
+        {
+            "courses_instructor": "gopaluni, bhushan",
+            "courses_dept": "chbe",
+            "overallAvg": 95.42,
+            "maximumAvg": 95.54,
+            "minimumAvg": 95.31
+        },
+        {
+            "courses_instructor": "gyenge, christina",
+            "courses_dept": "chbe",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "hatzikiriakos, savvas",
+            "courses_dept": "chbe",
+            "overallAvg": 94.75,
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "courses_instructor": "haynes, charles",
+            "courses_dept": "chbe",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "lau, anthony k",
+            "courses_dept": "chbe",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "smith, kevin",
+            "courses_dept": "chbe",
+            "overallAvg": 91.8,
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "courses_instructor": "wilkinson, david",
+            "courses_dept": "chbe",
+            "overallAvg": 90.45,
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "chem",
+            "overallAvg": 91.39,
+            "maximumAvg": 92.57,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "blades, michael;turner, robin",
+            "courses_dept": "chem",
+            "overallAvg": 91.47,
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "chen, david",
+            "courses_dept": "chem",
+            "overallAvg": 91.47,
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "krems, roman",
+            "courses_dept": "chem",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "patrick, brian",
+            "courses_dept": "chem",
+            "overallAvg": 91.56,
+            "maximumAvg": 92.57,
+            "minimumAvg": 90.56
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "chil",
+            "overallAvg": 91.46,
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "civl",
+            "overallAvg": 91.28,
+            "maximumAvg": 96.27,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "bigazzi, alexander york",
+            "courses_dept": "civl",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "chieng, sie-tan;stiemer, siegfried",
+            "courses_dept": "civl",
+            "overallAvg": 91.46,
+            "maximumAvg": 91.46,
+            "minimumAvg": 91.46
+        },
+        {
+            "courses_instructor": "jenkins, dr jacqueline",
+            "courses_dept": "civl",
+            "overallAvg": 91.34,
+            "maximumAvg": 92.3,
+            "minimumAvg": 90.39
+        },
+        {
+            "courses_instructor": "joghataie, abdolreza",
+            "courses_dept": "civl",
+            "overallAvg": 91.06,
+            "maximumAvg": 91.06,
+            "minimumAvg": 91.06
+        },
+        {
+            "courses_instructor": "lence, barbara jean",
+            "courses_dept": "civl",
+            "overallAvg": 90.63,
+            "maximumAvg": 91,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "lim, clark",
+            "courses_dept": "civl",
+            "overallAvg": 90.26,
+            "maximumAvg": 90.26,
+            "minimumAvg": 90.26
+        },
+        {
+            "courses_instructor": "lo, kwang victor",
+            "courses_dept": "civl",
+            "overallAvg": 90.44,
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "naghibi, ali",
+            "courses_dept": "civl",
+            "overallAvg": 90.11,
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "staub-french, sheryl",
+            "courses_dept": "civl",
+            "overallAvg": 90.2,
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "tannert, thomas",
+            "courses_dept": "civl",
+            "overallAvg": 91.32,
+            "maximumAvg": 91.32,
+            "minimumAvg": 91.32
+        },
+        {
+            "courses_instructor": "ventura, carlos estuardo",
+            "courses_dept": "civl",
+            "overallAvg": 92.11,
+            "maximumAvg": 96.27,
+            "minimumAvg": 90.22
+        },
+        {
+            "courses_instructor": "wijewickreme, dharmapriya",
+            "courses_dept": "civl",
+            "overallAvg": 90.06,
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "cnps",
+            "overallAvg": 92.08,
+            "maximumAvg": 97.47,
+            "minimumAvg": 90.02
+        },
+        {
+            "courses_instructor": "adler, michal",
+            "courses_dept": "cnps",
+            "overallAvg": 91.48,
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "amundson, norman",
+            "courses_dept": "cnps",
+            "overallAvg": 91.14,
+            "maximumAvg": 92.71,
+            "minimumAvg": 90.42
+        },
+        {
+            "courses_instructor": "amundson, norman;sawatsky, frank",
+            "courses_dept": "cnps",
+            "overallAvg": 91.8,
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "courses_instructor": "bruno, talino",
+            "courses_dept": "cnps",
+            "overallAvg": 91.57,
+            "maximumAvg": 92.91,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "carter, john",
+            "courses_dept": "cnps",
+            "overallAvg": 94.2,
+            "maximumAvg": 96,
+            "minimumAvg": 92.72
+        },
+        {
+            "courses_instructor": "cox, daniel",
+            "courses_dept": "cnps",
+            "overallAvg": 94.34,
+            "maximumAvg": 99.19,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "dadson, michael",
+            "courses_dept": "cnps",
+            "overallAvg": 90.64,
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "courses_instructor": "dyer, brenda",
+            "courses_dept": "cnps",
+            "overallAvg": 91.02,
+            "maximumAvg": 92.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "elez, tatjana",
+            "courses_dept": "cnps",
+            "overallAvg": 90.44,
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "flood, karen",
+            "courses_dept": "cnps",
+            "overallAvg": 92.41,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.32
+        },
+        {
+            "courses_instructor": "gaster, sean",
+            "courses_dept": "cnps",
+            "overallAvg": 91.22,
+            "maximumAvg": 92.1,
+            "minimumAvg": 90.35
+        },
+        {
+            "courses_instructor": "haney, colleen;hawley, jody;tba",
+            "courses_dept": "cnps",
+            "overallAvg": 92.29,
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "courses_instructor": "ishiyama, fumio ishu",
+            "courses_dept": "cnps",
+            "overallAvg": 91.74,
+            "maximumAvg": 93.7,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "james, susan",
+            "courses_dept": "cnps",
+            "overallAvg": 92.6,
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.4
+        },
+        {
+            "courses_instructor": "jordan, sharalyn",
+            "courses_dept": "cnps",
+            "overallAvg": 90.87,
+            "maximumAvg": 91.21,
+            "minimumAvg": 90.53
+        },
+        {
+            "courses_instructor": "klubben, laura",
+            "courses_dept": "cnps",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "marshall, janet vaughan",
+            "courses_dept": "cnps",
+            "overallAvg": 90.72,
+            "maximumAvg": 91.17,
+            "minimumAvg": 90.09
+        },
+        {
+            "courses_instructor": "miller, lynn delaine",
+            "courses_dept": "cnps",
+            "overallAvg": 92.35,
+            "maximumAvg": 92.35,
+            "minimumAvg": 92.35
+        },
+        {
+            "courses_instructor": "motl, thomas",
+            "courses_dept": "cnps",
+            "overallAvg": 90.84,
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "munteanu, mircea",
+            "courses_dept": "cnps",
+            "overallAvg": 92.59,
+            "maximumAvg": 95.36,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "neault, roberta a",
+            "courses_dept": "cnps",
+            "overallAvg": 97.47,
+            "maximumAvg": 97.47,
+            "minimumAvg": 97.47
+        },
+        {
+            "courses_instructor": "owens, rhea",
+            "courses_dept": "cnps",
+            "overallAvg": 95.78,
+            "maximumAvg": 95.78,
+            "minimumAvg": 95.78
+        },
+        {
+            "courses_instructor": "pickerell, deirdre",
+            "courses_dept": "cnps",
+            "overallAvg": 91.25,
+            "maximumAvg": 91.82,
+            "minimumAvg": 90.69
+        },
+        {
+            "courses_instructor": "schultz, izabela",
+            "courses_dept": "cnps",
+            "overallAvg": 92.69,
+            "maximumAvg": 95,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "smith, gillian",
+            "courses_dept": "cnps",
+            "overallAvg": 94.56,
+            "maximumAvg": 94.56,
+            "minimumAvg": 94.56
+        },
+        {
+            "courses_instructor": "swan, graeme",
+            "courses_dept": "cnps",
+            "overallAvg": 90.12,
+            "maximumAvg": 90.12,
+            "minimumAvg": 90.12
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "cnps",
+            "overallAvg": 91.03,
+            "maximumAvg": 91.13,
+            "minimumAvg": 90.94
+        },
+        {
+            "courses_instructor": "weinberg, mark",
+            "courses_dept": "cnps",
+            "overallAvg": 92.41,
+            "maximumAvg": 95.36,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "westwood, marvin",
+            "courses_dept": "cnps",
+            "overallAvg": 91.18,
+            "maximumAvg": 91.18,
+            "minimumAvg": 91.18
+        },
+        {
+            "courses_instructor": "young, richard",
+            "courses_dept": "cnps",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "cohr",
+            "overallAvg": 90.46,
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "berrington, david arthur",
+            "courses_dept": "cohr",
+            "overallAvg": 90.46,
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "comm",
+            "overallAvg": 94.06,
+            "maximumAvg": 94.75,
+            "minimumAvg": 92.45
+        },
+        {
+            "courses_instructor": "ghement, isabella",
+            "courses_dept": "comm",
+            "overallAvg": 94.06,
+            "maximumAvg": 94.75,
+            "minimumAvg": 92.45
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "cons",
+            "overallAvg": 90.27,
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "arcese, peter",
+            "courses_dept": "cons",
+            "overallAvg": 90.1,
+            "maximumAvg": 90.1,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "trosper, ronald",
+            "courses_dept": "cons",
+            "overallAvg": 90.21,
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.21
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "cpsc",
+            "overallAvg": 92.01,
+            "maximumAvg": 95,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "beschastnikh, ivan",
+            "courses_dept": "cpsc",
+            "overallAvg": 91.22,
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "carenini, giuseppe",
+            "courses_dept": "cpsc",
+            "overallAvg": 94.5,
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "courses_instructor": "friedman, joel",
+            "courses_dept": "cpsc",
+            "overallAvg": 92.48,
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "harvey, nicholas",
+            "courses_dept": "cpsc",
+            "overallAvg": 92.75,
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "hoos, holger",
+            "courses_dept": "cpsc",
+            "overallAvg": 91.25,
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "knorr, edwin max",
+            "courses_dept": "cpsc",
+            "overallAvg": 93.06,
+            "maximumAvg": 93.5,
+            "minimumAvg": 92.63
+        },
+        {
+            "courses_instructor": "krasic, charles",
+            "courses_dept": "cpsc",
+            "overallAvg": 90.11,
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "poole, david",
+            "courses_dept": "cpsc",
+            "overallAvg": 90.71,
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "schmidt, mark",
+            "courses_dept": "cpsc",
+            "overallAvg": 90.88,
+            "maximumAvg": 91.22,
+            "minimumAvg": 90.53
+        },
+        {
+            "courses_instructor": "tsiknis, georgios",
+            "courses_dept": "cpsc",
+            "overallAvg": 92.04,
+            "maximumAvg": 93.38,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "wohlstadter, eric",
+            "courses_dept": "cpsc",
+            "overallAvg": 91.79,
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "courses_instructor": "wolfman, steven",
+            "courses_dept": "cpsc",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "crwr",
+            "overallAvg": 93.52,
+            "maximumAvg": 95.7,
+            "minimumAvg": 90.8
+        },
+        {
+            "courses_instructor": "acheson, alison",
+            "courses_dept": "crwr",
+            "overallAvg": 95,
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "courses_instructor": "campbell, deborah",
+            "courses_dept": "crwr",
+            "overallAvg": 93.68,
+            "maximumAvg": 97,
+            "minimumAvg": 90.8
+        },
+        {
+            "courses_instructor": "galloway, steve",
+            "courses_dept": "crwr",
+            "overallAvg": 95.22,
+            "maximumAvg": 96,
+            "minimumAvg": 94.67
+        },
+        {
+            "courses_instructor": "gartner, zsu zsi",
+            "courses_dept": "crwr",
+            "overallAvg": 92.8,
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "courses_instructor": "grady, albert wayne",
+            "courses_dept": "crwr",
+            "overallAvg": 95.33,
+            "maximumAvg": 98,
+            "minimumAvg": 92.67
+        },
+        {
+            "courses_instructor": "graefe, sara",
+            "courses_dept": "crwr",
+            "overallAvg": 93.75,
+            "maximumAvg": 95,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "lyon, annabel",
+            "courses_dept": "crwr",
+            "overallAvg": 92.33,
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "maillard, keith",
+            "courses_dept": "crwr",
+            "overallAvg": 96.67,
+            "maximumAvg": 98,
+            "minimumAvg": 96
+        },
+        {
+            "courses_instructor": "medved, maureen",
+            "courses_dept": "crwr",
+            "overallAvg": 94.25,
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "musgrave, susan",
+            "courses_dept": "crwr",
+            "overallAvg": 92.33,
+            "maximumAvg": 92.33,
+            "minimumAvg": 92.33
+        },
+        {
+            "courses_instructor": "schendlinger, mary",
+            "courses_dept": "crwr",
+            "overallAvg": 93.67,
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "courses_instructor": "svendsen, linda jane",
+            "courses_dept": "crwr",
+            "overallAvg": 94.5,
+            "maximumAvg": 95,
+            "minimumAvg": 94
+        },
+        {
+            "courses_instructor": "taylor, timothy",
+            "courses_dept": "crwr",
+            "overallAvg": 94,
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "crwr",
+            "overallAvg": 92.67,
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "courses_instructor": "tregebov, rhea",
+            "courses_dept": "crwr",
+            "overallAvg": 93.83,
+            "maximumAvg": 94.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "dent",
+            "overallAvg": 91.31,
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "von bergmann, hsingchi",
+            "courses_dept": "dent",
+            "overallAvg": 91.82,
+            "maximumAvg": 91.82,
+            "minimumAvg": 91.82
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "dhyg",
+            "overallAvg": 90.78,
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.03
+        },
+        {
+            "courses_instructor": "mcfarlane, rae",
+            "courses_dept": "dhyg",
+            "overallAvg": 91.77,
+            "maximumAvg": 93.72,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "eced",
+            "overallAvg": 92.26,
+            "maximumAvg": 93.72,
+            "minimumAvg": 90.81
+        },
+        {
+            "courses_instructor": "el khatib, lara",
+            "courses_dept": "eced",
+            "overallAvg": 92.05,
+            "maximumAvg": 93.71,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "lintott, deirdre;thom, marie",
+            "courses_dept": "eced",
+            "overallAvg": 91.93,
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.93
+        },
+        {
+            "courses_instructor": "pighini, maria",
+            "courses_dept": "eced",
+            "overallAvg": 92.87,
+            "maximumAvg": 92.87,
+            "minimumAvg": 92.87
+        },
+        {
+            "courses_instructor": "richardson, catherine",
+            "courses_dept": "eced",
+            "overallAvg": 90.81,
+            "maximumAvg": 90.81,
+            "minimumAvg": 90.81
+        },
+        {
+            "courses_instructor": "thom, marie",
+            "courses_dept": "eced",
+            "overallAvg": 93.72,
+            "maximumAvg": 93.72,
+            "minimumAvg": 93.72
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "econ",
+            "overallAvg": 91.67,
+            "maximumAvg": 95,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "anderson, kristin siwan",
+            "courses_dept": "econ",
+            "overallAvg": 91.3,
+            "maximumAvg": 91.6,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "diewert, w erwin",
+            "courses_dept": "econ",
+            "overallAvg": 92.34,
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.95
+        },
+        {
+            "courses_instructor": "gallipoli, giovanni",
+            "courses_dept": "econ",
+            "overallAvg": 92.31,
+            "maximumAvg": 95,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "green, david",
+            "courses_dept": "econ",
+            "overallAvg": 93.33,
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "courses_instructor": "halevy, yoram",
+            "courses_dept": "econ",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "hoffmann, florian",
+            "courses_dept": "econ",
+            "overallAvg": 90.13,
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "kasahara, hiroyuki",
+            "courses_dept": "econ",
+            "overallAvg": 91.86,
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "courses_instructor": "lemieux, thomas",
+            "courses_dept": "econ",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "marmer, vadim",
+            "courses_dept": "econ",
+            "overallAvg": 91.36,
+            "maximumAvg": 91.84,
+            "minimumAvg": 90.88
+        },
+        {
+            "courses_instructor": "perla, jesse",
+            "courses_dept": "econ",
+            "overallAvg": 90.49,
+            "maximumAvg": 91.08,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "sakata, shinichi",
+            "courses_dept": "econ",
+            "overallAvg": 91.72,
+            "maximumAvg": 93.52,
+            "minimumAvg": 90.68
+        },
+        {
+            "courses_instructor": "schrimpf, paul",
+            "courses_dept": "econ",
+            "overallAvg": 91.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "siu, henry",
+            "courses_dept": "econ",
+            "overallAvg": 91.02,
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "edcp",
+            "overallAvg": 91.52,
+            "maximumAvg": 95.58,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "adler, james douglas",
+            "courses_dept": "edcp",
+            "overallAvg": 91.67,
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "butler, joy;clarke, anthony",
+            "courses_dept": "edcp",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "butler, joy;de cosson, alexander",
+            "courses_dept": "edcp",
+            "overallAvg": 91.94,
+            "maximumAvg": 91.94,
+            "minimumAvg": 91.94
+        },
+        {
+            "courses_instructor": "davis, brent",
+            "courses_dept": "edcp",
+            "overallAvg": 91.91,
+            "maximumAvg": 92.45,
+            "minimumAvg": 91.36
+        },
+        {
+            "courses_instructor": "de cosson, alexander",
+            "courses_dept": "edcp",
+            "overallAvg": 91.62,
+            "maximumAvg": 92.76,
+            "minimumAvg": 90.35
+        },
+        {
+            "courses_instructor": "gerofsky, susan",
+            "courses_dept": "edcp",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "gouzouasis, peter",
+            "courses_dept": "edcp",
+            "overallAvg": 91.41,
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.24
+        },
+        {
+            "courses_instructor": "jeroff, debra",
+            "courses_dept": "edcp",
+            "overallAvg": 90.95,
+            "maximumAvg": 90.95,
+            "minimumAvg": 90.95
+        },
+        {
+            "courses_instructor": "johnson, jennifer",
+            "courses_dept": "edcp",
+            "overallAvg": 90.52,
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "courses_instructor": "krug, don",
+            "courses_dept": "edcp",
+            "overallAvg": 90.9,
+            "maximumAvg": 91.47,
+            "minimumAvg": 90.57
+        },
+        {
+            "courses_instructor": "lamonde, anne-marie",
+            "courses_dept": "edcp",
+            "overallAvg": 91.48,
+            "maximumAvg": 91.48,
+            "minimumAvg": 91.48
+        },
+        {
+            "courses_instructor": "loutzenheiser, lisa",
+            "courses_dept": "edcp",
+            "overallAvg": 90.73,
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "lucus, calin",
+            "courses_dept": "edcp",
+            "overallAvg": 92.64,
+            "maximumAvg": 92.96,
+            "minimumAvg": 92.33
+        },
+        {
+            "courses_instructor": "macdowell, paula",
+            "courses_dept": "edcp",
+            "overallAvg": 91.44,
+            "maximumAvg": 91.44,
+            "minimumAvg": 91.44
+        },
+        {
+            "courses_instructor": "magee, theresa",
+            "courses_dept": "edcp",
+            "overallAvg": 91.99,
+            "maximumAvg": 95.58,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "milner-bolotin, marina",
+            "courses_dept": "edcp",
+            "overallAvg": 90.64,
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "courses_instructor": "nicholson, kathleen;petersen, susan",
+            "courses_dept": "edcp",
+            "overallAvg": 92.53,
+            "maximumAvg": 93.3,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "nicol, cynthia",
+            "courses_dept": "edcp",
+            "overallAvg": 90.56,
+            "maximumAvg": 90.56,
+            "minimumAvg": 90.56
+        },
+        {
+            "courses_instructor": "petrina, stephen",
+            "courses_dept": "edcp",
+            "overallAvg": 93.57,
+            "maximumAvg": 95,
+            "minimumAvg": 92.14
+        },
+        {
+            "courses_instructor": "phelan, anne",
+            "courses_dept": "edcp",
+            "overallAvg": 90.47,
+            "maximumAvg": 90.84,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "pinar, william",
+            "courses_dept": "edcp",
+            "overallAvg": 92.78,
+            "maximumAvg": 94.86,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "ross, eddie wayne",
+            "courses_dept": "edcp",
+            "overallAvg": 91.95,
+            "maximumAvg": 92.64,
+            "minimumAvg": 91.37
+        },
+        {
+            "courses_instructor": "smith, mary",
+            "courses_dept": "edcp",
+            "overallAvg": 93.56,
+            "maximumAvg": 93.56,
+            "minimumAvg": 93.56
+        },
+        {
+            "courses_instructor": "tan, yuen sze michelle",
+            "courses_dept": "edcp",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "edst",
+            "overallAvg": 92.23,
+            "maximumAvg": 96.46,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "aquash, mark",
+            "courses_dept": "edst",
+            "overallAvg": 91.09,
+            "maximumAvg": 91.09,
+            "minimumAvg": 91.09
+        },
+        {
+            "courses_instructor": "butterwick, shauna",
+            "courses_dept": "edst",
+            "overallAvg": 90.06,
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "butterwick, shauna;chan, jennifer",
+            "courses_dept": "edst",
+            "overallAvg": 91.36,
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "courses_instructor": "gill, hartej",
+            "courses_dept": "edst",
+            "overallAvg": 90.79,
+            "maximumAvg": 91.81,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "marker, michael",
+            "courses_dept": "edst",
+            "overallAvg": 93.75,
+            "maximumAvg": 95.78,
+            "minimumAvg": 91.29
+        },
+        {
+            "courses_instructor": "mazawi, andre",
+            "courses_dept": "edst",
+            "overallAvg": 92.3,
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "mazawi, andre;waithman, marilynne",
+            "courses_dept": "edst",
+            "overallAvg": 92.19,
+            "maximumAvg": 92.19,
+            "minimumAvg": 92.19
+        },
+        {
+            "courses_instructor": "metcalfe, amy",
+            "courses_dept": "edst",
+            "overallAvg": 92.03,
+            "maximumAvg": 93.44,
+            "minimumAvg": 90.87
+        },
+        {
+            "courses_instructor": "palacios, carolina",
+            "courses_dept": "edst",
+            "overallAvg": 93.4,
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "courses_instructor": "pamer, monica",
+            "courses_dept": "edst",
+            "overallAvg": 90.36,
+            "maximumAvg": 90.36,
+            "minimumAvg": 90.36
+        },
+        {
+            "courses_instructor": "poole, wendy",
+            "courses_dept": "edst",
+            "overallAvg": 90.77,
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.65
+        },
+        {
+            "courses_instructor": "rocha perkerwicz, samuel",
+            "courses_dept": "edst",
+            "overallAvg": 94.06,
+            "maximumAvg": 94.06,
+            "minimumAvg": 94.06
+        },
+        {
+            "courses_instructor": "roman, leslie",
+            "courses_dept": "edst",
+            "overallAvg": 91.91,
+            "maximumAvg": 93.78,
+            "minimumAvg": 91.17
+        },
+        {
+            "courses_instructor": "shamsher, mohammed",
+            "courses_dept": "edst",
+            "overallAvg": 90.87,
+            "maximumAvg": 91.55,
+            "minimumAvg": 90.4
+        },
+        {
+            "courses_instructor": "shan, hongxia",
+            "courses_dept": "edst",
+            "overallAvg": 90.36,
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "vanwynsberghe, robert",
+            "courses_dept": "edst",
+            "overallAvg": 94.48,
+            "maximumAvg": 96.46,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "educ",
+            "overallAvg": 91.48,
+            "maximumAvg": 93.6,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "adler, james douglas",
+            "courses_dept": "educ",
+            "overallAvg": 91.22,
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "adler, james douglas;scott, sandra",
+            "courses_dept": "educ",
+            "overallAvg": 95.02,
+            "maximumAvg": 95.16,
+            "minimumAvg": 94.87
+        },
+        {
+            "courses_instructor": "ahenakew, cash",
+            "courses_dept": "educ",
+            "overallAvg": 92.11,
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "bartosh, oksana",
+            "courses_dept": "educ",
+            "overallAvg": 90.93,
+            "maximumAvg": 91.79,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "carr, wendy;denizot, isabelle",
+            "courses_dept": "educ",
+            "overallAvg": 91.18,
+            "maximumAvg": 91.18,
+            "minimumAvg": 91.18
+        },
+        {
+            "courses_instructor": "carter, john",
+            "courses_dept": "educ",
+            "overallAvg": 90.53,
+            "maximumAvg": 90.53,
+            "minimumAvg": 90.53
+        },
+        {
+            "courses_instructor": "davis, brent",
+            "courses_dept": "educ",
+            "overallAvg": 91.22,
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "fatemi, sayyed mohsen",
+            "courses_dept": "educ",
+            "overallAvg": 92.44,
+            "maximumAvg": 92.89,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "feng, francis",
+            "courses_dept": "educ",
+            "overallAvg": 93.7,
+            "maximumAvg": 93.7,
+            "minimumAvg": 93.7
+        },
+        {
+            "courses_instructor": "feng, francis;o'riley, patricia",
+            "courses_dept": "educ",
+            "overallAvg": 90.14,
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "feng, francis;scott, sandra",
+            "courses_dept": "educ",
+            "overallAvg": 90.91,
+            "maximumAvg": 90.91,
+            "minimumAvg": 90.91
+        },
+        {
+            "courses_instructor": "henry, annette",
+            "courses_dept": "educ",
+            "overallAvg": 94.75,
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "courses_instructor": "krug, don",
+            "courses_dept": "educ",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "mathison, sandra",
+            "courses_dept": "educ",
+            "overallAvg": 92.61,
+            "maximumAvg": 93.6,
+            "minimumAvg": 91.61
+        },
+        {
+            "courses_instructor": "morgan, tannis",
+            "courses_dept": "educ",
+            "overallAvg": 97.5,
+            "maximumAvg": 97.5,
+            "minimumAvg": 97.5
+        },
+        {
+            "courses_instructor": "renwick, kerry",
+            "courses_dept": "educ",
+            "overallAvg": 91.58,
+            "maximumAvg": 91.58,
+            "minimumAvg": 91.58
+        },
+        {
+            "courses_instructor": "roman, leslie",
+            "courses_dept": "educ",
+            "overallAvg": 93.6,
+            "maximumAvg": 93.6,
+            "minimumAvg": 93.6
+        },
+        {
+            "courses_instructor": "ross, eddie wayne",
+            "courses_dept": "educ",
+            "overallAvg": 93.78,
+            "maximumAvg": 93.78,
+            "minimumAvg": 93.78
+        },
+        {
+            "courses_instructor": "scott, sandra",
+            "courses_dept": "educ",
+            "overallAvg": 93.77,
+            "maximumAvg": 94,
+            "minimumAvg": 93.53
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "eece",
+            "overallAvg": 91.57,
+            "maximumAvg": 98.75,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "coria, lino",
+            "courses_dept": "eece",
+            "overallAvg": 98.75,
+            "maximumAvg": 98.75,
+            "minimumAvg": 98.75
+        },
+        {
+            "courses_instructor": "cretu, edmond",
+            "courses_dept": "eece",
+            "overallAvg": 90.88,
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "courses_instructor": "dommel, hermann",
+            "courses_dept": "eece",
+            "overallAvg": 91.9,
+            "maximumAvg": 94.71,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "dumont, guy a",
+            "courses_dept": "eece",
+            "overallAvg": 91.15,
+            "maximumAvg": 91.67,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "jatskevich, juri",
+            "courses_dept": "eece",
+            "overallAvg": 90.42,
+            "maximumAvg": 90.58,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "krishnamurthy, vikram",
+            "courses_dept": "eece",
+            "overallAvg": 90.83,
+            "maximumAvg": 91.29,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "lis, mieszko",
+            "courses_dept": "eece",
+            "overallAvg": 92.6,
+            "maximumAvg": 92.6,
+            "minimumAvg": 92.6
+        },
+        {
+            "courses_instructor": "marti, jose",
+            "courses_dept": "eece",
+            "overallAvg": 91.13,
+            "maximumAvg": 91.13,
+            "minimumAvg": 91.13
+        },
+        {
+            "courses_instructor": "nasiopoulos, panos",
+            "courses_dept": "eece",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "nojeh, alireza",
+            "courses_dept": "eece",
+            "overallAvg": 92.03,
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "quinton, bradley",
+            "courses_dept": "eece",
+            "overallAvg": 92.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "sarkaria, sarbjit",
+            "courses_dept": "eece",
+            "overallAvg": 90.71,
+            "maximumAvg": 91.86,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "servati, peyman",
+            "courses_dept": "eece",
+            "overallAvg": 90.85,
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "walus, konrad",
+            "courses_dept": "eece",
+            "overallAvg": 92,
+            "maximumAvg": 93,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "wilton, steven",
+            "courses_dept": "eece",
+            "overallAvg": 92.82,
+            "maximumAvg": 93.58,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "elec",
+            "overallAvg": 92.87,
+            "maximumAvg": 93.91,
+            "minimumAvg": 91.83
+        },
+        {
+            "courses_instructor": "motavas, saloome",
+            "courses_dept": "elec",
+            "overallAvg": 93.91,
+            "maximumAvg": 93.93,
+            "minimumAvg": 93.88
+        },
+        {
+            "courses_instructor": "rohling, robert",
+            "courses_dept": "elec",
+            "overallAvg": 91.83,
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "eosc",
+            "overallAvg": 90.92,
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "baker, shaun;kennedy, lori",
+            "courses_dept": "eosc",
+            "overallAvg": 90.2,
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "balmforth, neil",
+            "courses_dept": "eosc",
+            "overallAvg": 90.2,
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "bostock, michael",
+            "courses_dept": "eosc",
+            "overallAvg": 91.13,
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "eberhardt, erik",
+            "courses_dept": "eosc",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "gordon, terence;russell, james kelly",
+            "courses_dept": "eosc",
+            "overallAvg": 92.75,
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "groat, lee",
+            "courses_dept": "eosc",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "haber, eldad",
+            "courses_dept": "eosc",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "hart, craig;mortensen, james",
+            "courses_dept": "eosc",
+            "overallAvg": 90.48,
+            "maximumAvg": 90.78,
+            "minimumAvg": 90.15
+        },
+        {
+            "courses_instructor": "herrmann, felix",
+            "courses_dept": "eosc",
+            "overallAvg": 90.63,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "hsieh, william",
+            "courses_dept": "eosc",
+            "overallAvg": 90.4,
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.4
+        },
+        {
+            "courses_instructor": "hungr, oldrich",
+            "courses_dept": "eosc",
+            "overallAvg": 93.47,
+            "maximumAvg": 93.47,
+            "minimumAvg": 93.47
+        },
+        {
+            "courses_instructor": "mindell, randal",
+            "courses_dept": "eosc",
+            "overallAvg": 90.62,
+            "maximumAvg": 90.62,
+            "minimumAvg": 90.62
+        },
+        {
+            "courses_instructor": "mortensen, james",
+            "courses_dept": "eosc",
+            "overallAvg": 92.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "mortensen, james;tba",
+            "courses_dept": "eosc",
+            "overallAvg": 90.2,
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "mortensen, james;tosdal, richard",
+            "courses_dept": "eosc",
+            "overallAvg": 91.8,
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "courses_instructor": "russell, james kelly",
+            "courses_dept": "eosc",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "tosdal, richard",
+            "courses_dept": "eosc",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "epse",
+            "overallAvg": 92.76,
+            "maximumAvg": 98.76,
+            "minimumAvg": 90.03
+        },
+        {
+            "courses_instructor": "amaral, deborah",
+            "courses_dept": "epse",
+            "overallAvg": 93.79,
+            "maximumAvg": 94.33,
+            "minimumAvg": 92.9
+        },
+        {
+            "courses_instructor": "amaral, deborah;ford, laurie",
+            "courses_dept": "epse",
+            "overallAvg": 97.39,
+            "maximumAvg": 97.78,
+            "minimumAvg": 97
+        },
+        {
+            "courses_instructor": "amaral, deborah;missiaen, sharon anne",
+            "courses_dept": "epse",
+            "overallAvg": 92.19,
+            "maximumAvg": 92.38,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "andreou, theresa",
+            "courses_dept": "epse",
+            "overallAvg": 93.56,
+            "maximumAvg": 93.56,
+            "minimumAvg": 93.56
+        },
+        {
+            "courses_instructor": "both, pauline",
+            "courses_dept": "epse",
+            "overallAvg": 90.54,
+            "maximumAvg": 90.54,
+            "minimumAvg": 90.54
+        },
+        {
+            "courses_instructor": "both, pauline;ervin, ruth",
+            "courses_dept": "epse",
+            "overallAvg": 94.88,
+            "maximumAvg": 94.88,
+            "minimumAvg": 94.88
+        },
+        {
+            "courses_instructor": "both, pauline;faber, shawna",
+            "courses_dept": "epse",
+            "overallAvg": 91.07,
+            "maximumAvg": 91.07,
+            "minimumAvg": 91.07
+        },
+        {
+            "courses_instructor": "both, pauline;romero, amber",
+            "courses_dept": "epse",
+            "overallAvg": 91.83,
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "courses_instructor": "cannon, joanna",
+            "courses_dept": "epse",
+            "overallAvg": 94.04,
+            "maximumAvg": 98.45,
+            "minimumAvg": 91.73
+        },
+        {
+            "courses_instructor": "champion, kathleen",
+            "courses_dept": "epse",
+            "overallAvg": 92.93,
+            "maximumAvg": 95.47,
+            "minimumAvg": 90.83
+        },
+        {
+            "courses_instructor": "chan, eric",
+            "courses_dept": "epse",
+            "overallAvg": 93,
+            "maximumAvg": 95.86,
+            "minimumAvg": 90.62
+        },
+        {
+            "courses_instructor": "chartres, lynn",
+            "courses_dept": "epse",
+            "overallAvg": 92.13,
+            "maximumAvg": 93.78,
+            "minimumAvg": 91.06
+        },
+        {
+            "courses_instructor": "cole, kenneth",
+            "courses_dept": "epse",
+            "overallAvg": 97.57,
+            "maximumAvg": 98.7,
+            "minimumAvg": 96.21
+        },
+        {
+            "courses_instructor": "cox, elizabeth;reiner, ann",
+            "courses_dept": "epse",
+            "overallAvg": 90.79,
+            "maximumAvg": 90.82,
+            "minimumAvg": 90.76
+        },
+        {
+            "courses_instructor": "curle, deirdre;jordan, elizabeth",
+            "courses_dept": "epse",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "curle, deirdre;jordan, elizabeth;norman, nancy",
+            "courses_dept": "epse",
+            "overallAvg": 93.94,
+            "maximumAvg": 94.05,
+            "minimumAvg": 93.83
+        },
+        {
+            "courses_instructor": "darwich, lina",
+            "courses_dept": "epse",
+            "overallAvg": 91.31,
+            "maximumAvg": 92.25,
+            "minimumAvg": 90.36
+        },
+        {
+            "courses_instructor": "dowler, judith rosemary",
+            "courses_dept": "epse",
+            "overallAvg": 91.63,
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "courses_instructor": "el khatib, lara",
+            "courses_dept": "epse",
+            "overallAvg": 91.86,
+            "maximumAvg": 94.23,
+            "minimumAvg": 90.18
+        },
+        {
+            "courses_instructor": "ercikan, kadriye",
+            "courses_dept": "epse",
+            "overallAvg": 92.66,
+            "maximumAvg": 94.5,
+            "minimumAvg": 90.22
+        },
+        {
+            "courses_instructor": "ervin, ruth",
+            "courses_dept": "epse",
+            "overallAvg": 94.97,
+            "maximumAvg": 96.21,
+            "minimumAvg": 93.73
+        },
+        {
+            "courses_instructor": "faber, shawna",
+            "courses_dept": "epse",
+            "overallAvg": 91.82,
+            "maximumAvg": 92.22,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "ford, laurie",
+            "courses_dept": "epse",
+            "overallAvg": 92.19,
+            "maximumAvg": 95.31,
+            "minimumAvg": 90.05
+        },
+        {
+            "courses_instructor": "ford, laurie;robinson, georgina",
+            "courses_dept": "epse",
+            "overallAvg": 93.88,
+            "maximumAvg": 94,
+            "minimumAvg": 93.75
+        },
+        {
+            "courses_instructor": "fossett, brenda",
+            "courses_dept": "epse",
+            "overallAvg": 91.35,
+            "maximumAvg": 92.13,
+            "minimumAvg": 90.57
+        },
+        {
+            "courses_instructor": "fusaro, nicole",
+            "courses_dept": "epse",
+            "overallAvg": 90.38,
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "gaster, sean",
+            "courses_dept": "epse",
+            "overallAvg": 96.9,
+            "maximumAvg": 96.9,
+            "minimumAvg": 96.9
+        },
+        {
+            "courses_instructor": "grow, laura",
+            "courses_dept": "epse",
+            "overallAvg": 95.53,
+            "maximumAvg": 98.8,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "guhn, martin",
+            "courses_dept": "epse",
+            "overallAvg": 92.16,
+            "maximumAvg": 93.88,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "heikkila, mary",
+            "courses_dept": "epse",
+            "overallAvg": 92.44,
+            "maximumAvg": 94.86,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "hubley, anita",
+            "courses_dept": "epse",
+            "overallAvg": 90.69,
+            "maximumAvg": 91.82,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "hymel, shelley",
+            "courses_dept": "epse",
+            "overallAvg": 92.42,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.33
+        },
+        {
+            "courses_instructor": "jamieson, janet ruth",
+            "courses_dept": "epse",
+            "overallAvg": 91.67,
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "courses_instructor": "jhangiani, rajiv",
+            "courses_dept": "epse",
+            "overallAvg": 92.22,
+            "maximumAvg": 92.44,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "jordan, elizabeth",
+            "courses_dept": "epse",
+            "overallAvg": 92.88,
+            "maximumAvg": 94.2,
+            "minimumAvg": 91.21
+        },
+        {
+            "courses_instructor": "jordan, sharalyn",
+            "courses_dept": "epse",
+            "overallAvg": 91.38,
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "courses_instructor": "karres, debora",
+            "courses_dept": "epse",
+            "overallAvg": 94.88,
+            "maximumAvg": 94.88,
+            "minimumAvg": 94.88
+        },
+        {
+            "courses_instructor": "kelty, jane",
+            "courses_dept": "epse",
+            "overallAvg": 90.19,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "kishor, nand",
+            "courses_dept": "epse",
+            "overallAvg": 93.61,
+            "maximumAvg": 97.09,
+            "minimumAvg": 90.69
+        },
+        {
+            "courses_instructor": "kishor, nand;launeanu, mihaela",
+            "courses_dept": "epse",
+            "overallAvg": 91.56,
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "courses_instructor": "konishi, chiaki",
+            "courses_dept": "epse",
+            "overallAvg": 90.46,
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "lacroix, serge",
+            "courses_dept": "epse",
+            "overallAvg": 91.2,
+            "maximumAvg": 92.38,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "launeanu, mihaela",
+            "courses_dept": "epse",
+            "overallAvg": 92.22,
+            "maximumAvg": 92.22,
+            "minimumAvg": 92.22
+        },
+        {
+            "courses_instructor": "lauridsen, kristi",
+            "courses_dept": "epse",
+            "overallAvg": 93.15,
+            "maximumAvg": 93.15,
+            "minimumAvg": 93.15
+        },
+        {
+            "courses_instructor": "lee, hyekyung",
+            "courses_dept": "epse",
+            "overallAvg": 91.8,
+            "maximumAvg": 92.75,
+            "minimumAvg": 90.85
+        },
+        {
+            "courses_instructor": "levinson, tami",
+            "courses_dept": "epse",
+            "overallAvg": 95.17,
+            "maximumAvg": 95.67,
+            "minimumAvg": 94.67
+        },
+        {
+            "courses_instructor": "lo, chih shen",
+            "courses_dept": "epse",
+            "overallAvg": 93.52,
+            "maximumAvg": 94.24,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "macneil, kimberley",
+            "courses_dept": "epse",
+            "overallAvg": 91.33,
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "malone, sharon",
+            "courses_dept": "epse",
+            "overallAvg": 91.2,
+            "maximumAvg": 92.3,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "mathison, sandra",
+            "courses_dept": "epse",
+            "overallAvg": 91.4,
+            "maximumAvg": 92.63,
+            "minimumAvg": 90.93
+        },
+        {
+            "courses_instructor": "mceachern hughes, tammy",
+            "courses_dept": "epse",
+            "overallAvg": 92.88,
+            "maximumAvg": 95.5,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "mcintosh, kent",
+            "courses_dept": "epse",
+            "overallAvg": 91.36,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "mckee, william",
+            "courses_dept": "epse",
+            "overallAvg": 93.19,
+            "maximumAvg": 93.67,
+            "minimumAvg": 92.71
+        },
+        {
+            "courses_instructor": "mcquarrie, maureen",
+            "courses_dept": "epse",
+            "overallAvg": 95.58,
+            "maximumAvg": 96.33,
+            "minimumAvg": 94.84
+        },
+        {
+            "courses_instructor": "mercer, sterett",
+            "courses_dept": "epse",
+            "overallAvg": 92.74,
+            "maximumAvg": 94.56,
+            "minimumAvg": 90.92
+        },
+        {
+            "courses_instructor": "miller, lynn delaine",
+            "courses_dept": "epse",
+            "overallAvg": 90.87,
+            "maximumAvg": 91.25,
+            "minimumAvg": 90.55
+        },
+        {
+            "courses_instructor": "mirenda, pat",
+            "courses_dept": "epse",
+            "overallAvg": 91.53,
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "missiaen, sharon anne",
+            "courses_dept": "epse",
+            "overallAvg": 93.79,
+            "maximumAvg": 94.5,
+            "minimumAvg": 93.08
+        },
+        {
+            "courses_instructor": "mitchell, allison rugh",
+            "courses_dept": "epse",
+            "overallAvg": 92.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "motl, thomas",
+            "courses_dept": "epse",
+            "overallAvg": 92.83,
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "courses_instructor": "nicks, david",
+            "courses_dept": "epse",
+            "overallAvg": 91.72,
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "perry, nancy",
+            "courses_dept": "epse",
+            "overallAvg": 91.44,
+            "maximumAvg": 92.7,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "porath, marion",
+            "courses_dept": "epse",
+            "overallAvg": 95.39,
+            "maximumAvg": 97.67,
+            "minimumAvg": 92.86
+        },
+        {
+            "courses_instructor": "rathwell, david",
+            "courses_dept": "epse",
+            "overallAvg": 93.1,
+            "maximumAvg": 93.69,
+            "minimumAvg": 92.49
+        },
+        {
+            "courses_instructor": "reid, gavin",
+            "courses_dept": "epse",
+            "overallAvg": 93.94,
+            "maximumAvg": 93.94,
+            "minimumAvg": 93.94
+        },
+        {
+            "courses_instructor": "robinson, georgina",
+            "courses_dept": "epse",
+            "overallAvg": 92.43,
+            "maximumAvg": 92.43,
+            "minimumAvg": 92.43
+        },
+        {
+            "courses_instructor": "romero, amber",
+            "courses_dept": "epse",
+            "overallAvg": 92.98,
+            "maximumAvg": 95.15,
+            "minimumAvg": 90.89
+        },
+        {
+            "courses_instructor": "russell, debra",
+            "courses_dept": "epse",
+            "overallAvg": 93.03,
+            "maximumAvg": 93.23,
+            "minimumAvg": 92.82
+        },
+        {
+            "courses_instructor": "rusticus, shayna",
+            "courses_dept": "epse",
+            "overallAvg": 90.72,
+            "maximumAvg": 91.62,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "sandilands, dallie",
+            "courses_dept": "epse",
+            "overallAvg": 90.32,
+            "maximumAvg": 90.32,
+            "minimumAvg": 90.32
+        },
+        {
+            "courses_instructor": "smith, gillian",
+            "courses_dept": "epse",
+            "overallAvg": 92.59,
+            "maximumAvg": 95.13,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "smith, veronica",
+            "courses_dept": "epse",
+            "overallAvg": 92.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "stock, richard",
+            "courses_dept": "epse",
+            "overallAvg": 94.4,
+            "maximumAvg": 94.4,
+            "minimumAvg": 94.4
+        },
+        {
+            "courses_instructor": "stockman, james",
+            "courses_dept": "epse",
+            "overallAvg": 94.83,
+            "maximumAvg": 96.03,
+            "minimumAvg": 93.54
+        },
+        {
+            "courses_instructor": "turriff, wendy",
+            "courses_dept": "epse",
+            "overallAvg": 91.95,
+            "maximumAvg": 93.35,
+            "minimumAvg": 90.55
+        },
+        {
+            "courses_instructor": "vadeboncoeur, jennifer",
+            "courses_dept": "epse",
+            "overallAvg": 93.55,
+            "maximumAvg": 95,
+            "minimumAvg": 91.2
+        },
+        {
+            "courses_instructor": "weber, barbara",
+            "courses_dept": "epse",
+            "overallAvg": 92.77,
+            "maximumAvg": 93.91,
+            "minimumAvg": 91.62
+        },
+        {
+            "courses_instructor": "weber, rachel",
+            "courses_dept": "epse",
+            "overallAvg": 93.47,
+            "maximumAvg": 95.17,
+            "minimumAvg": 91.31
+        },
+        {
+            "courses_instructor": "white, aaron",
+            "courses_dept": "epse",
+            "overallAvg": 92.34,
+            "maximumAvg": 94.08,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "wilk, diana",
+            "courses_dept": "epse",
+            "overallAvg": 95.53,
+            "maximumAvg": 97.41,
+            "minimumAvg": 93.65
+        },
+        {
+            "courses_instructor": "wormeli, ted",
+            "courses_dept": "epse",
+            "overallAvg": 93.33,
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "courses_instructor": "wu, amery",
+            "courses_dept": "epse",
+            "overallAvg": 93.42,
+            "maximumAvg": 95.9,
+            "minimumAvg": 90.18
+        },
+        {
+            "courses_instructor": "yorke, erin",
+            "courses_dept": "epse",
+            "overallAvg": 92.97,
+            "maximumAvg": 94.75,
+            "minimumAvg": 91.18
+        },
+        {
+            "courses_instructor": "young, tigerson",
+            "courses_dept": "epse",
+            "overallAvg": 90.27,
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "zebehazy, kim",
+            "courses_dept": "epse",
+            "overallAvg": 91.83,
+            "maximumAvg": 91.9,
+            "minimumAvg": 91.77
+        },
+        {
+            "courses_instructor": "zumbo, bruno",
+            "courses_dept": "epse",
+            "overallAvg": 93.39,
+            "maximumAvg": 95,
+            "minimumAvg": 90.8
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "etec",
+            "overallAvg": 92.08,
+            "maximumAvg": 96.47,
+            "minimumAvg": 90.03
+        },
+        {
+            "courses_instructor": "alam, matiul",
+            "courses_dept": "etec",
+            "overallAvg": 91.41,
+            "maximumAvg": 94.05,
+            "minimumAvg": 90.05
+        },
+        {
+            "courses_instructor": "bartosh, oksana",
+            "courses_dept": "etec",
+            "overallAvg": 90.31,
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.22
+        },
+        {
+            "courses_instructor": "bryson, mary",
+            "courses_dept": "etec",
+            "overallAvg": 92.45,
+            "maximumAvg": 92.45,
+            "minimumAvg": 92.45
+        },
+        {
+            "courses_instructor": "carey, stephen",
+            "courses_dept": "etec",
+            "overallAvg": 91.7,
+            "maximumAvg": 91.7,
+            "minimumAvg": 91.7
+        },
+        {
+            "courses_instructor": "cho, sunah",
+            "courses_dept": "etec",
+            "overallAvg": 91.97,
+            "maximumAvg": 94.88,
+            "minimumAvg": 90.26
+        },
+        {
+            "courses_instructor": "de cosson, alexander",
+            "courses_dept": "etec",
+            "overallAvg": 92.09,
+            "maximumAvg": 94,
+            "minimumAvg": 90.88
+        },
+        {
+            "courses_instructor": "dobson, teresa",
+            "courses_dept": "etec",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "ercikan, kadriye",
+            "courses_dept": "etec",
+            "overallAvg": 90.6,
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "falk, clifford",
+            "courses_dept": "etec",
+            "overallAvg": 90.31,
+            "maximumAvg": 90.41,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "feng, francis",
+            "courses_dept": "etec",
+            "overallAvg": 92.14,
+            "maximumAvg": 95.33,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "hauge, chelsey",
+            "courses_dept": "etec",
+            "overallAvg": 91.58,
+            "maximumAvg": 91.74,
+            "minimumAvg": 91.43
+        },
+        {
+            "courses_instructor": "janes, diane",
+            "courses_dept": "etec",
+            "overallAvg": 91.9,
+            "maximumAvg": 94.42,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "lamb, brian",
+            "courses_dept": "etec",
+            "overallAvg": 90.27,
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "law, danielle m",
+            "courses_dept": "etec",
+            "overallAvg": 91.6,
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "courses_instructor": "marker, michael",
+            "courses_dept": "etec",
+            "overallAvg": 93.27,
+            "maximumAvg": 96.47,
+            "minimumAvg": 90.37
+        },
+        {
+            "courses_instructor": "mccracken, janet",
+            "courses_dept": "etec",
+            "overallAvg": 90.73,
+            "maximumAvg": 91.3,
+            "minimumAvg": 90.21
+        },
+        {
+            "courses_instructor": "miller, jeffrey",
+            "courses_dept": "etec",
+            "overallAvg": 90.2,
+            "maximumAvg": 90.3,
+            "minimumAvg": 90.09
+        },
+        {
+            "courses_instructor": "milner-bolotin, marina",
+            "courses_dept": "etec",
+            "overallAvg": 94.21,
+            "maximumAvg": 95.96,
+            "minimumAvg": 91.74
+        },
+        {
+            "courses_instructor": "pena alonso, ernesto",
+            "courses_dept": "etec",
+            "overallAvg": 90.57,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "courses_instructor": "petrina, stephen",
+            "courses_dept": "etec",
+            "overallAvg": 93.06,
+            "maximumAvg": 95.63,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "van enk, anneke",
+            "courses_dept": "etec",
+            "overallAvg": 90.89,
+            "maximumAvg": 90.89,
+            "minimumAvg": 90.89
+        },
+        {
+            "courses_instructor": "wang, yifei",
+            "courses_dept": "etec",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "fipr",
+            "overallAvg": 96.4,
+            "maximumAvg": 96.4,
+            "minimumAvg": 96.4
+        },
+        {
+            "courses_instructor": "wenzek, rob",
+            "courses_dept": "fipr",
+            "overallAvg": 96.4,
+            "maximumAvg": 96.4,
+            "minimumAvg": 96.4
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "fish",
+            "overallAvg": 91.21,
+            "maximumAvg": 94,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "martell, steve",
+            "courses_dept": "fish",
+            "overallAvg": 91.53,
+            "maximumAvg": 94,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "mcallister, murdoch",
+            "courses_dept": "fish",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "sumaila, ussif rashid",
+            "courses_dept": "fish",
+            "overallAvg": 91.14,
+            "maximumAvg": 91.14,
+            "minimumAvg": 91.14
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "fnh",
+            "overallAvg": 91.44,
+            "maximumAvg": 93.05,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "food",
+            "overallAvg": 90.68,
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "courses_instructor": "ross, nancy",
+            "courses_dept": "food",
+            "overallAvg": 90.68,
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "fopr",
+            "overallAvg": 90.44,
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "bendickson, dennis",
+            "courses_dept": "fopr",
+            "overallAvg": 90.72,
+            "maximumAvg": 91,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "frst",
+            "overallAvg": 91.85,
+            "maximumAvg": 96.36,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "alila, younes",
+            "courses_dept": "frst",
+            "overallAvg": 91.17,
+            "maximumAvg": 91.17,
+            "minimumAvg": 91.17
+        },
+        {
+            "courses_instructor": "bohlmann, jorg",
+            "courses_dept": "frst",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "kozak, robert antal;panwar, rajat",
+            "courses_dept": "frst",
+            "overallAvg": 92.27,
+            "maximumAvg": 92.27,
+            "minimumAvg": 92.27
+        },
+        {
+            "courses_instructor": "mitchell, stephen jarvis",
+            "courses_dept": "frst",
+            "overallAvg": 90.89,
+            "maximumAvg": 91.17,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "nelson, harry william",
+            "courses_dept": "frst",
+            "overallAvg": 90.18,
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "courses_instructor": "simard, suzanne",
+            "courses_dept": "frst",
+            "overallAvg": 90.13,
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "timko, joleen",
+            "courses_dept": "frst",
+            "overallAvg": 96.36,
+            "maximumAvg": 96.36,
+            "minimumAvg": 96.36
+        },
+        {
+            "courses_instructor": "trosper, ronald",
+            "courses_dept": "frst",
+            "overallAvg": 92.22,
+            "maximumAvg": 92.22,
+            "minimumAvg": 92.22
+        },
+        {
+            "courses_instructor": "watts, susan",
+            "courses_dept": "frst",
+            "overallAvg": 91.61,
+            "maximumAvg": 93.17,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "germ",
+            "overallAvg": 92.25,
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "courses_instructor": "frackman, kyle",
+            "courses_dept": "germ",
+            "overallAvg": 92.25,
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "gpp",
+            "overallAvg": 93.04,
+            "maximumAvg": 93.04,
+            "minimumAvg": 93.04
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "gsat",
+            "overallAvg": 90.29,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "gsat",
+            "overallAvg": 90.29,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "hgse",
+            "overallAvg": 92.67,
+            "maximumAvg": 95.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "hgse",
+            "overallAvg": 93.19,
+            "maximumAvg": 94.5,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "hinu",
+            "overallAvg": 93.22,
+            "maximumAvg": 93.22,
+            "minimumAvg": 93.22
+        },
+        {
+            "courses_instructor": "hines, naseem",
+            "courses_dept": "hinu",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "sinha, srija",
+            "courses_dept": "hinu",
+            "overallAvg": 93.22,
+            "maximumAvg": 93.22,
+            "minimumAvg": 93.22
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "hist",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "hunu",
+            "overallAvg": 91.33,
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "isci",
+            "overallAvg": 90.44,
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "evans, robert james",
+            "courses_dept": "isci",
+            "overallAvg": 90.44,
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "ital",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "boccassini, daniela",
+            "courses_dept": "ital",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "itst",
+            "overallAvg": 92.88,
+            "maximumAvg": 93,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "benimeo, maria",
+            "courses_dept": "itst",
+            "overallAvg": 92.88,
+            "maximumAvg": 93,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "kin",
+            "overallAvg": 92.21,
+            "maximumAvg": 96.06,
+            "minimumAvg": 90.05
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "larc",
+            "overallAvg": 92.44,
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.07
+        },
+        {
+            "courses_instructor": "dunster, katherine",
+            "courses_dept": "larc",
+            "overallAvg": 92.07,
+            "maximumAvg": 92.07,
+            "minimumAvg": 92.07
+        },
+        {
+            "courses_instructor": "girling, cynthia",
+            "courses_dept": "larc",
+            "overallAvg": 92.8,
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "lfs",
+            "overallAvg": 90.83,
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "libe",
+            "overallAvg": 90.49,
+            "maximumAvg": 91.26,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "de groot, joanne",
+            "courses_dept": "libe",
+            "overallAvg": 91.26,
+            "maximumAvg": 91.26,
+            "minimumAvg": 91.26
+        },
+        {
+            "courses_instructor": "letain, anne",
+            "courses_dept": "libe",
+            "overallAvg": 92.26,
+            "maximumAvg": 92.26,
+            "minimumAvg": 92.26
+        },
+        {
+            "courses_instructor": "mueller, aaron",
+            "courses_dept": "libe",
+            "overallAvg": 90.22,
+            "maximumAvg": 90.22,
+            "minimumAvg": 90.22
+        },
+        {
+            "courses_instructor": "norrie, cathy",
+            "courses_dept": "libe",
+            "overallAvg": 90.29,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "libr",
+            "overallAvg": 92.09,
+            "maximumAvg": 96.1,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "arias hernandez, richard",
+            "courses_dept": "libr",
+            "overallAvg": 91.2,
+            "maximumAvg": 91.6,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "farrell, adam",
+            "courses_dept": "libr",
+            "overallAvg": 96.1,
+            "maximumAvg": 96.1,
+            "minimumAvg": 96.1
+        },
+        {
+            "courses_instructor": "prendergast, teresa",
+            "courses_dept": "libr",
+            "overallAvg": 91.63,
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "ling",
+            "overallAvg": 92.25,
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "courses_instructor": "matthewson, lisa",
+            "courses_dept": "ling",
+            "overallAvg": 92.25,
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "lled",
+            "overallAvg": 91.43,
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.3
+        },
+        {
+            "courses_instructor": "anderson, jim",
+            "courses_dept": "lled",
+            "overallAvg": 90.3,
+            "maximumAvg": 90.3,
+            "minimumAvg": 90.3
+        },
+        {
+            "courses_instructor": "delvecchio, jennifer",
+            "courses_dept": "lled",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "duff, patricia",
+            "courses_dept": "lled",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "ekdahl, moira",
+            "courses_dept": "lled",
+            "overallAvg": 91.08,
+            "maximumAvg": 91.26,
+            "minimumAvg": 90.89
+        },
+        {
+            "courses_instructor": "greig, linda elizabeth",
+            "courses_dept": "lled",
+            "overallAvg": 91.53,
+            "maximumAvg": 91.68,
+            "minimumAvg": 91.37
+        },
+        {
+            "courses_instructor": "li, guofang",
+            "courses_dept": "lled",
+            "overallAvg": 93.2,
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "courses_instructor": "rogers, theresa",
+            "courses_dept": "lled",
+            "overallAvg": 90.1,
+            "maximumAvg": 90.1,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "streelasky, jodi",
+            "courses_dept": "lled",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "vadeboncoeur, jennifer",
+            "courses_dept": "lled",
+            "overallAvg": 92.5,
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "math",
+            "overallAvg": 92.62,
+            "maximumAvg": 99.78,
+            "minimumAvg": 90.24
+        },
+        {
+            "courses_instructor": "adem, alejandro",
+            "courses_dept": "math",
+            "overallAvg": 94.17,
+            "maximumAvg": 94.17,
+            "minimumAvg": 94.17
+        },
+        {
+            "courses_instructor": "angel, omer",
+            "courses_dept": "math",
+            "overallAvg": 91.83,
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "balmforth, neil",
+            "courses_dept": "math",
+            "overallAvg": 90.94,
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.94
+        },
+        {
+            "courses_instructor": "barlow, martin",
+            "courses_dept": "math",
+            "overallAvg": 91.8,
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "courses_instructor": "behrend, kai",
+            "courses_dept": "math",
+            "overallAvg": 92.2,
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "courses_instructor": "bennett, michael",
+            "courses_dept": "math",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "bryan, jim",
+            "courses_dept": "math",
+            "overallAvg": 91.67,
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "courses_instructor": "brydges, david",
+            "courses_dept": "math",
+            "overallAvg": 92.75,
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "chau, albert",
+            "courses_dept": "math",
+            "overallAvg": 93.75,
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "courses_instructor": "chen, jingyi",
+            "courses_dept": "math",
+            "overallAvg": 91.14,
+            "maximumAvg": 92,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "feng, james jingtao",
+            "courses_dept": "math",
+            "overallAvg": 90.24,
+            "maximumAvg": 90.24,
+            "minimumAvg": 90.24
+        },
+        {
+            "courses_instructor": "fraser, ailana",
+            "courses_dept": "math",
+            "overallAvg": 92.78,
+            "maximumAvg": 97.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "courses_instructor": "friedman, joel",
+            "courses_dept": "math",
+            "overallAvg": 92.67,
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "courses_instructor": "ghioca, dragos",
+            "courses_dept": "math",
+            "overallAvg": 91.75,
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "courses_instructor": "gomez, jose",
+            "courses_dept": "math",
+            "overallAvg": 99.78,
+            "maximumAvg": 99.78,
+            "minimumAvg": 99.78
+        },
+        {
+            "courses_instructor": "gordon, julia yulia",
+            "courses_dept": "math",
+            "overallAvg": 93.9,
+            "maximumAvg": 95.56,
+            "minimumAvg": 91.47
+        },
+        {
+            "courses_instructor": "gustafson, stephen james",
+            "courses_dept": "math",
+            "overallAvg": 91.71,
+            "maximumAvg": 91.71,
+            "minimumAvg": 91.71
+        },
+        {
+            "courses_instructor": "karu, kalle",
+            "courses_dept": "math",
+            "overallAvg": 94.58,
+            "maximumAvg": 97.48,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "khosravi, mahta",
+            "courses_dept": "math",
+            "overallAvg": 90.57,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "courses_instructor": "kim, young-heon",
+            "courses_dept": "math",
+            "overallAvg": 92.53,
+            "maximumAvg": 93.8,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "laba, izabella",
+            "courses_dept": "math",
+            "overallAvg": 95.34,
+            "maximumAvg": 97.09,
+            "minimumAvg": 93.6
+        },
+        {
+            "courses_instructor": "lamoureux, michael",
+            "courses_dept": "math",
+            "overallAvg": 91.38,
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "courses_instructor": "li, dong",
+            "courses_dept": "math",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "magyar, akos",
+            "courses_dept": "math",
+            "overallAvg": 92.44,
+            "maximumAvg": 93.5,
+            "minimumAvg": 91.38
+        },
+        {
+            "courses_instructor": "murugan, mathav",
+            "courses_dept": "math",
+            "overallAvg": 95.67,
+            "maximumAvg": 95.67,
+            "minimumAvg": 95.67
+        },
+        {
+            "courses_instructor": "nachmias, asaf",
+            "courses_dept": "math",
+            "overallAvg": 96.83,
+            "maximumAvg": 96.83,
+            "minimumAvg": 96.83
+        },
+        {
+            "courses_instructor": "nagata, k wayne",
+            "courses_dept": "math",
+            "overallAvg": 94.33,
+            "maximumAvg": 94.33,
+            "minimumAvg": 94.33
+        },
+        {
+            "courses_instructor": "perkins, edwin",
+            "courses_dept": "math",
+            "overallAvg": 91.96,
+            "maximumAvg": 92.78,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "pramanik, malabika",
+            "courses_dept": "math",
+            "overallAvg": 92.63,
+            "maximumAvg": 93.78,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "reichstein, zinovy",
+            "courses_dept": "math",
+            "overallAvg": 91.4,
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "silberman, lior",
+            "courses_dept": "math",
+            "overallAvg": 91.19,
+            "maximumAvg": 91.38,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "slade, gordon",
+            "courses_dept": "math",
+            "overallAvg": 94.67,
+            "maximumAvg": 94.67,
+            "minimumAvg": 94.67
+        },
+        {
+            "courses_instructor": "solymosi, jozsef",
+            "courses_dept": "math",
+            "overallAvg": 92.13,
+            "maximumAvg": 93.11,
+            "minimumAvg": 91.2
+        },
+        {
+            "courses_instructor": "tsai, tai-peng",
+            "courses_dept": "math",
+            "overallAvg": 92.38,
+            "maximumAvg": 92.75,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "ward, michael jeffrey",
+            "courses_dept": "math",
+            "overallAvg": 90.96,
+            "maximumAvg": 91.14,
+            "minimumAvg": 90.73
+        },
+        {
+            "courses_instructor": "wei, juncheng",
+            "courses_dept": "math",
+            "overallAvg": 96.25,
+            "maximumAvg": 96.25,
+            "minimumAvg": 96.25
+        },
+        {
+            "courses_instructor": "zhao, mingfeng",
+            "courses_dept": "math",
+            "overallAvg": 91.1,
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "mech",
+            "overallAvg": 91.54,
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "altintas, yusuf",
+            "courses_dept": "mech",
+            "overallAvg": 92.5,
+            "maximumAvg": 93,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "anasavarapu, srikantha",
+            "courses_dept": "mech",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "chiao, mu",
+            "courses_dept": "mech",
+            "overallAvg": 91.01,
+            "maximumAvg": 91.32,
+            "minimumAvg": 90.7
+        },
+        {
+            "courses_instructor": "cripton, peter",
+            "courses_dept": "mech",
+            "overallAvg": 92.43,
+            "maximumAvg": 92.43,
+            "minimumAvg": 92.43
+        },
+        {
+            "courses_instructor": "de silva, clarence wilfred",
+            "courses_dept": "mech",
+            "overallAvg": 91.88,
+            "maximumAvg": 92.59,
+            "minimumAvg": 91.16
+        },
+        {
+            "courses_instructor": "hodgson, murray",
+            "courses_dept": "mech",
+            "overallAvg": 91.25,
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "merida-donis, walter",
+            "courses_dept": "mech",
+            "overallAvg": 90.17,
+            "maximumAvg": 90.17,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "mohammadhasani khorasany, rami",
+            "courses_dept": "mech",
+            "overallAvg": 93.5,
+            "maximumAvg": 93.5,
+            "minimumAvg": 93.5
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "mech",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "teslenko, tatiana",
+            "courses_dept": "mech",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "medg",
+            "overallAvg": 91.31,
+            "maximumAvg": 94.7,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "clarke, lorne",
+            "courses_dept": "medg",
+            "overallAvg": 94.7,
+            "maximumAvg": 94.7,
+            "minimumAvg": 94.7
+        },
+        {
+            "courses_instructor": "hieter, philip;jones, steven j;rose, ann",
+            "courses_dept": "medg",
+            "overallAvg": 91.08,
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "morin, gregg",
+            "courses_dept": "medg",
+            "overallAvg": 90.52,
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "courses_instructor": "taubert, stefan",
+            "courses_dept": "medg",
+            "overallAvg": 91.14,
+            "maximumAvg": 91.83,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "virani, alice",
+            "courses_dept": "medg",
+            "overallAvg": 92.14,
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "medi",
+            "overallAvg": 91.91,
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.6
+        },
+        {
+            "courses_instructor": "allard, michael",
+            "courses_dept": "medi",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "ashe, maureen;cherkasov, artem;cox, michael;duronio, vincent;mcnagny, kelly marshall;mui, alice;pelech, steven daniel;reiner, neil;roberts, clive;rossi, fabio;sandford, andrew;sly, laura;steiner, theodore;tebbutt, scott;vallance, bruce;wang, yu tian",
+            "courses_dept": "medi",
+            "overallAvg": 90.68,
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "courses_instructor": "ayas, najib",
+            "courses_dept": "medi",
+            "overallAvg": 93.14,
+            "maximumAvg": 93.29,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "cox, michael",
+            "courses_dept": "medi",
+            "overallAvg": 91.8,
+            "maximumAvg": 92.12,
+            "minimumAvg": 91.47
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "micb",
+            "overallAvg": 91.95,
+            "maximumAvg": 94.17,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "abraham, ninan",
+            "courses_dept": "micb",
+            "overallAvg": 91.42,
+            "maximumAvg": 91.42,
+            "minimumAvg": 91.42
+        },
+        {
+            "courses_instructor": "gantt, soren;horwitz, marc",
+            "courses_dept": "micb",
+            "overallAvg": 90.39,
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "courses_instructor": "gold, michael;perona wright, georgia;sly, laura",
+            "courses_dept": "micb",
+            "overallAvg": 90.55,
+            "maximumAvg": 90.55,
+            "minimumAvg": 90.55
+        },
+        {
+            "courses_instructor": "hallam, steven",
+            "courses_dept": "micb",
+            "overallAvg": 92.12,
+            "maximumAvg": 92.12,
+            "minimumAvg": 92.12
+        },
+        {
+            "courses_instructor": "kion, tracy",
+            "courses_dept": "micb",
+            "overallAvg": 94.17,
+            "maximumAvg": 94.17,
+            "minimumAvg": 94.17
+        },
+        {
+            "courses_instructor": "oliver, david",
+            "courses_dept": "micb",
+            "overallAvg": 91.79,
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "courses_instructor": "perona wright, georgia",
+            "courses_dept": "micb",
+            "overallAvg": 92.75,
+            "maximumAvg": 93.6,
+            "minimumAvg": 91.89
+        },
+        {
+            "courses_instructor": "ramey, william d",
+            "courses_dept": "micb",
+            "overallAvg": 91.77,
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "midw",
+            "overallAvg": 92.67,
+            "maximumAvg": 96.5,
+            "minimumAvg": 90.62
+        },
+        {
+            "courses_instructor": "bayrampour basmenj, hamideh",
+            "courses_dept": "midw",
+            "overallAvg": 93.75,
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "courses_instructor": "broten, courtney",
+            "courses_dept": "midw",
+            "overallAvg": 91.79,
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "courses_instructor": "campbell, kim;vedam, saraswathi",
+            "courses_dept": "midw",
+            "overallAvg": 92.29,
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "courses_instructor": "lyons, jeanne",
+            "courses_dept": "midw",
+            "overallAvg": 91.2,
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.78
+        },
+        {
+            "courses_instructor": "mcrae, lorna",
+            "courses_dept": "midw",
+            "overallAvg": 93.56,
+            "maximumAvg": 96.5,
+            "minimumAvg": 90.62
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "midw",
+            "overallAvg": 92.67,
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "mine",
+            "overallAvg": 92.03,
+            "maximumAvg": 95.43,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "dunbar, w scott",
+            "courses_dept": "mine",
+            "overallAvg": 94.33,
+            "maximumAvg": 95.6,
+            "minimumAvg": 91.8
+        },
+        {
+            "courses_instructor": "elmo, davide",
+            "courses_dept": "mine",
+            "overallAvg": 91.56,
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "courses_instructor": "handelsman, simon",
+            "courses_dept": "mine",
+            "overallAvg": 90.43,
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "schoen, michael",
+            "courses_dept": "mine",
+            "overallAvg": 92.67,
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "courses_instructor": "veiga, marcello",
+            "courses_dept": "mine",
+            "overallAvg": 92.06,
+            "maximumAvg": 96.59,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "mtrl",
+            "overallAvg": 92.99,
+            "maximumAvg": 96.25,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "cockcroft, steven",
+            "courses_dept": "mtrl",
+            "overallAvg": 92.89,
+            "maximumAvg": 92.89,
+            "minimumAvg": 92.89
+        },
+        {
+            "courses_instructor": "dixon, david",
+            "courses_dept": "mtrl",
+            "overallAvg": 95.63,
+            "maximumAvg": 96.25,
+            "minimumAvg": 95
+        },
+        {
+            "courses_instructor": "forghani, alireza;zobeiry, navid",
+            "courses_dept": "mtrl",
+            "overallAvg": 90.14,
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "musc",
+            "overallAvg": 92.86,
+            "maximumAvg": 96.5,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "barcza, peter;sharon, rena",
+            "courses_dept": "musc",
+            "overallAvg": 90.08,
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "bortolussi, paolo;hamm, corey",
+            "courses_dept": "musc",
+            "overallAvg": 91.79,
+            "maximumAvg": 93.35,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "girard, jonathan",
+            "courses_dept": "musc",
+            "overallAvg": 94.78,
+            "maximumAvg": 96.5,
+            "minimumAvg": 92.47
+        },
+        {
+            "courses_instructor": "hamm, corey;magnanensi, giorgio;wilson, eric",
+            "courses_dept": "musc",
+            "overallAvg": 93.06,
+            "maximumAvg": 93.06,
+            "minimumAvg": 93.06
+        },
+        {
+            "courses_instructor": "hamm, corey;wilson, eric",
+            "courses_dept": "musc",
+            "overallAvg": 94,
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "courses_instructor": "hesselink, nathan",
+            "courses_dept": "musc",
+            "overallAvg": 93.45,
+            "maximumAvg": 93.45,
+            "minimumAvg": 93.45
+        },
+        {
+            "courses_instructor": "konoval, michael brandon",
+            "courses_dept": "musc",
+            "overallAvg": 94.25,
+            "maximumAvg": 94.25,
+            "minimumAvg": 94.25
+        },
+        {
+            "courses_instructor": "langager, graeme",
+            "courses_dept": "musc",
+            "overallAvg": 94.33,
+            "maximumAvg": 95,
+            "minimumAvg": 92.75
+        },
+        {
+            "courses_instructor": "raftery, james",
+            "courses_dept": "musc",
+            "overallAvg": 92.67,
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "courses_instructor": "sharon, rena",
+            "courses_dept": "musc",
+            "overallAvg": 90.95,
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "stride, frederick",
+            "courses_dept": "musc",
+            "overallAvg": 90.19,
+            "maximumAvg": 90.19,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "van deursen, john",
+            "courses_dept": "musc",
+            "overallAvg": 92.98,
+            "maximumAvg": 93.33,
+            "minimumAvg": 92.63
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "name",
+            "overallAvg": 91.16,
+            "maximumAvg": 91.57,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "stana, vitorio",
+            "courses_dept": "name",
+            "overallAvg": 90.75,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "name",
+            "overallAvg": 91.57,
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.57
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "nrsc",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "nurs",
+            "overallAvg": 93.2,
+            "maximumAvg": 98.71,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "brew, nancy",
+            "courses_dept": "nurs",
+            "overallAvg": 95.49,
+            "maximumAvg": 98.71,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "brew, nancy;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 93.86,
+            "maximumAvg": 93.86,
+            "minimumAvg": 93.86
+        },
+        {
+            "courses_instructor": "brown, helen jean;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 90.29,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "brown, helen jean;o'flynn-magee, katherine;smye, victoria;tan, elsie",
+            "courses_dept": "nurs",
+            "overallAvg": 91.33,
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "bungay, victoria",
+            "courses_dept": "nurs",
+            "overallAvg": 91.67,
+            "maximumAvg": 92.33,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "burrows, marlene",
+            "courses_dept": "nurs",
+            "overallAvg": 95.07,
+            "maximumAvg": 96.73,
+            "minimumAvg": 94.19
+        },
+        {
+            "courses_instructor": "burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 95.08,
+            "maximumAvg": 98.5,
+            "minimumAvg": 90.81
+        },
+        {
+            "courses_instructor": "burrows, marlene;harding, jillian;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 94,
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "courses_instructor": "burrows, marlene;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 93.4,
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "courses_instructor": "harding, jillian",
+            "courses_dept": "nurs",
+            "overallAvg": 95.03,
+            "maximumAvg": 95.13,
+            "minimumAvg": 94.92
+        },
+        {
+            "courses_instructor": "harding, jillian;krist, jennifer;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 91.67,
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "henczel, lisa",
+            "courses_dept": "nurs",
+            "overallAvg": 92.08,
+            "maximumAvg": 92.69,
+            "minimumAvg": 91.47
+        },
+        {
+            "courses_instructor": "jennings,  mary lou;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 91.93,
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.93
+        },
+        {
+            "courses_instructor": "jillings, carol",
+            "courses_dept": "nurs",
+            "overallAvg": 92.31,
+            "maximumAvg": 94,
+            "minimumAvg": 90.63
+        },
+        {
+            "courses_instructor": "joachim, gloria;thomson, sharon",
+            "courses_dept": "nurs",
+            "overallAvg": 90.61,
+            "maximumAvg": 90.85,
+            "minimumAvg": 90.36
+        },
+        {
+            "courses_instructor": "krist, jennifer",
+            "courses_dept": "nurs",
+            "overallAvg": 97.42,
+            "maximumAvg": 98.21,
+            "minimumAvg": 96.64
+        },
+        {
+            "courses_instructor": "krist, jennifer;mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 95.29,
+            "maximumAvg": 95.29,
+            "minimumAvg": 95.29
+        },
+        {
+            "courses_instructor": "macphee, maura",
+            "courses_dept": "nurs",
+            "overallAvg": 93.25,
+            "maximumAvg": 94.15,
+            "minimumAvg": 91.91
+        },
+        {
+            "courses_instructor": "mccuaig, fairleth",
+            "courses_dept": "nurs",
+            "overallAvg": 91.46,
+            "maximumAvg": 94.21,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "mccuaig, fairleth;tba",
+            "courses_dept": "nurs",
+            "overallAvg": 90.07,
+            "maximumAvg": 90.07,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "phillips, craig",
+            "courses_dept": "nurs",
+            "overallAvg": 91.9,
+            "maximumAvg": 95,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "rodney, patricia",
+            "courses_dept": "nurs",
+            "overallAvg": 92.22,
+            "maximumAvg": 92.62,
+            "minimumAvg": 91.83
+        },
+        {
+            "courses_instructor": "saewyc, elizabeth",
+            "courses_dept": "nurs",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "thomson, sharon",
+            "courses_dept": "nurs",
+            "overallAvg": 93.07,
+            "maximumAvg": 93.07,
+            "minimumAvg": 93.07
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "obst",
+            "overallAvg": 92.33,
+            "maximumAvg": 95,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "janssen, patricia",
+            "courses_dept": "obst",
+            "overallAvg": 93,
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "perks, anthony",
+            "courses_dept": "obst",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "onco",
+            "overallAvg": 91.62,
+            "maximumAvg": 93.07,
+            "minimumAvg": 90.58
+        },
+        {
+            "courses_instructor": "weng, andrew",
+            "courses_dept": "onco",
+            "overallAvg": 90.78,
+            "maximumAvg": 90.78,
+            "minimumAvg": 90.78
+        },
+        {
+            "courses_instructor": "yip, stephen",
+            "courses_dept": "onco",
+            "overallAvg": 91.77,
+            "maximumAvg": 93.07,
+            "minimumAvg": 90.58
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "path",
+            "overallAvg": 91.19,
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "bally, marcel bertran;bennewith, kevin;cote, helene;devlin, angela;rajcan-separovic, evica;shah, sohrab;steidl, christian;verchere, bruce;wellington, cheryl lea;weng, andrew",
+            "courses_dept": "path",
+            "overallAvg": 92.58,
+            "maximumAvg": 92.58,
+            "minimumAvg": 92.58
+        },
+        {
+            "courses_instructor": "bennewith, kevin;cote, helene;devlin, angela;granville, david;lockwood, william;shah, sohrab;steidl, christian;verchere, bruce;wellington, cheryl lea;weng, andrew",
+            "courses_dept": "path",
+            "overallAvg": 91.79,
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "courses_instructor": "cote, helene",
+            "courses_dept": "path",
+            "overallAvg": 91.26,
+            "maximumAvg": 93,
+            "minimumAvg": 90.4
+        },
+        {
+            "courses_instructor": "cote, helene;kalloger, steve ernest;wellington, cheryl lea",
+            "courses_dept": "path",
+            "overallAvg": 91.17,
+            "maximumAvg": 91.17,
+            "minimumAvg": 91.17
+        },
+        {
+            "courses_instructor": "morin, gregg",
+            "courses_dept": "path",
+            "overallAvg": 91,
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "ng, david",
+            "courses_dept": "path",
+            "overallAvg": 91.02,
+            "maximumAvg": 91.55,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "pcth",
+            "overallAvg": 91.45,
+            "maximumAvg": 96,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "bhagavatula, sastry",
+            "courses_dept": "pcth",
+            "overallAvg": 91.63,
+            "maximumAvg": 93,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "dormuth, colin",
+            "courses_dept": "pcth",
+            "overallAvg": 91.22,
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "courses_instructor": "karim, sultan;pang, catherine c;walker, michael j a",
+            "courses_dept": "pcth",
+            "overallAvg": 91.16,
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "knight, darryl",
+            "courses_dept": "pcth",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "macleod, bernard a",
+            "courses_dept": "pcth",
+            "overallAvg": 91.8,
+            "maximumAvg": 92.2,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "pang, catherine c",
+            "courses_dept": "pcth",
+            "overallAvg": 90.93,
+            "maximumAvg": 90.93,
+            "minimumAvg": 90.93
+        },
+        {
+            "courses_instructor": "walker, michael j a",
+            "courses_dept": "pcth",
+            "overallAvg": 90.23,
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.07
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "phar",
+            "overallAvg": 91.13,
+            "maximumAvg": 94.87,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "cairns, brian;levine, marc;soja, peter",
+            "courses_dept": "phar",
+            "overallAvg": 91.2,
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "courses_instructor": "collier, abby;ensom, mary;wong, harvey",
+            "courses_dept": "phar",
+            "overallAvg": 90.63,
+            "maximumAvg": 90.63,
+            "minimumAvg": 90.63
+        },
+        {
+            "courses_instructor": "ensom, mary",
+            "courses_dept": "phar",
+            "overallAvg": 91.23,
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.19
+        },
+        {
+            "courses_instructor": "ensom, mary;riggs, kenneth wayne",
+            "courses_dept": "phar",
+            "overallAvg": 90.52,
+            "maximumAvg": 91.4,
+            "minimumAvg": 90.1
+        },
+        {
+            "courses_instructor": "hafeli, urs",
+            "courses_dept": "phar",
+            "overallAvg": 91.72,
+            "maximumAvg": 93,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "hafeli, urs;kumar, ujendra",
+            "courses_dept": "phar",
+            "overallAvg": 91.4,
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "kent, debra ann",
+            "courses_dept": "phar",
+            "overallAvg": 91.06,
+            "maximumAvg": 92.28,
+            "minimumAvg": 90.15
+        },
+        {
+            "courses_instructor": "lalji, fawziah;seto, katherine",
+            "courses_dept": "phar",
+            "overallAvg": 94.81,
+            "maximumAvg": 95.07,
+            "minimumAvg": 94.54
+        },
+        {
+            "courses_instructor": "leung, larry;min, jason",
+            "courses_dept": "phar",
+            "overallAvg": 91.12,
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.7
+        },
+        {
+            "courses_instructor": "low, alan",
+            "courses_dept": "phar",
+            "overallAvg": 90.87,
+            "maximumAvg": 91.16,
+            "minimumAvg": 90.63
+        },
+        {
+            "courses_instructor": "massaro, davide",
+            "courses_dept": "phar",
+            "overallAvg": 92.66,
+            "maximumAvg": 92.66,
+            "minimumAvg": 92.66
+        },
+        {
+            "courses_instructor": "massaro, davide;seto, katherine",
+            "courses_dept": "phar",
+            "overallAvg": 91.95,
+            "maximumAvg": 91.95,
+            "minimumAvg": 91.95
+        },
+        {
+            "courses_instructor": "nicholl, tessa",
+            "courses_dept": "phar",
+            "overallAvg": 90.53,
+            "maximumAvg": 91.02,
+            "minimumAvg": 90.02
+        },
+        {
+            "courses_instructor": "seto, katherine",
+            "courses_dept": "phar",
+            "overallAvg": 92.85,
+            "maximumAvg": 92.85,
+            "minimumAvg": 92.85
+        },
+        {
+            "courses_instructor": "wasan, kishor",
+            "courses_dept": "phar",
+            "overallAvg": 90.45,
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "phil",
+            "overallAvg": 90.94,
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "jackson, howard",
+            "courses_dept": "phil",
+            "overallAvg": 96,
+            "maximumAvg": 96,
+            "minimumAvg": 96
+        },
+        {
+            "courses_instructor": "taubeneck, steven",
+            "courses_dept": "phil",
+            "overallAvg": 90.67,
+            "maximumAvg": 91,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "phrm",
+            "overallAvg": 93.14,
+            "maximumAvg": 94.23,
+            "minimumAvg": 92.06
+        },
+        {
+            "courses_instructor": "leung, larry",
+            "courses_dept": "phrm",
+            "overallAvg": 94.23,
+            "maximumAvg": 94.23,
+            "minimumAvg": 94.23
+        },
+        {
+            "courses_instructor": "min, jason",
+            "courses_dept": "phrm",
+            "overallAvg": 92.06,
+            "maximumAvg": 92.06,
+            "minimumAvg": 92.06
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "phth",
+            "overallAvg": 92.01,
+            "maximumAvg": 95.37,
+            "minimumAvg": 90.03
+        },
+        {
+            "courses_instructor": "murphy, susan",
+            "courses_dept": "phth",
+            "overallAvg": 90.99,
+            "maximumAvg": 90.99,
+            "minimumAvg": 90.99
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "phys",
+            "overallAvg": 91.82,
+            "maximumAvg": 95.43,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "affleck, ian keith",
+            "courses_dept": "phys",
+            "overallAvg": 91.5,
+            "maximumAvg": 92.58,
+            "minimumAvg": 90.42
+        },
+        {
+            "courses_instructor": "bonn, douglas andrew",
+            "courses_dept": "phys",
+            "overallAvg": 90.25,
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "duzenli, cheryl",
+            "courses_dept": "phys",
+            "overallAvg": 90.83,
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "courses_instructor": "lister, alison",
+            "courses_dept": "phys",
+            "overallAvg": 91.25,
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "mackay, alexander",
+            "courses_dept": "phys",
+            "overallAvg": 90.96,
+            "maximumAvg": 91.89,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "mackay, alexander;schulzer, michael",
+            "courses_dept": "phys",
+            "overallAvg": 90.94,
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.94
+        },
+        {
+            "courses_instructor": "ng, john",
+            "courses_dept": "phys",
+            "overallAvg": 92.2,
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "courses_instructor": "reinsberg, stefan",
+            "courses_dept": "phys",
+            "overallAvg": 92.42,
+            "maximumAvg": 94.5,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "rozali, moshe",
+            "courses_dept": "phys",
+            "overallAvg": 91.75,
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "courses_instructor": "semenoff, gordon walter",
+            "courses_dept": "phys",
+            "overallAvg": 92.58,
+            "maximumAvg": 93.31,
+            "minimumAvg": 91.85
+        },
+        {
+            "courses_instructor": "spadinger, ingrid",
+            "courses_dept": "phys",
+            "overallAvg": 90.7,
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.7
+        },
+        {
+            "courses_instructor": "stamp, philip c",
+            "courses_dept": "phys",
+            "overallAvg": 95.43,
+            "maximumAvg": 95.43,
+            "minimumAvg": 95.43
+        },
+        {
+            "courses_instructor": "zhitnitsky, ariel",
+            "courses_dept": "phys",
+            "overallAvg": 92.07,
+            "maximumAvg": 94.7,
+            "minimumAvg": 90.55
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "plan",
+            "overallAvg": 92.03,
+            "maximumAvg": 96.47,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "dorcey, anthony h j",
+            "courses_dept": "plan",
+            "overallAvg": 94.68,
+            "maximumAvg": 96.47,
+            "minimumAvg": 93
+        },
+        {
+            "courses_instructor": "erfan, aftab",
+            "courses_dept": "plan",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "frank, lawrence",
+            "courses_dept": "plan",
+            "overallAvg": 90.08,
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "courses_instructor": "hutton, thomas",
+            "courses_dept": "plan",
+            "overallAvg": 90.53,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "senbel, maged",
+            "courses_dept": "plan",
+            "overallAvg": 91.14,
+            "maximumAvg": 91.36,
+            "minimumAvg": 90.93
+        },
+        {
+            "courses_instructor": "villagomez, erick",
+            "courses_dept": "plan",
+            "overallAvg": 91.58,
+            "maximumAvg": 92.07,
+            "minimumAvg": 91.09
+        },
+        {
+            "courses_instructor": "wollenberg, jay",
+            "courses_dept": "plan",
+            "overallAvg": 91.88,
+            "maximumAvg": 93.12,
+            "minimumAvg": 90.23
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "psyc",
+            "overallAvg": 92.2,
+            "maximumAvg": 97,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "alden, lynn",
+            "courses_dept": "psyc",
+            "overallAvg": 91.42,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.33
+        },
+        {
+            "courses_instructor": "carlson, scott",
+            "courses_dept": "psyc",
+            "overallAvg": 91.04,
+            "maximumAvg": 91.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "courses_instructor": "de longis, anita",
+            "courses_dept": "psyc",
+            "overallAvg": 94.13,
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "heaven, roberta",
+            "courses_dept": "psyc",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "klonsky, elisha",
+            "courses_dept": "psyc",
+            "overallAvg": 91.6,
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "courses_instructor": "mcgee, brandy",
+            "courses_dept": "psyc",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.17
+        },
+        {
+            "courses_instructor": "schaller, mark",
+            "courses_dept": "psyc",
+            "overallAvg": 90.33,
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "sochting, ingrid",
+            "courses_dept": "psyc",
+            "overallAvg": 93.38,
+            "maximumAvg": 95.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "courses_instructor": "wagner, john",
+            "courses_dept": "psyc",
+            "overallAvg": 95,
+            "maximumAvg": 95.25,
+            "minimumAvg": 94.75
+        },
+        {
+            "courses_instructor": "wilkie, donald",
+            "courses_dept": "psyc",
+            "overallAvg": 90.27,
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "courses_instructor": "woody, sheila",
+            "courses_dept": "psyc",
+            "overallAvg": 90.38,
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "rhsc",
+            "overallAvg": 91.69,
+            "maximumAvg": 95,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "barbic, skye",
+            "courses_dept": "rhsc",
+            "overallAvg": 91.36,
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "courses_instructor": "jongbloed, lyn",
+            "courses_dept": "rhsc",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "tba",
+            "courses_dept": "rhsc",
+            "overallAvg": 91.35,
+            "maximumAvg": 91.92,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "rsot",
+            "overallAvg": 91.05,
+            "maximumAvg": 91.7,
+            "minimumAvg": 90.39
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "russ",
+            "overallAvg": 92.3,
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "courses_instructor": "chitnev, veta",
+            "courses_dept": "russ",
+            "overallAvg": 90.17,
+            "maximumAvg": 90.17,
+            "minimumAvg": 90.17
+        },
+        {
+            "courses_instructor": "habajova, irina",
+            "courses_dept": "russ",
+            "overallAvg": 92.3,
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "courses_instructor": "yusupova, stella",
+            "courses_dept": "russ",
+            "overallAvg": 90.5,
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "sans",
+            "overallAvg": 91.39,
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "hunter, thomas",
+            "courses_dept": "sans",
+            "overallAvg": 91.39,
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "soil",
+            "overallAvg": 91.07,
+            "maximumAvg": 91.43,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "lavkulich, leslie;wilson, julie",
+            "courses_dept": "soil",
+            "overallAvg": 90.71,
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "courses_instructor": "wilson, julie",
+            "courses_dept": "soil",
+            "overallAvg": 91.43,
+            "maximumAvg": 91.43,
+            "minimumAvg": 91.43
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "sowk",
+            "overallAvg": 91.7,
+            "maximumAvg": 96.15,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "advisor, -",
+            "courses_dept": "sowk",
+            "overallAvg": 90.13,
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "bryson, stephanie",
+            "courses_dept": "sowk",
+            "overallAvg": 91.09,
+            "maximumAvg": 92.08,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "bryson, stephanie;o'connor, deborah;stainton, timothy;sullivan, t richard;tester, frank",
+            "courses_dept": "sowk",
+            "overallAvg": 96.15,
+            "maximumAvg": 96.15,
+            "minimumAvg": 96.15
+        },
+        {
+            "courses_instructor": "casson, barbara;choi, marcia",
+            "courses_dept": "sowk",
+            "overallAvg": 90.09,
+            "maximumAvg": 90.09,
+            "minimumAvg": 90.09
+        },
+        {
+            "courses_instructor": "clark, natalie",
+            "courses_dept": "sowk",
+            "overallAvg": 91.88,
+            "maximumAvg": 95,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "escueta, mok",
+            "courses_dept": "sowk",
+            "overallAvg": 91.81,
+            "maximumAvg": 92.67,
+            "minimumAvg": 91
+        },
+        {
+            "courses_instructor": "gauvin, emma",
+            "courses_dept": "sowk",
+            "overallAvg": 92.88,
+            "maximumAvg": 92.88,
+            "minimumAvg": 92.88
+        },
+        {
+            "courses_instructor": "gill, deana",
+            "courses_dept": "sowk",
+            "overallAvg": 95.28,
+            "maximumAvg": 96.09,
+            "minimumAvg": 93.82
+        },
+        {
+            "courses_instructor": "johnson, shelly",
+            "courses_dept": "sowk",
+            "overallAvg": 90.41,
+            "maximumAvg": 90.62,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "johnston, patricia",
+            "courses_dept": "sowk",
+            "overallAvg": 90.53,
+            "maximumAvg": 90.66,
+            "minimumAvg": 90.4
+        },
+        {
+            "courses_instructor": "kealy, david",
+            "courses_dept": "sowk",
+            "overallAvg": 94.56,
+            "maximumAvg": 94.56,
+            "minimumAvg": 94.56
+        },
+        {
+            "courses_instructor": "o'neill, brian",
+            "courses_dept": "sowk",
+            "overallAvg": 91.36,
+            "maximumAvg": 92.23,
+            "minimumAvg": 90.25
+        },
+        {
+            "courses_instructor": "vedan, richard",
+            "courses_dept": "sowk",
+            "overallAvg": 93.4,
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "courses_instructor": "weaver, sydney",
+            "courses_dept": "sowk",
+            "overallAvg": 91.82,
+            "maximumAvg": 91.82,
+            "minimumAvg": 91.82
+        },
+        {
+            "courses_instructor": "wright, margaret",
+            "courses_dept": "sowk",
+            "overallAvg": 90.06,
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "span",
+            "overallAvg": 92.7,
+            "maximumAvg": 93.25,
+            "minimumAvg": 91.6
+        },
+        {
+            "courses_instructor": "spacciante, stephanie;tba",
+            "courses_dept": "span",
+            "overallAvg": 91.6,
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "spph",
+            "overallAvg": 92.46,
+            "maximumAvg": 98.98,
+            "minimumAvg": 90.11
+        },
+        {
+            "courses_instructor": "birnbaum, david",
+            "courses_dept": "spph",
+            "overallAvg": 92.08,
+            "maximumAvg": 92.08,
+            "minimumAvg": 92.08
+        },
+        {
+            "courses_instructor": "dharamsi, shafik;spiegel, jerry",
+            "courses_dept": "spph",
+            "overallAvg": 90.57,
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "courses_instructor": "doyle-waters, mary;taylor, darlene",
+            "courses_dept": "spph",
+            "overallAvg": 93.73,
+            "maximumAvg": 93.73,
+            "minimumAvg": 93.73
+        },
+        {
+            "courses_instructor": "frank, erica",
+            "courses_dept": "spph",
+            "overallAvg": 98.98,
+            "maximumAvg": 98.98,
+            "minimumAvg": 98.98
+        },
+        {
+            "courses_instructor": "frankish, charles james",
+            "courses_dept": "spph",
+            "overallAvg": 93.84,
+            "maximumAvg": 96.96,
+            "minimumAvg": 92.36
+        },
+        {
+            "courses_instructor": "frankish, charles james;guhn, martin;tanimura, kanna",
+            "courses_dept": "spph",
+            "overallAvg": 93.89,
+            "maximumAvg": 93.89,
+            "minimumAvg": 93.89
+        },
+        {
+            "courses_instructor": "janssen, patricia",
+            "courses_dept": "spph",
+            "overallAvg": 92,
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "kassam, rosemin",
+            "courses_dept": "spph",
+            "overallAvg": 91.14,
+            "maximumAvg": 91.14,
+            "minimumAvg": 91.14
+        },
+        {
+            "courses_instructor": "kazanjian, arminee",
+            "courses_dept": "spph",
+            "overallAvg": 91.75,
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.31
+        },
+        {
+            "courses_instructor": "kishchenko, svetlana",
+            "courses_dept": "spph",
+            "overallAvg": 93.84,
+            "maximumAvg": 96.8,
+            "minimumAvg": 92
+        },
+        {
+            "courses_instructor": "lee, victoria",
+            "courses_dept": "spph",
+            "overallAvg": 90.64,
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "courses_instructor": "lovato, chris",
+            "courses_dept": "spph",
+            "overallAvg": 91.92,
+            "maximumAvg": 92.39,
+            "minimumAvg": 91.4
+        },
+        {
+            "courses_instructor": "masse, louise",
+            "courses_dept": "spph",
+            "overallAvg": 93.33,
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "courses_instructor": "mcgrail, kimberlyn",
+            "courses_dept": "spph",
+            "overallAvg": 90.38,
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "mcgrail, kimberlyn;shoveller, jean",
+            "courses_dept": "spph",
+            "overallAvg": 90.45,
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "mulpuri, kishore",
+            "courses_dept": "spph",
+            "overallAvg": 92.83,
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "courses_instructor": "naus, monika",
+            "courses_dept": "spph",
+            "overallAvg": 90.84,
+            "maximumAvg": 90.84,
+            "minimumAvg": 90.84
+        },
+        {
+            "courses_instructor": "oviedo-joekes, eugenia",
+            "courses_dept": "spph",
+            "overallAvg": 94.36,
+            "maximumAvg": 94.36,
+            "minimumAvg": 94.36
+        },
+        {
+            "courses_instructor": "patrick, david",
+            "courses_dept": "spph",
+            "overallAvg": 90.77,
+            "maximumAvg": 90.77,
+            "minimumAvg": 90.77
+        },
+        {
+            "courses_instructor": "pourbohloul, babak",
+            "courses_dept": "spph",
+            "overallAvg": 93.96,
+            "maximumAvg": 95.75,
+            "minimumAvg": 92.5
+        },
+        {
+            "courses_instructor": "ragaz, joseph",
+            "courses_dept": "spph",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "shoveller, jean",
+            "courses_dept": "spph",
+            "overallAvg": 90.67,
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "courses_instructor": "smailes, elizabeth;smith, robert",
+            "courses_dept": "spph",
+            "overallAvg": 91.81,
+            "maximumAvg": 91.81,
+            "minimumAvg": 91.81
+        },
+        {
+            "courses_instructor": "sobolev, boris",
+            "courses_dept": "spph",
+            "overallAvg": 93.19,
+            "maximumAvg": 95.11,
+            "minimumAvg": 90.38
+        },
+        {
+            "courses_instructor": "spittal, patricia",
+            "courses_dept": "spph",
+            "overallAvg": 91.25,
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "stat",
+            "overallAvg": 92.23,
+            "maximumAvg": 94.7,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "bryan, jennifer frazier;cohen freue, gabriela",
+            "courses_dept": "stat",
+            "overallAvg": 90.9,
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.9
+        },
+        {
+            "courses_instructor": "cohen freue, gabriela",
+            "courses_dept": "stat",
+            "overallAvg": 90.29,
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "courses_instructor": "zamar, ruben",
+            "courses_dept": "stat",
+            "overallAvg": 92.81,
+            "maximumAvg": 94.7,
+            "minimumAvg": 91.73
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "surg",
+            "overallAvg": 92.39,
+            "maximumAvg": 94.25,
+            "minimumAvg": 90.13
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "thtr",
+            "overallAvg": 91.42,
+            "maximumAvg": 95.2,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "ditor, rachel",
+            "courses_dept": "thtr",
+            "overallAvg": 90.14,
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "courses_instructor": "driscoll-bell, jean",
+            "courses_dept": "thtr",
+            "overallAvg": 92.32,
+            "maximumAvg": 92.32,
+            "minimumAvg": 92.32
+        },
+        {
+            "courses_instructor": "firkins, jacqueline",
+            "courses_dept": "thtr",
+            "overallAvg": 92.41,
+            "maximumAvg": 92.41,
+            "minimumAvg": 92.41
+        },
+        {
+            "courses_instructor": "fowler, ruth skai",
+            "courses_dept": "thtr",
+            "overallAvg": 90.46,
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "courses_instructor": "gardiner, robert",
+            "courses_dept": "thtr",
+            "overallAvg": 91.5,
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "courses_instructor": "horka, andy",
+            "courses_dept": "thtr",
+            "overallAvg": 91.89,
+            "maximumAvg": 93.05,
+            "minimumAvg": 90.73
+        },
+        {
+            "courses_instructor": "johnston, kirsty",
+            "courses_dept": "thtr",
+            "overallAvg": 90.59,
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.43
+        },
+        {
+            "courses_instructor": "mclean, jayson",
+            "courses_dept": "thtr",
+            "overallAvg": 92.56,
+            "maximumAvg": 95.2,
+            "minimumAvg": 90.33
+        },
+        {
+            "courses_instructor": "rodgers, sarah",
+            "courses_dept": "thtr",
+            "overallAvg": 91.1,
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "courses_instructor": "",
+            "courses_dept": "zool",
+            "overallAvg": 91.69,
+            "maximumAvg": 92.71,
+            "minimumAvg": 90.2
+        },
+        {
+            "courses_instructor": "matthews, philip",
+            "courses_dept": "zool",
+            "overallAvg": 90.45,
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "courses_instructor": "savage, ken;shadwick, robert edward",
+            "courses_dept": "zool",
+            "overallAvg": 92.1,
+            "maximumAvg": 92.1,
+            "minimumAvg": 92.1
+        }
+    ]
+}

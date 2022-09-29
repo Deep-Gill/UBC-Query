@@ -1,0 +1,53 @@
+{
+    "title": "Invalid key courses_lat in AVG.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "years Offered"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "overall average": {
+                        "AVG": "courses_lat"
+                    }
+                },
+                {
+                    "years Offered": {
+                        "COUNT": "courses_lon"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

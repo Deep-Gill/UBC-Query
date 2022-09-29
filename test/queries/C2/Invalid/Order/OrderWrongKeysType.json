@@ -1,0 +1,56 @@
+{
+    "title": "ORDER keys must be an array that is non-empty",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": "courses_dept"
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "averagePass": {
+                        "AVG": "courses_pass"
+                    }
+                },
+                {
+                    "numFails": {
+                        "SUM": "courses_fail"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

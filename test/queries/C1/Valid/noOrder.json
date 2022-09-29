@@ -1,0 +1,1095 @@
+{
+    "title": "Valid, no order",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 86
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_title": "dev wkshp/sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "apsc",
+            "courses_title": "eng mtls lab",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "arst",
+            "courses_title": "presrv dig recds",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "arst",
+            "courses_title": "presrv dig recds",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "arst",
+            "courses_title": "presrv dig recds",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "arst",
+            "courses_title": "presrv dig recds",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "astr",
+            "courses_title": "observnl astronm",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "astr",
+            "courses_title": "observnl astronm",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "atsc",
+            "courses_title": "intro comput lab",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "atsc",
+            "courses_title": "intro comput lab",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "amplification ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "amplification ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "pediatric audio",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "pediatric audio",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "cochl implants",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "audi",
+            "courses_title": "cochl implants",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "baac",
+            "courses_title": "financial rept'g",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "baen",
+            "courses_title": "vent cptl fin&in",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "baen",
+            "courses_title": "vent cptl fin&in",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "bafi",
+            "courses_title": "mergers & acqsns",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "bioc",
+            "courses_title": "seminar",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "biol",
+            "courses_title": "biol of the cell",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "biol",
+            "courses_title": "biol of the cell",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "biol",
+            "courses_title": "teach life sci",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "biol",
+            "courses_title": "teach life sci",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "bmeg",
+            "courses_title": "m.a. sc. thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_title": "sem cont context",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_title": "case museum",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_title": "case museum",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "chbe",
+            "courses_title": "masc thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "chbe",
+            "courses_title": "masc thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "chem",
+            "courses_title": "bioinorganc chem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "chem",
+            "courses_title": "bioinorganc chem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "chil",
+            "courses_title": "child's lit",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cics",
+            "courses_title": "ad software proj",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cics",
+            "courses_title": "ad software proj",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "civl",
+            "courses_title": "urbn engr m&m",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "civl",
+            "courses_title": "urbn engr m&m",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_title": "basic intvw skls",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_title": "basic intvw skls",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_title": "int thry counsel",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "comm",
+            "courses_title": "adv tpc th co pr",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "comm",
+            "courses_title": "adv tpc th co pr",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cons",
+            "courses_title": "ths or spec proj",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "compiler constrc",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "compiler constrc",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "m.sc major essay",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "m.sc major essay",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "ped case rev ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "ped case rev ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "lit rvw prdt i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "lit rvw prdt i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "m.sc. thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "dent",
+            "courses_title": "m.sc. thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "econ",
+            "courses_title": "hist mod europe",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "econ",
+            "courses_title": "hist mod europe",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "econ",
+            "courses_title": "econ thry ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "econ",
+            "courses_title": "econ thry ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "econ",
+            "courses_title": "ph d resrch sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "edcp",
+            "courses_title": "curric iss&thry",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "edst",
+            "courses_title": "qst, theor, mthd",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "edst",
+            "courses_title": "qst, theor, mthd",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "educ",
+            "courses_title": "res mthd in educ",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "educ",
+            "courses_title": "res mthd in educ",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "biomed microdev",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "biomed microdev",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "power syst anlys",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "power syst anlys",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "eng report",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "eng report",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eece",
+            "courses_title": "eng report",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "engl",
+            "courses_title": "maj seminar lang",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "envr",
+            "courses_title": "rsrc prj env sci",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "envr",
+            "courses_title": "rsrc prj env sci",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "geoeng: soil&rck",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "geoeng: soil&rck",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "adv field earth",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "adv field earth",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "tnl&undergrd eng",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "tnl&undergrd eng",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "mech erth quake",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "mech erth quake",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "mth oceanography",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_title": "mth oceanography",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "epse",
+            "courses_title": "basic princ meas",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "epse",
+            "courses_title": "prof,eth&lgl iss",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "epse",
+            "courses_title": "prof,eth&lgl iss",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "epse",
+            "courses_title": "coll&uni teachng",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "etec",
+            "courses_title": "curric issu",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "fish",
+            "courses_title": "quant an fish i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "fish",
+            "courses_title": "quant an fish i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "fmst",
+            "courses_title": "fam econ issues",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "fmst",
+            "courses_title": "fam econ issues",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "food",
+            "courses_title": "adv food biotech",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "food",
+            "courses_title": "adv food biotech",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "frst",
+            "courses_title": "visual res mgmt",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "frst",
+            "courses_title": "visual res mgmt",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "geog",
+            "courses_title": "cult nat cp ecol",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "geog",
+            "courses_title": "cult nat cp ecol",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "grsj",
+            "courses_title": "gndr sex crt rce",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "grsj",
+            "courses_title": "gndr sex crt rce",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "hist 1500 - 20 c",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "masters thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "chinese hist rdg",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "chinese hist rdg",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "chinese hist rdg",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "chinese hist rdg",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "ma research sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "ma research sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "phd research sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hist",
+            "courses_title": "phd research sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hunu",
+            "courses_title": "cur iss appl ntr",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "hunu",
+            "courses_title": "cur iss appl ntr",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "kin",
+            "courses_title": "coaching sc ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "kin",
+            "courses_title": "coaching sc ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "libr",
+            "courses_title": "client-ctrd serv",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "libr",
+            "courses_title": "client-ctrd serv",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "libr",
+            "courses_title": "instructnl role",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "libr",
+            "courses_title": "directed study",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "libr",
+            "courses_title": "directed study",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "phonetic theory",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "phonetic theory",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "fld mthd ling i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "fld mthd ling i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "fld mthd ling ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "ling",
+            "courses_title": "fld mthd ling ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "stochastic proc",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "stochastic proc",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "complex analysis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "complex analysis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "ptl dif eqn flud",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "ptl dif eqn flud",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "algb topology i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "algb topology i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "msc major essay",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "math",
+            "courses_title": "msc major essay",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mech",
+            "courses_title": "cntrl sens & act",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mech",
+            "courses_title": "cntrl sens & act",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mech",
+            "courses_title": "adv eng acoustcs",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mech",
+            "courses_title": "adv eng acoustcs",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mech",
+            "courses_title": "research seminar",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "medg",
+            "courses_title": "intro cln lab ro",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "medg",
+            "courses_title": "intro cln lab ro",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "medi",
+            "courses_title": "mole & cell biol",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "medi",
+            "courses_title": "mole & cell biol",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "appl hlth serv",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "appl hlth serv",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "theory & practic",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "theory & practic",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "sr rsrch project",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "midw",
+            "courses_title": "sr rsrch project",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mine",
+            "courses_title": "main eng",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mine",
+            "courses_title": "main eng",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "mine",
+            "courses_title": "seminar",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "musc",
+            "courses_title": "clbrtv piano i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "musc",
+            "courses_title": "clbrtv piano i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "musc",
+            "courses_title": "lyric diction",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "musc",
+            "courses_title": "lyric diction",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "nrsc",
+            "courses_title": "master's thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "nrsc",
+            "courses_title": "master's thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_title": "infnt chld youth",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_title": "msn major essay",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_title": "masters thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "obst",
+            "courses_title": "m.sc. thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "path",
+            "courses_title": "haematology",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "path",
+            "courses_title": "haematology",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "path",
+            "courses_title": "msc thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_title": "drugs &intercell",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_title": "drugs &intercell",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_title": "design & bioassy",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_title": "design & bioassy",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_title": "ms thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phar",
+            "courses_title": "seminar",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phar",
+            "courses_title": "adv hos phr mngt",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phar",
+            "courses_title": "adv hos phr mngt",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phys",
+            "courses_title": "quantum mech ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phys",
+            "courses_title": "quantum mech ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phys",
+            "courses_title": "biomed optics",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "phys",
+            "courses_title": "biomed optics",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "plan",
+            "courses_title": "plan thy adv sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "plan",
+            "courses_title": "plan thy adv sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "plan",
+            "courses_title": "plan thy adv sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "plan",
+            "courses_title": "plan thy adv sem",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "poli",
+            "courses_title": "honours thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "poli",
+            "courses_title": "honours thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_title": "masters thesis",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_title": "reas & dec-mking",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_title": "meas in practice",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_title": "rehab learning",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_title": "major proj prt 1",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "sem resrce & env",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "sem resrce & env",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "social eco syst",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "social eco syst",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "environ anyl",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_title": "environ anyl",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "spph",
+            "courses_title": "cancer epid",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "spph",
+            "courses_title": "cancer epid",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "spph",
+            "courses_title": "occ & env health",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "spph",
+            "courses_title": "occ & env health",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv bfa acting i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv bfa acting i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv bfa act ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv bfa act ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv spch&move i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv spch&move i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv spch&move ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "adv spch&move ii",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "cs dsgn std i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "thtr",
+            "courses_title": "cs dsgn std i",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "visa",
+            "courses_title": "studio v",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "visa",
+            "courses_title": "studio v",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "visa",
+            "courses_title": "studio vi",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "visa",
+            "courses_title": "studio vi",
+            "courses_avg": 86
+        }
+    ]
+}

@@ -1,0 +1,1928 @@
+{
+    "title": "Apply is an empty array",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "APPLY": []
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "329"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "329"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "329"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "366"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "366"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "366"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "366"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "375"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "375"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "375"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "375"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "380"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "380"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "380"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "380"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "386"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "386"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "386"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "306"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "308"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "325"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353"
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "331"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "331"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "331"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "331"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "333"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "333"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "393"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "393"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "393"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "396"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "396"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "396"
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "396"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "350"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "359"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "359"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "361"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "361"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "361"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "365"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "365"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "365"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "378"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "378"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "378"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "381"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "381"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "381"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "381"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394"
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "305"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "309"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "309"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "309"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "323"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "336"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "336"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "349"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "349"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "349"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "349"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "354"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "354"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "358"
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "358"
+        }
+    ]
+}

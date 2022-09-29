@@ -1,0 +1,384 @@
+{
+    "title": "tests for rooms dataset",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 100
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "average seats",
+                "rooms_name",
+                "rooms_number",
+                "rooms_type"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_name",
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_type",
+                "rooms_name",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "average seats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "average seats": 144,
+            "rooms_name": "AERL_120",
+            "rooms_number": "120",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 260,
+            "rooms_name": "ANGU_098",
+            "rooms_number": "098",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 228,
+            "rooms_name": "BIOL_2000",
+            "rooms_number": "2000",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 275,
+            "rooms_name": "BUCH_A101",
+            "rooms_number": "A101",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 150,
+            "rooms_name": "BUCH_A102",
+            "rooms_number": "A102",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 131,
+            "rooms_name": "BUCH_A103",
+            "rooms_number": "A103",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 150,
+            "rooms_name": "BUCH_A104",
+            "rooms_number": "A104",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 181,
+            "rooms_name": "BUCH_A201",
+            "rooms_number": "A201",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 108,
+            "rooms_name": "BUCH_A202",
+            "rooms_number": "A202",
+            "rooms_type": "Case Style"
+        },
+        {
+            "average seats": 108,
+            "rooms_name": "BUCH_A203",
+            "rooms_number": "A203",
+            "rooms_type": "Case Style"
+        },
+        {
+            "average seats": 200,
+            "rooms_name": "CHBE_101",
+            "rooms_number": "101",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 265,
+            "rooms_name": "CHEM_B150",
+            "rooms_number": "B150",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 240,
+            "rooms_name": "CHEM_B250",
+            "rooms_number": "B250",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 114,
+            "rooms_name": "CHEM_D200",
+            "rooms_number": "D200",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 114,
+            "rooms_name": "CHEM_D300",
+            "rooms_number": "D300",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 426,
+            "rooms_name": "CIRS_1250",
+            "rooms_number": "1250",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 120,
+            "rooms_name": "DMP_110",
+            "rooms_number": "110",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 160,
+            "rooms_name": "DMP_310",
+            "rooms_number": "310",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 150,
+            "rooms_name": "ESB_1012",
+            "rooms_number": "1012",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 350,
+            "rooms_name": "ESB_1013",
+            "rooms_number": "1013",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 160,
+            "rooms_name": "FRDM_153",
+            "rooms_number": "153",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 250,
+            "rooms_name": "FSC_1005",
+            "rooms_number": "1005",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 225,
+            "rooms_name": "GEOG_100",
+            "rooms_number": "100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 375,
+            "rooms_name": "HEBB_100",
+            "rooms_number": "100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 257,
+            "rooms_name": "HENN_200",
+            "rooms_number": "200",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 155,
+            "rooms_name": "HENN_201",
+            "rooms_number": "201",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 150,
+            "rooms_name": "HENN_202",
+            "rooms_number": "202",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 154,
+            "rooms_name": "IBLC_182",
+            "rooms_number": "182",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 112,
+            "rooms_name": "IBLC_261",
+            "rooms_number": "261",
+            "rooms_type": "Open Design General Purpose"
+        },
+        {
+            "average seats": 350,
+            "rooms_name": "LSC_1001",
+            "rooms_number": "1001",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 350,
+            "rooms_name": "LSC_1002",
+            "rooms_number": "1002",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 125,
+            "rooms_name": "LSC_1003",
+            "rooms_number": "1003",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 205,
+            "rooms_name": "LSK_200",
+            "rooms_number": "200",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 183,
+            "rooms_name": "LSK_201",
+            "rooms_number": "201",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 224,
+            "rooms_name": "MATH_100",
+            "rooms_number": "100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 106,
+            "rooms_name": "MATX_1100",
+            "rooms_number": "1100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 123,
+            "rooms_name": "MCLD_202",
+            "rooms_number": "202",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 136,
+            "rooms_name": "MCLD_228",
+            "rooms_number": "228",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 200,
+            "rooms_name": "MCML_166",
+            "rooms_number": "166",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 442,
+            "rooms_name": "OSBO_A",
+            "rooms_number": "A",
+            "rooms_type": "Open Design General Purpose"
+        },
+        {
+            "average seats": 236,
+            "rooms_name": "PHRM_1101",
+            "rooms_number": "1101",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 167,
+            "rooms_name": "PHRM_1201",
+            "rooms_number": "1201",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 280,
+            "rooms_name": "SCRF_100",
+            "rooms_number": "100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 299,
+            "rooms_name": "SRC_220A",
+            "rooms_number": "220A",
+            "rooms_type": "TBD"
+        },
+        {
+            "average seats": 299,
+            "rooms_name": "SRC_220B",
+            "rooms_number": "220B",
+            "rooms_type": "TBD"
+        },
+        {
+            "average seats": 299,
+            "rooms_name": "SRC_220C",
+            "rooms_number": "220C",
+            "rooms_type": "TBD"
+        },
+        {
+            "average seats": 187,
+            "rooms_name": "SWNG_121",
+            "rooms_number": "121",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 188,
+            "rooms_name": "SWNG_122",
+            "rooms_number": "122",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 190,
+            "rooms_name": "SWNG_221",
+            "rooms_number": "221",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 190,
+            "rooms_name": "SWNG_222",
+            "rooms_number": "222",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 325,
+            "rooms_name": "WESB_100",
+            "rooms_number": "100",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 102,
+            "rooms_name": "WESB_201",
+            "rooms_number": "201",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 120,
+            "rooms_name": "WOOD_1",
+            "rooms_number": "1",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 503,
+            "rooms_name": "WOOD_2",
+            "rooms_number": "2",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 120,
+            "rooms_name": "WOOD_4",
+            "rooms_number": "4",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 120,
+            "rooms_name": "WOOD_5",
+            "rooms_number": "5",
+            "rooms_type": "Tiered Large Group"
+        },
+        {
+            "average seats": 181,
+            "rooms_name": "WOOD_6",
+            "rooms_number": "6",
+            "rooms_type": "Tiered Large Group"
+        }
+    ]
+}

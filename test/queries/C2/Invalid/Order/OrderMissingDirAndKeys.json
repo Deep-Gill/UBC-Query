@@ -1,0 +1,53 @@
+{
+    "title": "ORDER missing 'dir' and 'keys' key.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {}
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "averagePass": {
+                        "AVG": "courses_pass"
+                    }
+                },
+                {
+                    "numFails": {
+                        "SUM": "courses_fail"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

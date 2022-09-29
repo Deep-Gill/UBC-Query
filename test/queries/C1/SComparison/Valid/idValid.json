@@ -1,0 +1,1920 @@
+{
+    "title": "Valid, uses id key",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comptng life sci",
+            "courses_id": "301"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num comp alg prb",
+            "courses_id": "302"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "num approx/discr",
+            "courses_id": "303"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr rel databse",
+            "courses_id": "304"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr sftwr eng",
+            "courses_id": "310"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "programmng langs",
+            "courses_id": "311"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "func & logic prg",
+            "courses_id": "312"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp hard&os",
+            "courses_id": "313"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "comp graphics",
+            "courses_id": "314"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "internet comp",
+            "courses_id": "317"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "softwr eng proj",
+            "courses_id": "319"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "intr alg dsgn&an",
+            "courses_id": "320"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "artificial intel",
+            "courses_id": "322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "machine lrn mine",
+            "courses_id": "340"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_title": "hum-com interact",
+            "courses_id": "344"
+        }
+    ]
+}

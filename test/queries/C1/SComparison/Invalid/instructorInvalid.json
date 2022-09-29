@@ -1,0 +1,21 @@
+{
+    "title": "Invalid value type in IS, should be string but is null",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": null
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

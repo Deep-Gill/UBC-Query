@@ -1,0 +1,35 @@
+{
+    "title": "TRANSFORMATIONS missing GROUP.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

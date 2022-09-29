@@ -1,0 +1,61 @@
+{
+    "title": "Invalid key coursesid in IS.",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "coursesid": "*3"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "courses_id": "*3*"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "courses_id": "3*"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 97
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

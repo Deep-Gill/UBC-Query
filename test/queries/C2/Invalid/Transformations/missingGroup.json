@@ -1,0 +1,53 @@
+{
+    "title": "TRANSFORMATIONS missing GROUP.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "APPLY": [
+                {
+                    "averagePass": {
+                        "AVG": "courses_pass"
+                    }
+                },
+                {
+                    "numFails": {
+                        "SUM": "courses_fail"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

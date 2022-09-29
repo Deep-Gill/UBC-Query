@@ -1,0 +1,55 @@
+{
+    "title": "Excess keys in query.",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "overall average"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "overall average": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        },
+        "GROUP": [
+            "courses_id"
+        ]
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

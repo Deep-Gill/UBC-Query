@@ -1,0 +1,47 @@
+{
+    "query1":{"WHERE": {"IS": {"courses_dept": "cpsc"} }, "OPTIONS": {"COLUMNS": ["courses_dept", "courses_id"], "ORDER": "courses_id"} },
+    "query2": {
+        "WHERE": {
+            "OR": [
+                {
+                    "NOT": {
+                        "LT": {
+                            "rooms_seats": 100
+                        }
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_type": "Tiered Large Group"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "number of types",
+                "average seats"
+            ],
+            "ORDER": "rooms_address"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address"
+            ],
+            "APPLY": [
+                {
+                    "number of types": {
+                        "COUNT": "rooms_type"
+                    }
+                },
+                {
+                    "average seats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    }
+}
+

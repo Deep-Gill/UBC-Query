@@ -1,0 +1,906 @@
+{
+    "title": "Valid, uses Double NOT with OR",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "NOT": {
+                            "OR": [
+                                {
+                                    "IS": {
+                                        "courses_dept": "cpsc"
+                                    }
+                                },
+                                {
+                                    "IS": {
+                                        "courses_dept": "math"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "LT": {
+                            "courses_avg": 90
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.11
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.11
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.14
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.24
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.24
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.27
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.29
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.29
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.43
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.43
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.53
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.53
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.57
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.57
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.57
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.6
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.71
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 90.71
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.73
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.73
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.83
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.83
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.83
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.94
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90.94
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.14
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.14
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.2
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.22
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.22
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.22
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.22
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.25
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.4
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.4
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.47
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.47
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.56
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.56
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.71
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.71
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.73
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.73
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.75
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.79
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 91.79
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.86
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 91.86
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.08
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.08
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.3
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.3
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.4
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.43
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.43
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.63
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.63
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.63
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.63
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 92.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 92.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.2
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.2
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 93.38
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 93.38
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 93.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.6
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.75
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.8
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 93.8
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 94
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 94
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.17
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.17
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.33
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 94.5
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 94.5
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 94.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 95
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 95
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95.56
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95.56
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 95.67
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.33
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.44
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.44
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.83
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 96.83
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.09
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.09
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.25
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.48
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 97.48
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 99.78
+        }
+    ]
+}

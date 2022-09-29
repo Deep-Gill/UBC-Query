@@ -1,0 +1,19 @@
+{
+    "title": "Invalid value type in GT, should be number but is string.",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": "500"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

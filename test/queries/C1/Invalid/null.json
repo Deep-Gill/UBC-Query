@@ -1,0 +1,6 @@
+{
+    "title": "Query must be object.",
+    "query": null,
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,547 @@
+{
+    "title": "Uses an apply key that has only whitespaces",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "m*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "overall average",
+                "         "
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "overall average": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "         ": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_id": "300",
+            "overall average": 66.24,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "301",
+            "overall average": 70.31,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "302",
+            "overall average": 69.96,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "303",
+            "overall average": 68.84,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "305",
+            "overall average": 66.67,
+            "         ": 7
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "307",
+            "overall average": 69.21,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "308",
+            "overall average": 71.38,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "overall average": 66.19,
+            "         ": 5
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "312",
+            "overall average": 68.66,
+            "         ": 11
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "313",
+            "overall average": 70.53,
+            "         ": 5
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316",
+            "overall average": 73.43,
+            "         ": 11
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "317",
+            "overall average": 69.03,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "318",
+            "overall average": 69.8,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "320",
+            "overall average": 70.47,
+            "         ": 11
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "321",
+            "overall average": 69.28,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "322",
+            "overall average": 73.03,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "323",
+            "overall average": 73.75,
+            "         ": 5
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "overall average": 79.11,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "340",
+            "overall average": 69.94,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "342",
+            "overall average": 71.71,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "345",
+            "overall average": 71.24,
+            "         ": 10
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360",
+            "overall average": 78.2,
+            "         ": 5
+        },
+        {
+            "courses_dept": "mdvl",
+            "courses_id": "301",
+            "overall average": 75.31,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "305",
+            "overall average": 77.8,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "306",
+            "overall average": 77.92,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "325",
+            "overall average": 73.58,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "326",
+            "overall average": 71.46,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "327",
+            "overall average": 70.55,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "328",
+            "overall average": 81.42,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "329",
+            "overall average": 71.45,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "358",
+            "overall average": 75.37,
+            "         ": 6
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "360",
+            "overall average": 71.48,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "366",
+            "overall average": 78.97,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "368",
+            "overall average": 77.96,
+            "         ": 8
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "375",
+            "overall average": 69.3,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "380",
+            "overall average": 76.72,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "386",
+            "overall average": 81.46,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mech",
+            "courses_id": "392",
+            "overall average": 79.46,
+            "         ": 10
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "301",
+            "overall average": 77.38,
+            "         ": 7
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "302",
+            "overall average": 72.04,
+            "         ": 10
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "306",
+            "overall average": 76.68,
+            "         ": 10
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "308",
+            "overall average": 72.09,
+            "         ": 6
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "322",
+            "overall average": 77.92,
+            "         ": 10
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "323",
+            "overall average": 77.59,
+            "         ": 10
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "325",
+            "overall average": 80.17,
+            "         ": 7
+        },
+        {
+            "courses_dept": "micb",
+            "courses_id": "353",
+            "overall average": 78.53,
+            "         ": 11
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "305",
+            "overall average": 84.64,
+            "         ": 6
+        },
+        {
+            "courses_dept": "midw",
+            "courses_id": "310",
+            "overall average": 86.5,
+            "         ": 6
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "302",
+            "overall average": 73.03,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "303",
+            "overall average": 73.34,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "304",
+            "overall average": 77.4,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "310",
+            "overall average": 74.14,
+            "         ": 7
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "331",
+            "overall average": 74.35,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "333",
+            "overall average": 72.84,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "350",
+            "overall average": 87.02,
+            "         ": 3
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "393",
+            "overall average": 85.29,
+            "         ": 9
+        },
+        {
+            "courses_dept": "mine",
+            "courses_id": "396",
+            "overall average": 75.43,
+            "         ": 8
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "340",
+            "overall average": 67.89,
+            "         ": 6
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "350",
+            "overall average": 72.29,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "358",
+            "overall average": 73.52,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "359",
+            "overall average": 81.04,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "361",
+            "overall average": 80.14,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "363",
+            "overall average": 76.75,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "365",
+            "overall average": 62.55,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "378",
+            "overall average": 62.74,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "381",
+            "overall average": 79.02,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "382",
+            "overall average": 68.38,
+            "         ": 10
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "392",
+            "overall average": 77.97,
+            "         ": 6
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_id": "394",
+            "overall average": 70.2,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "300",
+            "overall average": 73.54,
+            "         ": 11
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "305",
+            "overall average": 88.57,
+            "         ": 6
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "309",
+            "overall average": 77.46,
+            "         ": 11
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "310",
+            "overall average": 77.74,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "311",
+            "overall average": 85.94,
+            "         ": 11
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "312",
+            "overall average": 84.34,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "313",
+            "overall average": 82.96,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "320",
+            "overall average": 81.59,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "323",
+            "overall average": 83.14,
+            "         ": 6
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "336",
+            "overall average": 83.57,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "349",
+            "overall average": 79.45,
+            "         ": 10
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "354",
+            "overall average": 71.18,
+            "         ": 4
+        },
+        {
+            "courses_dept": "musc",
+            "courses_id": "358",
+            "overall average": 79.23,
+            "         ": 4
+        }
+    ]
+}

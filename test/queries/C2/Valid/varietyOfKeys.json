@@ -1,0 +1,4576 @@
+{
+    "title": "many different kinds of keys used, uses DOWN when sorting",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "c*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "averagePass",
+                "numFails",
+                "courses_dept",
+                "yearsOffered"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "averagePass",
+                    "numFails",
+                    "yearsOffered",
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "averagePass": {
+                        "AVG": "courses_pass"
+                    }
+                },
+                {
+                    "numFails": {
+                        "SUM": "courses_fail"
+                    }
+                },
+                {
+                    "yearsOffered": {
+                        "COUNT": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "averagePass": 635.67,
+            "numFails": 18,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 581,
+            "numFails": 20,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 487.6,
+            "numFails": 39,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 471.11,
+            "numFails": 39,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 446.33,
+            "numFails": 61,
+            "courses_dept": "caps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 390.2,
+            "numFails": 110,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 378.2,
+            "numFails": 36,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 375.33,
+            "numFails": 26,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 364.41,
+            "numFails": 11,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 364,
+            "numFails": 5,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 360.13,
+            "numFails": 340,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 353.76,
+            "numFails": 169,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 346,
+            "numFails": 7,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 306,
+            "numFails": 49,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 296.2,
+            "numFails": 91,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 277.67,
+            "numFails": 15,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 261,
+            "numFails": 2,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 249,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 246.9,
+            "numFails": 37,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 244.6,
+            "numFails": 10,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 237.38,
+            "numFails": 20,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 236.5,
+            "numFails": 28,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 235.5,
+            "numFails": 11,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 231.57,
+            "numFails": 6,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 227.11,
+            "numFails": 16,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 211.57,
+            "numFails": 91,
+            "courses_dept": "caps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 210.5,
+            "numFails": 24,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 208,
+            "numFails": 6,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 208,
+            "numFails": 4,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 207.63,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 205.57,
+            "numFails": 72,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 205.5,
+            "numFails": 46,
+            "courses_dept": "chem",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 203.8,
+            "numFails": 4,
+            "courses_dept": "civl",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 202.33,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 200.25,
+            "numFails": 49,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 199,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 190.08,
+            "numFails": 222,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 186,
+            "numFails": 9,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 185,
+            "numFails": 7,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 183.22,
+            "numFails": 96,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 183,
+            "numFails": 3,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 182.5,
+            "numFails": 11,
+            "courses_dept": "caps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 181.67,
+            "numFails": 20,
+            "courses_dept": "chem",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 181.5,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 180.8,
+            "numFails": 4,
+            "courses_dept": "civl",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 174.5,
+            "numFails": 3,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 172.56,
+            "numFails": 10,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 170,
+            "numFails": 16,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 170,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 169.5,
+            "numFails": 4,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 167,
+            "numFails": 2,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 166,
+            "numFails": 17,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 165.91,
+            "numFails": 16,
+            "courses_dept": "civl",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 164,
+            "numFails": 11,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 162,
+            "numFails": 1,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 158.5,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 156,
+            "numFails": 3,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 156,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 156,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 153,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 152.17,
+            "numFails": 40,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 148.22,
+            "numFails": 9,
+            "courses_dept": "civl",
+            "yearsOffered": 9
+        },
+        {
+            "averagePass": 148,
+            "numFails": 1,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 148,
+            "numFails": 1,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 148,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 147,
+            "numFails": 8,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 146.78,
+            "numFails": 43,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 146,
+            "numFails": 3,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 145.6,
+            "numFails": 18,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 145.6,
+            "numFails": 18,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 145.17,
+            "numFails": 22,
+            "courses_dept": "civl",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 145.13,
+            "numFails": 134,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 144.4,
+            "numFails": 30,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 143.82,
+            "numFails": 13,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 143,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 142,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 140.47,
+            "numFails": 50,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 140,
+            "numFails": 49,
+            "courses_dept": "civl",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 139,
+            "numFails": 6,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 139,
+            "numFails": 3,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 139,
+            "numFails": 3,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 139,
+            "numFails": 3,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 138.25,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 138,
+            "numFails": 12,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 138,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 137,
+            "numFails": 7,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 136.4,
+            "numFails": 71,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 136,
+            "numFails": 4,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 133.3,
+            "numFails": 26,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 133.25,
+            "numFails": 3,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 133,
+            "numFails": 6,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 132.5,
+            "numFails": 5,
+            "courses_dept": "civl",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 132.1,
+            "numFails": 14,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 132,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 130,
+            "numFails": 11,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 128.31,
+            "numFails": 104,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 127.82,
+            "numFails": 73,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 127.18,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 125,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 124.5,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 123.53,
+            "numFails": 297,
+            "courses_dept": "clst",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 122,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 122,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 118,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 118,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 117.11,
+            "numFails": 95,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 117,
+            "numFails": 37,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 115,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 114.17,
+            "numFails": 35,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 114,
+            "numFails": 0,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 114,
+            "numFails": 0,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 113.9,
+            "numFails": 42,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 112.14,
+            "numFails": 46,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 112,
+            "numFails": 1,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 111,
+            "numFails": 6,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 110,
+            "numFails": 8,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 108,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 108,
+            "numFails": 1,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 108,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 106.33,
+            "numFails": 28,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 105,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 104,
+            "numFails": 4,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 104,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 103.57,
+            "numFails": 31,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 103,
+            "numFails": 12,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 102,
+            "numFails": 44,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 102,
+            "numFails": 0,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 102,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 101.71,
+            "numFails": 32,
+            "courses_dept": "chem",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 101.71,
+            "numFails": 32,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 101.5,
+            "numFails": 7,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 101.5,
+            "numFails": 3,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 100.71,
+            "numFails": 14,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 99.67,
+            "numFails": 25,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 99.67,
+            "numFails": 17,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 99.5,
+            "numFails": 5,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 99,
+            "numFails": 11,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 99,
+            "numFails": 7,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 99,
+            "numFails": 7,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 99,
+            "numFails": 2,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 98.8,
+            "numFails": 35,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 98.5,
+            "numFails": 8,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 97,
+            "numFails": 2,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 96.7,
+            "numFails": 51,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 96.04,
+            "numFails": 42,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 95,
+            "numFails": 9,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 95,
+            "numFails": 9,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 94.67,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 94.14,
+            "numFails": 35,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 94,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 93.91,
+            "numFails": 13,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 93.67,
+            "numFails": 30,
+            "courses_dept": "chem",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 93.67,
+            "numFails": 12,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 93.5,
+            "numFails": 9,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 93.5,
+            "numFails": 8,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 93.2,
+            "numFails": 32,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 93,
+            "numFails": 9,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 93,
+            "numFails": 3,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 93,
+            "numFails": 0,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 92,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 91.6,
+            "numFails": 37,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 91.57,
+            "numFails": 86,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 91.5,
+            "numFails": 10,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 91,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 90.33,
+            "numFails": 5,
+            "courses_dept": "cons",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 90.33,
+            "numFails": 5,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 90,
+            "numFails": 39,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 90,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 89.33,
+            "numFails": 28,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 89,
+            "numFails": 30,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 89,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 89,
+            "numFails": 2,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 88.2,
+            "numFails": 14,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 87.6,
+            "numFails": 79,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 87.36,
+            "numFails": 49,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 87,
+            "numFails": 4,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 86.33,
+            "numFails": 21,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 86,
+            "numFails": 21,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 86,
+            "numFails": 21,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 86,
+            "numFails": 6,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 86,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 85.57,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 85,
+            "numFails": 10,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 84.9,
+            "numFails": 36,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 84.5,
+            "numFails": 8,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 84,
+            "numFails": 22,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 83.93,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 83.25,
+            "numFails": 81,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 83,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 82.91,
+            "numFails": 40,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 82.67,
+            "numFails": 10,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 82,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 82,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 81.91,
+            "numFails": 15,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 81.38,
+            "numFails": 43,
+            "courses_dept": "cpsc",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 81.2,
+            "numFails": 27,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 80.83,
+            "numFails": 37,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 80.5,
+            "numFails": 6,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 80.4,
+            "numFails": 11,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 80,
+            "numFails": 5,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 80,
+            "numFails": 5,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 80,
+            "numFails": 0,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 79.82,
+            "numFails": 35,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 79.5,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 78.25,
+            "numFails": 12,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 78,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 77,
+            "numFails": 4,
+            "courses_dept": "chbe",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 76.6,
+            "numFails": 43,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 76.6,
+            "numFails": 43,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 76.5,
+            "numFails": 14,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 76.5,
+            "numFails": 14,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 76,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 76,
+            "numFails": 0,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 75.75,
+            "numFails": 8,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 75.65,
+            "numFails": 79,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 75.11,
+            "numFails": 2,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 75,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 74.5,
+            "numFails": 9,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 74.5,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 74,
+            "numFails": 3,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 74,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 74,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 73.75,
+            "numFails": 12,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 73.75,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 73,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 72,
+            "numFails": 18,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 72,
+            "numFails": 9,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 72,
+            "numFails": 3,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 72,
+            "numFails": 3,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 71.71,
+            "numFails": 13,
+            "courses_dept": "cons",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 70,
+            "numFails": 9,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 70,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 69,
+            "numFails": 73,
+            "courses_dept": "chem",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 69,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 68.7,
+            "numFails": 44,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 68.67,
+            "numFails": 14,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 68,
+            "numFails": 13,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 68,
+            "numFails": 10,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 67.67,
+            "numFails": 18,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 67.67,
+            "numFails": 12,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 67,
+            "numFails": 3,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 66.33,
+            "numFails": 2,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 66.25,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 66.1,
+            "numFails": 15,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 66,
+            "numFails": 35,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 66,
+            "numFails": 35,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 65.63,
+            "numFails": 75,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 65,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 64.8,
+            "numFails": 15,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 64,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 64,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 62.25,
+            "numFails": 6,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 62,
+            "numFails": 6,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 60.5,
+            "numFails": 3,
+            "courses_dept": "cens",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 60.5,
+            "numFails": 3,
+            "courses_dept": "cens",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 60.4,
+            "numFails": 10,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 60,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 59,
+            "numFails": 6,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 58.6,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 58.57,
+            "numFails": 17,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 58.5,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 58.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 58,
+            "numFails": 6,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 57.67,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 57.5,
+            "numFails": 17,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 57.25,
+            "numFails": 5,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 57.17,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 57,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 56.8,
+            "numFails": 14,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 56,
+            "numFails": 4,
+            "courses_dept": "chbe",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 56,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 56,
+            "numFails": 4,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 56,
+            "numFails": 2,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 56,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 55.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 55.25,
+            "numFails": 20,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 55.25,
+            "numFails": 18,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 55.1,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 55.09,
+            "numFails": 6,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 55,
+            "numFails": 4,
+            "courses_dept": "cnrs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 55,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 55,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 55,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 54.67,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 54.33,
+            "numFails": 11,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 53.5,
+            "numFails": 6,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 53.18,
+            "numFails": 34,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 53,
+            "numFails": 2,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 53,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 53,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 52,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 52,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 52,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 51.9,
+            "numFails": 27,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 51,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 51,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 51,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 50.86,
+            "numFails": 5,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 50.64,
+            "numFails": 10,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 50.41,
+            "numFails": 28,
+            "courses_dept": "cnps",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 50,
+            "numFails": 2,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 50,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 50,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 50,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 48,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 47.8,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 47.8,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 47,
+            "numFails": 1,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 47,
+            "numFails": 1,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 47,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 47,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 46.93,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 46.71,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 46.5,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 46.23,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 46,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 46,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 46,
+            "numFails": 2,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 46,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 46,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 46,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 46,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45.27,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 45,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 45,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 1,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 45,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 45,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44.75,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 44.7,
+            "numFails": 18,
+            "courses_dept": "cnrs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 44.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44.62,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 44.57,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 44.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44.33,
+            "numFails": 6,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 44,
+            "numFails": 4,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 44,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43.86,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 43.54,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 43.5,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 43.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43.47,
+            "numFails": 15,
+            "courses_dept": "cnps",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 43.38,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 43.33,
+            "numFails": 2,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 43.25,
+            "numFails": 4,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 43.2,
+            "numFails": 19,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 43,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 43,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 1,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 43,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42.67,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 42.67,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42.6,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42.5,
+            "numFails": 6,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42.5,
+            "numFails": 4,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42.33,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42.25,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42.23,
+            "numFails": 10,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 42.2,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 42.2,
+            "numFails": 4,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 42,
+            "numFails": 5,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42,
+            "numFails": 4,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 2,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 1,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 42,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 42,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.7,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 41.67,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 41.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 41.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.6,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 41.5,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 41.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.4,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 41.36,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 41.33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.25,
+            "numFails": 1,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41.2,
+            "numFails": 6,
+            "courses_dept": "cnrs",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 41.07,
+            "numFails": 10,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 41,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 41,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 41,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40.9,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 40.67,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40.6,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40.57,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 40.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 40.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40.4,
+            "numFails": 11,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40.4,
+            "numFails": 7,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40.38,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 40.33,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 40.25,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 40,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 40,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 0,
+            "courses_dept": "coec",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 40,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39.78,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 39.75,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 1,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39.33,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39.33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39.25,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 39.25,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39.22,
+            "numFails": 12,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 39,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 39,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 39,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 39,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 39,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38.9,
+            "numFails": 24,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.9,
+            "numFails": 5,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.83,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 38.79,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 38.75,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 38.67,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38.56,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 38.5,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.5,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38.5,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.5,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38.33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 38,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38,
+            "numFails": 0,
+            "courses_dept": "coec",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 38,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 38,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37.88,
+            "numFails": 8,
+            "courses_dept": "comm",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 37.67,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 37.55,
+            "numFails": 94,
+            "courses_dept": "comm",
+            "yearsOffered": 9
+        },
+        {
+            "averagePass": 37.5,
+            "numFails": 8,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 37.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37.33,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 37,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36.75,
+            "numFails": 8,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36.6,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36.6,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36.53,
+            "numFails": 8,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 36.5,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36.2,
+            "numFails": 2,
+            "courses_dept": "cons",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 36,
+            "numFails": 5,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 36,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 36,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35.6,
+            "numFails": 5,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 3,
+            "courses_dept": "cpsc",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 3,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 1,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 35.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35.13,
+            "numFails": 11,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 35,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 2,
+            "courses_dept": "cnrs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 35,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 35,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 34.88,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 34.3,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 34,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 34,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 34,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 34,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 34,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 33.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 33.3,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 33.2,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 33,
+            "numFails": 1,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 33,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 33,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32.71,
+            "numFails": 3,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 32.7,
+            "numFails": 6,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 32.67,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 32.63,
+            "numFails": 6,
+            "courses_dept": "chbe",
+            "yearsOffered": 8
+        },
+        {
+            "averagePass": 32.5,
+            "numFails": 4,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32.5,
+            "numFails": 2,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32.36,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 32.25,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 32.17,
+            "numFails": 1,
+            "courses_dept": "cogs",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 32,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 32,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 31,
+            "numFails": 2,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 31,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 31,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 31,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 31,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 30.5,
+            "numFails": 6,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 30.14,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 30,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 30,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 30,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 30,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 30,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 29.75,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 29.5,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 29.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 29.25,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 29.25,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 29.17,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 29,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 29,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 29,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 29,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 28.33,
+            "numFails": 10,
+            "courses_dept": "cpsc",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 28,
+            "numFails": 3,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 28,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 28,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 28,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27.67,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 27.5,
+            "numFails": 1,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 27,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 27,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 26.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 26,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 26,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 26,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25.73,
+            "numFails": 3,
+            "courses_dept": "cogs",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 25.5,
+            "numFails": 1,
+            "courses_dept": "cogs",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 25,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 25,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 24.67,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 24.5,
+            "numFails": 0,
+            "courses_dept": "cohr",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 24.29,
+            "numFails": 1,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 24.17,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 24,
+            "numFails": 1,
+            "courses_dept": "cpsc",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 23.56,
+            "numFails": 1,
+            "courses_dept": "chbe",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 23.5,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 23.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 23,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 23,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 23,
+            "numFails": 1,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 23,
+            "numFails": 1,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 23,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 23,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 22.71,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 22.67,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 22.5,
+            "numFails": 1,
+            "courses_dept": "chin",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 22,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21.43,
+            "numFails": 2,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 21,
+            "numFails": 1,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21,
+            "numFails": 0,
+            "courses_dept": "cogs",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21,
+            "numFails": 0,
+            "courses_dept": "chbe",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21,
+            "numFails": 0,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 21,
+            "numFails": 0,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 20.92,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 20.5,
+            "numFails": 1,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 20.4,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 20.33,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 20.08,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 20,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 20,
+            "numFails": 0,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 19.67,
+            "numFails": 0,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 19.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 19.5,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 19.5,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 19.46,
+            "numFails": 2,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 19.38,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 19.15,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 19,
+            "numFails": 3,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 19,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 19,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 18.95,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 18.89,
+            "numFails": 4,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 18.4,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 18.4,
+            "numFails": 1,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 18.17,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 18,
+            "numFails": 3,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 18,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 17.8,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 17.5,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 17.4,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 17.38,
+            "numFails": 5,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 17.33,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 17.24,
+            "numFails": 6,
+            "courses_dept": "comm",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 17,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 17,
+            "numFails": 0,
+            "courses_dept": "caps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 16.87,
+            "numFails": 7,
+            "courses_dept": "comm",
+            "yearsOffered": 6
+        },
+        {
+            "averagePass": 16.69,
+            "numFails": 11,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 16.56,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 16.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 16.44,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 16.33,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 16,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 16,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 16,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 16,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15.67,
+            "numFails": 2,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 15.67,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15.17,
+            "numFails": 3,
+            "courses_dept": "chem",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 15,
+            "numFails": 0,
+            "courses_dept": "clst",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14.75,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 14.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14.33,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 14.25,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 14.22,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 14.08,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 14,
+            "numFails": 0,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13.56,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 7
+        },
+        {
+            "averagePass": 13.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 13.5,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 13.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13.5,
+            "numFails": 0,
+            "courses_dept": "civl",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13.31,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 3
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 13,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12.88,
+            "numFails": 5,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12.8,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 12.67,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 12.5,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12.12,
+            "numFails": 6,
+            "courses_dept": "chem",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 12,
+            "numFails": 0,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 11.75,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 4
+        },
+        {
+            "averagePass": 11,
+            "numFails": 0,
+            "courses_dept": "clch",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 11,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 11,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 10.5,
+            "numFails": 1,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 10,
+            "numFails": 1,
+            "courses_dept": "comm",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 10,
+            "numFails": 0,
+            "courses_dept": "cnto",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 9.41,
+            "numFails": 25,
+            "courses_dept": "chem",
+            "yearsOffered": 5
+        },
+        {
+            "averagePass": 9,
+            "numFails": 4,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 9,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 9,
+            "numFails": 0,
+            "courses_dept": "cpen",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 9,
+            "numFails": 0,
+            "courses_dept": "cons",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 7,
+            "numFails": 0,
+            "courses_dept": "cnps",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 6.5,
+            "numFails": 0,
+            "courses_dept": "clch",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 6.5,
+            "numFails": 0,
+            "courses_dept": "clch",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 6,
+            "numFails": 2,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 6,
+            "numFails": 0,
+            "courses_dept": "comm",
+            "yearsOffered": 2
+        },
+        {
+            "averagePass": 6,
+            "numFails": 0,
+            "courses_dept": "chin",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 6,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 5.33,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        },
+        {
+            "averagePass": 4,
+            "numFails": 0,
+            "courses_dept": "chem",
+            "yearsOffered": 1
+        }
+    ]
+}

@@ -1,0 +1,5765 @@
+{
+    "title": "Only keys in GROUP and APPLY, only aoply keys in COLUMNS and ORDER",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "maximumAvg",
+                "minimumAvg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "maximumAvg",
+                    "minimumAvg"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "maximumAvg": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "minimumAvg": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "maximumAvg": 90.02,
+            "minimumAvg": 90.02
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.06,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.07,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.08,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.09,
+            "minimumAvg": 90.09
+        },
+        {
+            "maximumAvg": 90.09,
+            "minimumAvg": 90.09
+        },
+        {
+            "maximumAvg": 90.09,
+            "minimumAvg": 90.09
+        },
+        {
+            "maximumAvg": 90.1,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 90.1,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.11,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.12,
+            "minimumAvg": 90.12
+        },
+        {
+            "maximumAvg": 90.12,
+            "minimumAvg": 90.12
+        },
+        {
+            "maximumAvg": 90.12,
+            "minimumAvg": 90.12
+        },
+        {
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 90.13,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 90.14,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 90.16,
+            "minimumAvg": 90.16
+        },
+        {
+            "maximumAvg": 90.17,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.17,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.17,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 90.18,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 90.19,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 90.19,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.2,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.09
+        },
+        {
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.21
+        },
+        {
+            "maximumAvg": 90.21,
+            "minimumAvg": 90.21
+        },
+        {
+            "maximumAvg": 90.22,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 90.22,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 90.22,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 90.22,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 90.23,
+            "minimumAvg": 90.23
+        },
+        {
+            "maximumAvg": 90.23,
+            "minimumAvg": 90.23
+        },
+        {
+            "maximumAvg": 90.24,
+            "minimumAvg": 90.24
+        },
+        {
+            "maximumAvg": 90.24,
+            "minimumAvg": 90.24
+        },
+        {
+            "maximumAvg": 90.24,
+            "minimumAvg": 90.24
+        },
+        {
+            "maximumAvg": 90.24,
+            "minimumAvg": 90.24
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.25,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.26,
+            "minimumAvg": 90.26
+        },
+        {
+            "maximumAvg": 90.26,
+            "minimumAvg": 90.26
+        },
+        {
+            "maximumAvg": 90.26,
+            "minimumAvg": 90.26
+        },
+        {
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.27,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.28,
+            "minimumAvg": 90.28
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.29,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.3,
+            "minimumAvg": 90.3
+        },
+        {
+            "maximumAvg": 90.3,
+            "minimumAvg": 90.3
+        },
+        {
+            "maximumAvg": 90.31,
+            "minimumAvg": 90.31
+        },
+        {
+            "maximumAvg": 90.31,
+            "minimumAvg": 90.31
+        },
+        {
+            "maximumAvg": 90.32,
+            "minimumAvg": 90.32
+        },
+        {
+            "maximumAvg": 90.32,
+            "minimumAvg": 90.32
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.33,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 90.36,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.36,
+            "minimumAvg": 90.36
+        },
+        {
+            "maximumAvg": 90.36,
+            "minimumAvg": 90.36
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 90.38,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 90.39,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 90.4,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 90.41,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 90.42,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 90.42,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 90.42,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.43,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.44,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.45,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 90.46,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 90.48,
+            "minimumAvg": 90.48
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "maximumAvg": 90.52,
+            "minimumAvg": 90.52
+        },
+        {
+            "maximumAvg": 90.53,
+            "minimumAvg": 90.53
+        },
+        {
+            "maximumAvg": 90.54,
+            "minimumAvg": 90.54
+        },
+        {
+            "maximumAvg": 90.55,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 90.56,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 90.56,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 90.56,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.57,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 90.58,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.58,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 90.6,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 90.61,
+            "minimumAvg": 90.61
+        },
+        {
+            "maximumAvg": 90.62,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 90.62,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 90.63,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 90.63,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "maximumAvg": 90.64,
+            "minimumAvg": 90.64
+        },
+        {
+            "maximumAvg": 90.65,
+            "minimumAvg": 90.65
+        },
+        {
+            "maximumAvg": 90.65,
+            "minimumAvg": 90.65
+        },
+        {
+            "maximumAvg": 90.65,
+            "minimumAvg": 90.65
+        },
+        {
+            "maximumAvg": 90.66,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.67,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.68,
+            "minimumAvg": 90.68
+        },
+        {
+            "maximumAvg": 90.69,
+            "minimumAvg": 90.69
+        },
+        {
+            "maximumAvg": 90.69,
+            "minimumAvg": 90.69
+        },
+        {
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.41
+        },
+        {
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 90.7,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.71,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.74,
+            "minimumAvg": 90.74
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.75,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 90.77,
+            "minimumAvg": 90.77
+        },
+        {
+            "maximumAvg": 90.77,
+            "minimumAvg": 90.77
+        },
+        {
+            "maximumAvg": 90.78,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 90.78,
+            "minimumAvg": 90.78
+        },
+        {
+            "maximumAvg": 90.8,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 90.8,
+            "minimumAvg": 90.8
+        },
+        {
+            "maximumAvg": 90.81,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 90.81,
+            "minimumAvg": 90.81
+        },
+        {
+            "maximumAvg": 90.81,
+            "minimumAvg": 90.81
+        },
+        {
+            "maximumAvg": 90.81,
+            "minimumAvg": 90.81
+        },
+        {
+            "maximumAvg": 90.82,
+            "minimumAvg": 90.76
+        },
+        {
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 90.83,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 90.84,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 90.84,
+            "minimumAvg": 90.84
+        },
+        {
+            "maximumAvg": 90.85,
+            "minimumAvg": 90.85
+        },
+        {
+            "maximumAvg": 90.86,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 90.86,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 90.86,
+            "minimumAvg": 90.86
+        },
+        {
+            "maximumAvg": 90.87,
+            "minimumAvg": 90.87
+        },
+        {
+            "maximumAvg": 90.87,
+            "minimumAvg": 90.87
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.88,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 90.89,
+            "minimumAvg": 90.21
+        },
+        {
+            "maximumAvg": 90.89,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 90.89,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 90.89,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.59
+        },
+        {
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.9
+        },
+        {
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.9
+        },
+        {
+            "maximumAvg": 90.9,
+            "minimumAvg": 90.9
+        },
+        {
+            "maximumAvg": 90.91,
+            "minimumAvg": 90.91
+        },
+        {
+            "maximumAvg": 90.92,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 90.92,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 90.92,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 90.93,
+            "minimumAvg": 90.93
+        },
+        {
+            "maximumAvg": 90.93,
+            "minimumAvg": 90.93
+        },
+        {
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.94
+        },
+        {
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.94
+        },
+        {
+            "maximumAvg": 90.94,
+            "minimumAvg": 90.94
+        },
+        {
+            "maximumAvg": 90.95,
+            "minimumAvg": 90.95
+        },
+        {
+            "maximumAvg": 90.95,
+            "minimumAvg": 90.95
+        },
+        {
+            "maximumAvg": 90.95,
+            "minimumAvg": 90.95
+        },
+        {
+            "maximumAvg": 90.99,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 90.99,
+            "minimumAvg": 90.99
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.02
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.58
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 90.58
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.02,
+            "minimumAvg": 90.02
+        },
+        {
+            "maximumAvg": 91.06,
+            "minimumAvg": 91.06
+        },
+        {
+            "maximumAvg": 91.06,
+            "minimumAvg": 91.06
+        },
+        {
+            "maximumAvg": 91.07,
+            "minimumAvg": 91.07
+        },
+        {
+            "maximumAvg": 91.07,
+            "minimumAvg": 91.07
+        },
+        {
+            "maximumAvg": 91.08,
+            "minimumAvg": 90.77
+        },
+        {
+            "maximumAvg": 91.08,
+            "minimumAvg": 91.08
+        },
+        {
+            "maximumAvg": 91.08,
+            "minimumAvg": 91.08
+        },
+        {
+            "maximumAvg": 91.08,
+            "minimumAvg": 91.08
+        },
+        {
+            "maximumAvg": 91.09,
+            "minimumAvg": 91.09
+        },
+        {
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "maximumAvg": 91.1,
+            "minimumAvg": 91.1
+        },
+        {
+            "maximumAvg": 91.13,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 91.13,
+            "minimumAvg": 91.13
+        },
+        {
+            "maximumAvg": 91.13,
+            "minimumAvg": 91.13
+        },
+        {
+            "maximumAvg": 91.14,
+            "minimumAvg": 90.73
+        },
+        {
+            "maximumAvg": 91.14,
+            "minimumAvg": 90.73
+        },
+        {
+            "maximumAvg": 91.14,
+            "minimumAvg": 91.14
+        },
+        {
+            "maximumAvg": 91.14,
+            "minimumAvg": 91.14
+        },
+        {
+            "maximumAvg": 91.14,
+            "minimumAvg": 91.14
+        },
+        {
+            "maximumAvg": 91.15,
+            "minimumAvg": 91.15
+        },
+        {
+            "maximumAvg": 91.15,
+            "minimumAvg": 91.15
+        },
+        {
+            "maximumAvg": 91.16,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 90.09
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 91.17,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 91.18,
+            "minimumAvg": 91.18
+        },
+        {
+            "maximumAvg": 91.18,
+            "minimumAvg": 91.18
+        },
+        {
+            "maximumAvg": 91.18,
+            "minimumAvg": 91.18
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.2,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 91.21,
+            "minimumAvg": 90.53
+        },
+        {
+            "maximumAvg": 91.21,
+            "minimumAvg": 91.21
+        },
+        {
+            "maximumAvg": 91.21,
+            "minimumAvg": 91.21
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 90.53
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 90.53
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.22,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.23,
+            "minimumAvg": 91.23
+        },
+        {
+            "maximumAvg": 91.23,
+            "minimumAvg": 91.23
+        },
+        {
+            "maximumAvg": 91.24,
+            "minimumAvg": 91.24
+        },
+        {
+            "maximumAvg": 91.24,
+            "minimumAvg": 91.24
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 91.26,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 91.26,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 91.26,
+            "minimumAvg": 91.26
+        },
+        {
+            "maximumAvg": 91.26,
+            "minimumAvg": 91.26
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 91.27
+        },
+        {
+            "maximumAvg": 91.27,
+            "minimumAvg": 91.27
+        },
+        {
+            "maximumAvg": 91.29,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 91.29,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 91.29,
+            "minimumAvg": 91.29
+        },
+        {
+            "maximumAvg": 91.3,
+            "minimumAvg": 90.05
+        },
+        {
+            "maximumAvg": 91.3,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 91.3,
+            "minimumAvg": 90.86
+        },
+        {
+            "maximumAvg": 91.32,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 91.32,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 91.32,
+            "minimumAvg": 91.32
+        },
+        {
+            "maximumAvg": 91.32,
+            "minimumAvg": 91.32
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.41
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.64
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 90.85
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.33,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.35,
+            "minimumAvg": 90.05
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 90.93
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 90.93
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "maximumAvg": 91.36,
+            "minimumAvg": 91.36
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 90.21
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.38,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.4,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.42,
+            "minimumAvg": 91.42
+        },
+        {
+            "maximumAvg": 91.43,
+            "minimumAvg": 91.43
+        },
+        {
+            "maximumAvg": 91.43,
+            "minimumAvg": 91.43
+        },
+        {
+            "maximumAvg": 91.44,
+            "minimumAvg": 91.44
+        },
+        {
+            "maximumAvg": 91.44,
+            "minimumAvg": 91.44
+        },
+        {
+            "maximumAvg": 91.45,
+            "minimumAvg": 91.45
+        },
+        {
+            "maximumAvg": 91.46,
+            "minimumAvg": 91.46
+        },
+        {
+            "maximumAvg": 91.46,
+            "minimumAvg": 91.46
+        },
+        {
+            "maximumAvg": 91.46,
+            "minimumAvg": 91.46
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 91.47,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 91.48,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 91.48,
+            "minimumAvg": 91.48
+        },
+        {
+            "maximumAvg": 91.48,
+            "minimumAvg": 91.48
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.67
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.78
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 90.78
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.5,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 91.55,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 91.55,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 91.55,
+            "minimumAvg": 91.55
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 91.56,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 91.57,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.57
+        },
+        {
+            "maximumAvg": 91.57,
+            "minimumAvg": 91.57
+        },
+        {
+            "maximumAvg": 91.58,
+            "minimumAvg": 91.58
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 91.6,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 91.62,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.62,
+            "minimumAvg": 91.62
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "maximumAvg": 91.63,
+            "minimumAvg": 91.63
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 91.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 91.68,
+            "minimumAvg": 91.37
+        },
+        {
+            "maximumAvg": 91.68,
+            "minimumAvg": 91.37
+        },
+        {
+            "maximumAvg": 91.7,
+            "minimumAvg": 90.39
+        },
+        {
+            "maximumAvg": 91.7,
+            "minimumAvg": 91.7
+        },
+        {
+            "maximumAvg": 91.7,
+            "minimumAvg": 91.7
+        },
+        {
+            "maximumAvg": 91.71,
+            "minimumAvg": 90.23
+        },
+        {
+            "maximumAvg": 91.71,
+            "minimumAvg": 91.71
+        },
+        {
+            "maximumAvg": 91.73,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 91.73,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 91.73,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 91.73,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 91.74,
+            "minimumAvg": 91.43
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "maximumAvg": 91.75,
+            "minimumAvg": 91.75
+        },
+        {
+            "maximumAvg": 91.77,
+            "minimumAvg": 91.77
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.79,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 91.8,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 91.81,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 91.81,
+            "minimumAvg": 91.81
+        },
+        {
+            "maximumAvg": 91.82,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 91.82,
+            "minimumAvg": 90.69
+        },
+        {
+            "maximumAvg": 91.82,
+            "minimumAvg": 91.82
+        },
+        {
+            "maximumAvg": 91.82,
+            "minimumAvg": 91.82
+        },
+        {
+            "maximumAvg": 91.82,
+            "minimumAvg": 91.82
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 90.05
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "maximumAvg": 91.83,
+            "minimumAvg": 91.83
+        },
+        {
+            "maximumAvg": 91.84,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 91.84,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 91.85,
+            "minimumAvg": 91.85
+        },
+        {
+            "maximumAvg": 91.85,
+            "minimumAvg": 91.85
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "maximumAvg": 91.86,
+            "minimumAvg": 91.86
+        },
+        {
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.03
+        },
+        {
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 91.88,
+            "minimumAvg": 90.86
+        },
+        {
+            "maximumAvg": 91.88,
+            "minimumAvg": 91.72
+        },
+        {
+            "maximumAvg": 91.89,
+            "minimumAvg": 90.03
+        },
+        {
+            "maximumAvg": 91.89,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 91.89,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 91.9,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 91.9,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 91.9,
+            "minimumAvg": 91.77
+        },
+        {
+            "maximumAvg": 91.91,
+            "minimumAvg": 91.37
+        },
+        {
+            "maximumAvg": 91.91,
+            "minimumAvg": 91.91
+        },
+        {
+            "maximumAvg": 91.92,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 91.92,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 91.92,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.93
+        },
+        {
+            "maximumAvg": 91.93,
+            "minimumAvg": 91.93
+        },
+        {
+            "maximumAvg": 91.94,
+            "minimumAvg": 91.94
+        },
+        {
+            "maximumAvg": 91.95,
+            "minimumAvg": 91.95
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.04,
+            "minimumAvg": 92.04
+        },
+        {
+            "maximumAvg": 92.05,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 92.05,
+            "minimumAvg": 92.05
+        },
+        {
+            "maximumAvg": 92.06,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 92.06,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92.06,
+            "minimumAvg": 92.06
+        },
+        {
+            "maximumAvg": 92.06,
+            "minimumAvg": 92.06
+        },
+        {
+            "maximumAvg": 92.07,
+            "minimumAvg": 90.93
+        },
+        {
+            "maximumAvg": 92.07,
+            "minimumAvg": 91.09
+        },
+        {
+            "maximumAvg": 92.07,
+            "minimumAvg": 92.07
+        },
+        {
+            "maximumAvg": 92.07,
+            "minimumAvg": 92.07
+        },
+        {
+            "maximumAvg": 92.08,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 92.08,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 92.08,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 92.08,
+            "minimumAvg": 92.08
+        },
+        {
+            "maximumAvg": 92.08,
+            "minimumAvg": 92.08
+        },
+        {
+            "maximumAvg": 92.09,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 92.1,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 92.1,
+            "minimumAvg": 90.35
+        },
+        {
+            "maximumAvg": 92.1,
+            "minimumAvg": 92.1
+        },
+        {
+            "maximumAvg": 92.11,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 92.12,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 92.12,
+            "minimumAvg": 92.12
+        },
+        {
+            "maximumAvg": 92.12,
+            "minimumAvg": 92.12
+        },
+        {
+            "maximumAvg": 92.13,
+            "minimumAvg": 91.56
+        },
+        {
+            "maximumAvg": 92.13,
+            "minimumAvg": 92.13
+        },
+        {
+            "maximumAvg": 92.14,
+            "minimumAvg": 90.54
+        },
+        {
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "maximumAvg": 92.14,
+            "minimumAvg": 92.14
+        },
+        {
+            "maximumAvg": 92.15,
+            "minimumAvg": 92.15
+        },
+        {
+            "maximumAvg": 92.15,
+            "minimumAvg": 92.15
+        },
+        {
+            "maximumAvg": 92.17,
+            "minimumAvg": 91.88
+        },
+        {
+            "maximumAvg": 92.19,
+            "minimumAvg": 90.48
+        },
+        {
+            "maximumAvg": 92.19,
+            "minimumAvg": 90.48
+        },
+        {
+            "maximumAvg": 92.19,
+            "minimumAvg": 92.19
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 90.86
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 92.2,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 91.48
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 92.22
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 92.22
+        },
+        {
+            "maximumAvg": 92.22,
+            "minimumAvg": 92.22
+        },
+        {
+            "maximumAvg": 92.23,
+            "minimumAvg": 90.87
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 90.36
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.14
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "maximumAvg": 92.25,
+            "minimumAvg": 92.25
+        },
+        {
+            "maximumAvg": 92.26,
+            "minimumAvg": 92.26
+        },
+        {
+            "maximumAvg": 92.27,
+            "minimumAvg": 92.27
+        },
+        {
+            "maximumAvg": 92.27,
+            "minimumAvg": 92.27
+        },
+        {
+            "maximumAvg": 92.28,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 92.28,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 92.28,
+            "minimumAvg": 91.24
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 91.1
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "maximumAvg": 92.29,
+            "minimumAvg": 92.29
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 90.26
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 90.94
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "maximumAvg": 92.3,
+            "minimumAvg": 92.3
+        },
+        {
+            "maximumAvg": 92.32,
+            "minimumAvg": 92.32
+        },
+        {
+            "maximumAvg": 92.33,
+            "minimumAvg": 91.91
+        },
+        {
+            "maximumAvg": 92.33,
+            "minimumAvg": 92.33
+        },
+        {
+            "maximumAvg": 92.33,
+            "minimumAvg": 92.33
+        },
+        {
+            "maximumAvg": 92.33,
+            "minimumAvg": 92.33
+        },
+        {
+            "maximumAvg": 92.35,
+            "minimumAvg": 92.35
+        },
+        {
+            "maximumAvg": 92.36,
+            "minimumAvg": 92.36
+        },
+        {
+            "maximumAvg": 92.36,
+            "minimumAvg": 92.36
+        },
+        {
+            "maximumAvg": 92.38,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 92.38,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.39,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 92.39,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 91.13
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 91.2
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 92.4
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 92.4
+        },
+        {
+            "maximumAvg": 92.4,
+            "minimumAvg": 92.4
+        },
+        {
+            "maximumAvg": 92.41,
+            "minimumAvg": 92.32
+        },
+        {
+            "maximumAvg": 92.41,
+            "minimumAvg": 92.41
+        },
+        {
+            "maximumAvg": 92.42,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 92.43,
+            "minimumAvg": 92.43
+        },
+        {
+            "maximumAvg": 92.43,
+            "minimumAvg": 92.43
+        },
+        {
+            "maximumAvg": 92.43,
+            "minimumAvg": 92.43
+        },
+        {
+            "maximumAvg": 92.44,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.45,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 92.45,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 92.45,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 92.45,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 92.49,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.32
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.5,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 92.57,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 92.57,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 92.58,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 92.58,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 92.58,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 92.58,
+            "minimumAvg": 92.58
+        },
+        {
+            "maximumAvg": 92.59,
+            "minimumAvg": 91.16
+        },
+        {
+            "maximumAvg": 92.59,
+            "minimumAvg": 91.16
+        },
+        {
+            "maximumAvg": 92.6,
+            "minimumAvg": 92.6
+        },
+        {
+            "maximumAvg": 92.6,
+            "minimumAvg": 92.6
+        },
+        {
+            "maximumAvg": 92.61,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 92.62,
+            "minimumAvg": 91.33
+        },
+        {
+            "maximumAvg": 92.62,
+            "minimumAvg": 92.62
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.63,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 92.64,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 92.66,
+            "minimumAvg": 92.66
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 92.67,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 92.69,
+            "minimumAvg": 92.69
+        },
+        {
+            "maximumAvg": 92.7,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 92.7,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 92.71,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 92.71,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 92.73,
+            "minimumAvg": 92.73
+        },
+        {
+            "maximumAvg": 92.73,
+            "minimumAvg": 92.73
+        },
+        {
+            "maximumAvg": 92.74,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 90.85
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.38
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 92.75,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 92.76,
+            "minimumAvg": 90.17
+        },
+        {
+            "maximumAvg": 92.76,
+            "minimumAvg": 90.35
+        },
+        {
+            "maximumAvg": 92.77,
+            "minimumAvg": 90.36
+        },
+        {
+            "maximumAvg": 92.78,
+            "minimumAvg": 92.78
+        },
+        {
+            "maximumAvg": 92.78,
+            "minimumAvg": 92.78
+        },
+        {
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "maximumAvg": 92.8,
+            "minimumAvg": 92.8
+        },
+        {
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "maximumAvg": 92.83,
+            "minimumAvg": 92.83
+        },
+        {
+            "maximumAvg": 92.85,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 92.85,
+            "minimumAvg": 92.85
+        },
+        {
+            "maximumAvg": 92.85,
+            "minimumAvg": 92.85
+        },
+        {
+            "maximumAvg": 92.87,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 92.87,
+            "minimumAvg": 92.87
+        },
+        {
+            "maximumAvg": 92.87,
+            "minimumAvg": 92.87
+        },
+        {
+            "maximumAvg": 92.88,
+            "minimumAvg": 92.88
+        },
+        {
+            "maximumAvg": 92.89,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.89,
+            "minimumAvg": 92.89
+        },
+        {
+            "maximumAvg": 92.89,
+            "minimumAvg": 92.89
+        },
+        {
+            "maximumAvg": 92.9,
+            "minimumAvg": 92.9
+        },
+        {
+            "maximumAvg": 92.91,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 92.92,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 92.92,
+            "minimumAvg": 92.92
+        },
+        {
+            "maximumAvg": 92.96,
+            "minimumAvg": 92.33
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93.04,
+            "minimumAvg": 93.04
+        },
+        {
+            "maximumAvg": 93.05,
+            "minimumAvg": 90.45
+        },
+        {
+            "maximumAvg": 93.05,
+            "minimumAvg": 90.73
+        },
+        {
+            "maximumAvg": 93.05,
+            "minimumAvg": 90.73
+        },
+        {
+            "maximumAvg": 93.06,
+            "minimumAvg": 93.06
+        },
+        {
+            "maximumAvg": 93.07,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 93.07,
+            "minimumAvg": 90.58
+        },
+        {
+            "maximumAvg": 93.07,
+            "minimumAvg": 90.58
+        },
+        {
+            "maximumAvg": 93.07,
+            "minimumAvg": 93.07
+        },
+        {
+            "maximumAvg": 93.07,
+            "minimumAvg": 93.07
+        },
+        {
+            "maximumAvg": 93.08,
+            "minimumAvg": 90.74
+        },
+        {
+            "maximumAvg": 93.08,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 93.08,
+            "minimumAvg": 93.08
+        },
+        {
+            "maximumAvg": 93.09,
+            "minimumAvg": 93.09
+        },
+        {
+            "maximumAvg": 93.1,
+            "minimumAvg": 90.79
+        },
+        {
+            "maximumAvg": 93.11,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 93.11,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 93.11,
+            "minimumAvg": 93.11
+        },
+        {
+            "maximumAvg": 93.12,
+            "minimumAvg": 90.23
+        },
+        {
+            "maximumAvg": 93.12,
+            "minimumAvg": 90.23
+        },
+        {
+            "maximumAvg": 93.14,
+            "minimumAvg": 90.08
+        },
+        {
+            "maximumAvg": 93.15,
+            "minimumAvg": 93.15
+        },
+        {
+            "maximumAvg": 93.17,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 93.19,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.3
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.2,
+            "minimumAvg": 93.2
+        },
+        {
+            "maximumAvg": 93.22,
+            "minimumAvg": 93.22
+        },
+        {
+            "maximumAvg": 93.22,
+            "minimumAvg": 93.22
+        },
+        {
+            "maximumAvg": 93.23,
+            "minimumAvg": 92.82
+        },
+        {
+            "maximumAvg": 93.23,
+            "minimumAvg": 92.82
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.22
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.73
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 93.25,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 93.27,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 93.29,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 93.29,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 93.3,
+            "minimumAvg": 90.52
+        },
+        {
+            "maximumAvg": 93.3,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 93.31,
+            "minimumAvg": 93.31
+        },
+        {
+            "maximumAvg": 93.31,
+            "minimumAvg": 93.31
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 92.41
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "maximumAvg": 93.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "maximumAvg": 93.34,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 93.35,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 93.35,
+            "minimumAvg": 93.06
+        },
+        {
+            "maximumAvg": 93.35,
+            "minimumAvg": 93.35
+        },
+        {
+            "maximumAvg": 93.37,
+            "minimumAvg": 90.54
+        },
+        {
+            "maximumAvg": 93.38,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 93.4,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "maximumAvg": 93.4,
+            "minimumAvg": 93.4
+        },
+        {
+            "maximumAvg": 93.41,
+            "minimumAvg": 92.64
+        },
+        {
+            "maximumAvg": 93.41,
+            "minimumAvg": 92.64
+        },
+        {
+            "maximumAvg": 93.42,
+            "minimumAvg": 93.42
+        },
+        {
+            "maximumAvg": 93.44,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 93.44,
+            "minimumAvg": 91.79
+        },
+        {
+            "maximumAvg": 93.45,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 93.45,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 93.45,
+            "minimumAvg": 93.45
+        },
+        {
+            "maximumAvg": 93.45,
+            "minimumAvg": 93.45
+        },
+        {
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.95
+        },
+        {
+            "maximumAvg": 93.47,
+            "minimumAvg": 90.95
+        },
+        {
+            "maximumAvg": 93.47,
+            "minimumAvg": 93.47
+        },
+        {
+            "maximumAvg": 93.47,
+            "minimumAvg": 93.47
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 92.25
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 92.63
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 93.5
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 93.5
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 93.5
+        },
+        {
+            "maximumAvg": 93.5,
+            "minimumAvg": 93.5
+        },
+        {
+            "maximumAvg": 93.52,
+            "minimumAvg": 90.97
+        },
+        {
+            "maximumAvg": 93.52,
+            "minimumAvg": 90.97
+        },
+        {
+            "maximumAvg": 93.54,
+            "minimumAvg": 92.7
+        },
+        {
+            "maximumAvg": 93.54,
+            "minimumAvg": 92.7
+        },
+        {
+            "maximumAvg": 93.56,
+            "minimumAvg": 93.56
+        },
+        {
+            "maximumAvg": 93.56,
+            "minimumAvg": 93.56
+        },
+        {
+            "maximumAvg": 93.58,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 93.58,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 93.59,
+            "minimumAvg": 93.59
+        },
+        {
+            "maximumAvg": 93.59,
+            "minimumAvg": 93.59
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 91.61
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 91.89
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 93.6
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 93.6
+        },
+        {
+            "maximumAvg": 93.6,
+            "minimumAvg": 93.6
+        },
+        {
+            "maximumAvg": 93.64,
+            "minimumAvg": 91.31
+        },
+        {
+            "maximumAvg": 93.65,
+            "minimumAvg": 93.65
+        },
+        {
+            "maximumAvg": 93.67,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 93.67,
+            "minimumAvg": 92.71
+        },
+        {
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "maximumAvg": 93.67,
+            "minimumAvg": 93.67
+        },
+        {
+            "maximumAvg": 93.68,
+            "minimumAvg": 93.68
+        },
+        {
+            "maximumAvg": 93.69,
+            "minimumAvg": 92.49
+        },
+        {
+            "maximumAvg": 93.7,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 93.7,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 93.7,
+            "minimumAvg": 93.7
+        },
+        {
+            "maximumAvg": 93.71,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 93.72,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 93.72,
+            "minimumAvg": 90.89
+        },
+        {
+            "maximumAvg": 93.72,
+            "minimumAvg": 93.72
+        },
+        {
+            "maximumAvg": 93.72,
+            "minimumAvg": 93.72
+        },
+        {
+            "maximumAvg": 93.73,
+            "minimumAvg": 93.73
+        },
+        {
+            "maximumAvg": 93.73,
+            "minimumAvg": 93.73
+        },
+        {
+            "maximumAvg": 93.74,
+            "minimumAvg": 93.74
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 90.11
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 93.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 93.78,
+            "minimumAvg": 91.06
+        },
+        {
+            "maximumAvg": 93.78,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 93.78,
+            "minimumAvg": 91.17
+        },
+        {
+            "maximumAvg": 93.78,
+            "minimumAvg": 93.11
+        },
+        {
+            "maximumAvg": 93.78,
+            "minimumAvg": 93.78
+        },
+        {
+            "maximumAvg": 93.79,
+            "minimumAvg": 92.44
+        },
+        {
+            "maximumAvg": 93.79,
+            "minimumAvg": 92.44
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 93.8,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 93.81,
+            "minimumAvg": 93.64
+        },
+        {
+            "maximumAvg": 93.82,
+            "minimumAvg": 93.82
+        },
+        {
+            "maximumAvg": 93.86,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 93.86,
+            "minimumAvg": 93.86
+        },
+        {
+            "maximumAvg": 93.86,
+            "minimumAvg": 93.86
+        },
+        {
+            "maximumAvg": 93.88,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 93.89,
+            "minimumAvg": 93.89
+        },
+        {
+            "maximumAvg": 93.9,
+            "minimumAvg": 90.7
+        },
+        {
+            "maximumAvg": 93.91,
+            "minimumAvg": 92.9
+        },
+        {
+            "maximumAvg": 93.91,
+            "minimumAvg": 93.91
+        },
+        {
+            "maximumAvg": 93.91,
+            "minimumAvg": 93.91
+        },
+        {
+            "maximumAvg": 93.91,
+            "minimumAvg": 93.91
+        },
+        {
+            "maximumAvg": 93.93,
+            "minimumAvg": 93.88
+        },
+        {
+            "maximumAvg": 93.94,
+            "minimumAvg": 93.94
+        },
+        {
+            "maximumAvg": 93.95,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 90.43
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 90.88
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91.08
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91.08
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91.63
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 91.92
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 92.8
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 93.53
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 94.05,
+            "minimumAvg": 90.05
+        },
+        {
+            "maximumAvg": 94.05,
+            "minimumAvg": 93.83
+        },
+        {
+            "maximumAvg": 94.06,
+            "minimumAvg": 90.4
+        },
+        {
+            "maximumAvg": 94.06,
+            "minimumAvg": 94.06
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 90.8
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 90.8
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.29
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.29
+        },
+        {
+            "maximumAvg": 94.08,
+            "minimumAvg": 91.72
+        },
+        {
+            "maximumAvg": 94.13,
+            "minimumAvg": 90.03
+        },
+        {
+            "maximumAvg": 94.14,
+            "minimumAvg": 94.14
+        },
+        {
+            "maximumAvg": 94.15,
+            "minimumAvg": 94.15
+        },
+        {
+            "maximumAvg": 94.15,
+            "minimumAvg": 94.15
+        },
+        {
+            "maximumAvg": 94.17,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 94.17,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 94.17,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 94.17,
+            "minimumAvg": 94.17
+        },
+        {
+            "maximumAvg": 94.17,
+            "minimumAvg": 94.17
+        },
+        {
+            "maximumAvg": 94.18,
+            "minimumAvg": 92.13
+        },
+        {
+            "maximumAvg": 94.2,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 94.2,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 94.2,
+            "minimumAvg": 91.21
+        },
+        {
+            "maximumAvg": 94.2,
+            "minimumAvg": 91.78
+        },
+        {
+            "maximumAvg": 94.21,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 94.21,
+            "minimumAvg": 90.56
+        },
+        {
+            "maximumAvg": 94.23,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 94.23,
+            "minimumAvg": 94.23
+        },
+        {
+            "maximumAvg": 94.23,
+            "minimumAvg": 94.23
+        },
+        {
+            "maximumAvg": 94.24,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 94.25,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 94.25,
+            "minimumAvg": 93.27
+        },
+        {
+            "maximumAvg": 94.25,
+            "minimumAvg": 94.25
+        },
+        {
+            "maximumAvg": 94.27,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 94.29,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 90.84
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 93.33
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 94.33
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 94.33
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 94.33
+        },
+        {
+            "maximumAvg": 94.33,
+            "minimumAvg": 94.33
+        },
+        {
+            "maximumAvg": 94.34,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 94.36,
+            "minimumAvg": 94.36
+        },
+        {
+            "maximumAvg": 94.36,
+            "minimumAvg": 94.36
+        },
+        {
+            "maximumAvg": 94.4,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 94.4,
+            "minimumAvg": 90.25
+        },
+        {
+            "maximumAvg": 94.4,
+            "minimumAvg": 94.4
+        },
+        {
+            "maximumAvg": 94.42,
+            "minimumAvg": 90.18
+        },
+        {
+            "maximumAvg": 94.42,
+            "minimumAvg": 93.47
+        },
+        {
+            "maximumAvg": 94.44,
+            "minimumAvg": 94.44
+        },
+        {
+            "maximumAvg": 94.48,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.5,
+            "minimumAvg": 94.5
+        },
+        {
+            "maximumAvg": 94.56,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 94.56,
+            "minimumAvg": 94.56
+        },
+        {
+            "maximumAvg": 94.56,
+            "minimumAvg": 94.56
+        },
+        {
+            "maximumAvg": 94.62,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 94.67,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 94.67,
+            "minimumAvg": 91.77
+        },
+        {
+            "maximumAvg": 94.67,
+            "minimumAvg": 94.67
+        },
+        {
+            "maximumAvg": 94.67,
+            "minimumAvg": 94.67
+        },
+        {
+            "maximumAvg": 94.67,
+            "minimumAvg": 94.67
+        },
+        {
+            "maximumAvg": 94.69,
+            "minimumAvg": 90.8
+        },
+        {
+            "maximumAvg": 94.69,
+            "minimumAvg": 90.8
+        },
+        {
+            "maximumAvg": 94.7,
+            "minimumAvg": 90.1
+        },
+        {
+            "maximumAvg": 94.7,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 94.7,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 94.7,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 94.7,
+            "minimumAvg": 94.7
+        },
+        {
+            "maximumAvg": 94.71,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 94.71,
+            "minimumAvg": 90.46
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 92.45
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 93.85
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 93.85
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "maximumAvg": 94.75,
+            "minimumAvg": 94.75
+        },
+        {
+            "maximumAvg": 94.86,
+            "minimumAvg": 90.03
+        },
+        {
+            "maximumAvg": 94.86,
+            "minimumAvg": 91.72
+        },
+        {
+            "maximumAvg": 94.86,
+            "minimumAvg": 94.86
+        },
+        {
+            "maximumAvg": 94.86,
+            "minimumAvg": 94.86
+        },
+        {
+            "maximumAvg": 94.87,
+            "minimumAvg": 92.39
+        },
+        {
+            "maximumAvg": 94.88,
+            "minimumAvg": 90.96
+        },
+        {
+            "maximumAvg": 94.88,
+            "minimumAvg": 94.88
+        },
+        {
+            "maximumAvg": 94.88,
+            "minimumAvg": 94.88
+        },
+        {
+            "maximumAvg": 94.92,
+            "minimumAvg": 94.92
+        },
+        {
+            "maximumAvg": 94.92,
+            "minimumAvg": 94.92
+        },
+        {
+            "maximumAvg": 94.94,
+            "minimumAvg": 91.11
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91.64
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 91.64
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 92.38
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 92.75
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 93.23
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 94
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 95.07,
+            "minimumAvg": 94.54
+        },
+        {
+            "maximumAvg": 95.09,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 95.09,
+            "minimumAvg": 92.36
+        },
+        {
+            "maximumAvg": 95.11,
+            "minimumAvg": 90.38
+        },
+        {
+            "maximumAvg": 95.11,
+            "minimumAvg": 95.11
+        },
+        {
+            "maximumAvg": 95.13,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 95.13,
+            "minimumAvg": 90.69
+        },
+        {
+            "maximumAvg": 95.13,
+            "minimumAvg": 95.13
+        },
+        {
+            "maximumAvg": 95.15,
+            "minimumAvg": 90.9
+        },
+        {
+            "maximumAvg": 95.15,
+            "minimumAvg": 92.17
+        },
+        {
+            "maximumAvg": 95.15,
+            "minimumAvg": 95.15
+        },
+        {
+            "maximumAvg": 95.16,
+            "minimumAvg": 90.15
+        },
+        {
+            "maximumAvg": 95.16,
+            "minimumAvg": 94.87
+        },
+        {
+            "maximumAvg": 95.17,
+            "minimumAvg": 93.71
+        },
+        {
+            "maximumAvg": 95.17,
+            "minimumAvg": 93.71
+        },
+        {
+            "maximumAvg": 95.18,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 95.2,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 95.2,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 95.22,
+            "minimumAvg": 90.92
+        },
+        {
+            "maximumAvg": 95.22,
+            "minimumAvg": 95.22
+        },
+        {
+            "maximumAvg": 95.25,
+            "minimumAvg": 90.75
+        },
+        {
+            "maximumAvg": 95.25,
+            "minimumAvg": 95.25
+        },
+        {
+            "maximumAvg": 95.27,
+            "minimumAvg": 93.09
+        },
+        {
+            "maximumAvg": 95.29,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 95.29,
+            "minimumAvg": 95.29
+        },
+        {
+            "maximumAvg": 95.3,
+            "minimumAvg": 93.15
+        },
+        {
+            "maximumAvg": 95.31,
+            "minimumAvg": 90.21
+        },
+        {
+            "maximumAvg": 95.31,
+            "minimumAvg": 90.3
+        },
+        {
+            "maximumAvg": 95.31,
+            "minimumAvg": 90.82
+        },
+        {
+            "maximumAvg": 95.31,
+            "minimumAvg": 95.31
+        },
+        {
+            "maximumAvg": 95.33,
+            "minimumAvg": 90.29
+        },
+        {
+            "maximumAvg": 95.36,
+            "minimumAvg": 90.07
+        },
+        {
+            "maximumAvg": 95.36,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 95.36,
+            "minimumAvg": 95.36
+        },
+        {
+            "maximumAvg": 95.37,
+            "minimumAvg": 94.32
+        },
+        {
+            "maximumAvg": 95.38,
+            "minimumAvg": 92.47
+        },
+        {
+            "maximumAvg": 95.41,
+            "minimumAvg": 94.8
+        },
+        {
+            "maximumAvg": 95.43,
+            "minimumAvg": 90.55
+        },
+        {
+            "maximumAvg": 95.43,
+            "minimumAvg": 91.6
+        },
+        {
+            "maximumAvg": 95.43,
+            "minimumAvg": 95.43
+        },
+        {
+            "maximumAvg": 95.47,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 95.47,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 95.5,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 95.5,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 95.54,
+            "minimumAvg": 90.33
+        },
+        {
+            "maximumAvg": 95.54,
+            "minimumAvg": 95.54
+        },
+        {
+            "maximumAvg": 95.56,
+            "minimumAvg": 91.4
+        },
+        {
+            "maximumAvg": 95.56,
+            "minimumAvg": 91.47
+        },
+        {
+            "maximumAvg": 95.58,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 95.58,
+            "minimumAvg": 90.06
+        },
+        {
+            "maximumAvg": 95.6,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 95.63,
+            "minimumAvg": 95.63
+        },
+        {
+            "maximumAvg": 95.67,
+            "minimumAvg": 90.6
+        },
+        {
+            "maximumAvg": 95.67,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 95.67,
+            "minimumAvg": 95.67
+        },
+        {
+            "maximumAvg": 95.67,
+            "minimumAvg": 95.67
+        },
+        {
+            "maximumAvg": 95.67,
+            "minimumAvg": 95.67
+        },
+        {
+            "maximumAvg": 95.7,
+            "minimumAvg": 92.17
+        },
+        {
+            "maximumAvg": 95.7,
+            "minimumAvg": 92.17
+        },
+        {
+            "maximumAvg": 95.75,
+            "minimumAvg": 91.38
+        },
+        {
+            "maximumAvg": 95.75,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 95.75,
+            "minimumAvg": 92.5
+        },
+        {
+            "maximumAvg": 95.75,
+            "minimumAvg": 93.75
+        },
+        {
+            "maximumAvg": 95.76,
+            "minimumAvg": 95.76
+        },
+        {
+            "maximumAvg": 95.78,
+            "minimumAvg": 91.29
+        },
+        {
+            "maximumAvg": 95.78,
+            "minimumAvg": 91.29
+        },
+        {
+            "maximumAvg": 95.78,
+            "minimumAvg": 94.56
+        },
+        {
+            "maximumAvg": 95.78,
+            "minimumAvg": 95.78
+        },
+        {
+            "maximumAvg": 95.83,
+            "minimumAvg": 91.73
+        },
+        {
+            "maximumAvg": 95.86,
+            "minimumAvg": 90.71
+        },
+        {
+            "maximumAvg": 95.86,
+            "minimumAvg": 92.69
+        },
+        {
+            "maximumAvg": 95.9,
+            "minimumAvg": 92.42
+        },
+        {
+            "maximumAvg": 95.93,
+            "minimumAvg": 95.93
+        },
+        {
+            "maximumAvg": 95.96,
+            "minimumAvg": 91.74
+        },
+        {
+            "maximumAvg": 95.96,
+            "minimumAvg": 91.74
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 90.14
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 90.2
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 90.44
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 91.78
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 92.72
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 94.67
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 96
+        },
+        {
+            "maximumAvg": 96,
+            "minimumAvg": 96
+        },
+        {
+            "maximumAvg": 96.03,
+            "minimumAvg": 93.54
+        },
+        {
+            "maximumAvg": 96.06,
+            "minimumAvg": 94.29
+        },
+        {
+            "maximumAvg": 96.09,
+            "minimumAvg": 96.09
+        },
+        {
+            "maximumAvg": 96.1,
+            "minimumAvg": 96.1
+        },
+        {
+            "maximumAvg": 96.1,
+            "minimumAvg": 96.1
+        },
+        {
+            "maximumAvg": 96.11,
+            "minimumAvg": 90.82
+        },
+        {
+            "maximumAvg": 96.15,
+            "minimumAvg": 95.93
+        },
+        {
+            "maximumAvg": 96.15,
+            "minimumAvg": 96.15
+        },
+        {
+            "maximumAvg": 96.16,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 96.21,
+            "minimumAvg": 91.07
+        },
+        {
+            "maximumAvg": 96.21,
+            "minimumAvg": 93.73
+        },
+        {
+            "maximumAvg": 96.23,
+            "minimumAvg": 92.86
+        },
+        {
+            "maximumAvg": 96.25,
+            "minimumAvg": 91.25
+        },
+        {
+            "maximumAvg": 96.25,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 96.25,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 96.25,
+            "minimumAvg": 96.25
+        },
+        {
+            "maximumAvg": 96.27,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 96.27,
+            "minimumAvg": 90.5
+        },
+        {
+            "maximumAvg": 96.33,
+            "minimumAvg": 90.19
+        },
+        {
+            "maximumAvg": 96.33,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 96.33,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 96.33,
+            "minimumAvg": 94.84
+        },
+        {
+            "maximumAvg": 96.36,
+            "minimumAvg": 96.36
+        },
+        {
+            "maximumAvg": 96.36,
+            "minimumAvg": 96.36
+        },
+        {
+            "maximumAvg": 96.4,
+            "minimumAvg": 96.4
+        },
+        {
+            "maximumAvg": 96.4,
+            "minimumAvg": 96.4
+        },
+        {
+            "maximumAvg": 96.44,
+            "minimumAvg": 92.2
+        },
+        {
+            "maximumAvg": 96.44,
+            "minimumAvg": 96.44
+        },
+        {
+            "maximumAvg": 96.46,
+            "minimumAvg": 91.36
+        },
+        {
+            "maximumAvg": 96.46,
+            "minimumAvg": 96.46
+        },
+        {
+            "maximumAvg": 96.47,
+            "minimumAvg": 90.37
+        },
+        {
+            "maximumAvg": 96.47,
+            "minimumAvg": 90.63
+        },
+        {
+            "maximumAvg": 96.47,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 96.47,
+            "minimumAvg": 93
+        },
+        {
+            "maximumAvg": 96.5,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 96.5,
+            "minimumAvg": 90.62
+        },
+        {
+            "maximumAvg": 96.5,
+            "minimumAvg": 96.5
+        },
+        {
+            "maximumAvg": 96.5,
+            "minimumAvg": 96.5
+        },
+        {
+            "maximumAvg": 96.59,
+            "minimumAvg": 90.13
+        },
+        {
+            "maximumAvg": 96.64,
+            "minimumAvg": 96.64
+        },
+        {
+            "maximumAvg": 96.73,
+            "minimumAvg": 94.19
+        },
+        {
+            "maximumAvg": 96.8,
+            "minimumAvg": 92.71
+        },
+        {
+            "maximumAvg": 96.8,
+            "minimumAvg": 92.71
+        },
+        {
+            "maximumAvg": 96.83,
+            "minimumAvg": 91.8
+        },
+        {
+            "maximumAvg": 96.83,
+            "minimumAvg": 96.83
+        },
+        {
+            "maximumAvg": 96.9,
+            "minimumAvg": 90.69
+        },
+        {
+            "maximumAvg": 96.9,
+            "minimumAvg": 92
+        },
+        {
+            "maximumAvg": 96.9,
+            "minimumAvg": 93.5
+        },
+        {
+            "maximumAvg": 96.9,
+            "minimumAvg": 96.9
+        },
+        {
+            "maximumAvg": 96.94,
+            "minimumAvg": 96.94
+        },
+        {
+            "maximumAvg": 96.96,
+            "minimumAvg": 96.96
+        },
+        {
+            "maximumAvg": 97,
+            "minimumAvg": 90.27
+        },
+        {
+            "maximumAvg": 97,
+            "minimumAvg": 97
+        },
+        {
+            "maximumAvg": 97.09,
+            "minimumAvg": 90.53
+        },
+        {
+            "maximumAvg": 97.09,
+            "minimumAvg": 91.13
+        },
+        {
+            "maximumAvg": 97.09,
+            "minimumAvg": 93.11
+        },
+        {
+            "maximumAvg": 97.09,
+            "minimumAvg": 97.09
+        },
+        {
+            "maximumAvg": 97.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 97.25,
+            "minimumAvg": 90.83
+        },
+        {
+            "maximumAvg": 97.33,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 97.33,
+            "minimumAvg": 91.5
+        },
+        {
+            "maximumAvg": 97.41,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 97.41,
+            "minimumAvg": 97.41
+        },
+        {
+            "maximumAvg": 97.47,
+            "minimumAvg": 90.42
+        },
+        {
+            "maximumAvg": 97.47,
+            "minimumAvg": 97.47
+        },
+        {
+            "maximumAvg": 97.48,
+            "minimumAvg": 95
+        },
+        {
+            "maximumAvg": 97.48,
+            "minimumAvg": 97.48
+        },
+        {
+            "maximumAvg": 97.5,
+            "minimumAvg": 97.5
+        },
+        {
+            "maximumAvg": 97.67,
+            "minimumAvg": 97.67
+        },
+        {
+            "maximumAvg": 97.69,
+            "minimumAvg": 91.22
+        },
+        {
+            "maximumAvg": 97.78,
+            "minimumAvg": 97
+        },
+        {
+            "maximumAvg": 98,
+            "minimumAvg": 92.67
+        },
+        {
+            "maximumAvg": 98,
+            "minimumAvg": 96
+        },
+        {
+            "maximumAvg": 98.21,
+            "minimumAvg": 98.21
+        },
+        {
+            "maximumAvg": 98.36,
+            "minimumAvg": 90.05
+        },
+        {
+            "maximumAvg": 98.45,
+            "minimumAvg": 98.45
+        },
+        {
+            "maximumAvg": 98.45,
+            "minimumAvg": 98.45
+        },
+        {
+            "maximumAvg": 98.5,
+            "minimumAvg": 97.53
+        },
+        {
+            "maximumAvg": 98.58,
+            "minimumAvg": 90.85
+        },
+        {
+            "maximumAvg": 98.7,
+            "minimumAvg": 96.21
+        },
+        {
+            "maximumAvg": 98.71,
+            "minimumAvg": 90.36
+        },
+        {
+            "maximumAvg": 98.71,
+            "minimumAvg": 95.43
+        },
+        {
+            "maximumAvg": 98.75,
+            "minimumAvg": 91
+        },
+        {
+            "maximumAvg": 98.75,
+            "minimumAvg": 98.75
+        },
+        {
+            "maximumAvg": 98.76,
+            "minimumAvg": 90.57
+        },
+        {
+            "maximumAvg": 98.8,
+            "minimumAvg": 94.72
+        },
+        {
+            "maximumAvg": 98.98,
+            "minimumAvg": 98.98
+        },
+        {
+            "maximumAvg": 98.98,
+            "minimumAvg": 98.98
+        },
+        {
+            "maximumAvg": 99.19,
+            "minimumAvg": 99.19
+        },
+        {
+            "maximumAvg": 99.78,
+            "minimumAvg": 91.67
+        },
+        {
+            "maximumAvg": 99.78,
+            "minimumAvg": 99.78
+        }
+    ]
+}

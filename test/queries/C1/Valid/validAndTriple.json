@@ -1,0 +1,162 @@
+{
+    "title": "Valid, uses AND with three values",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "math"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "3*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 80
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_id": "316",
+            "courses_avg": 80.39,
+            "courses_uuid": "23171"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316",
+            "courses_avg": 80.39,
+            "courses_uuid": "23170"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 80.7,
+            "courses_uuid": "3934"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 80.7,
+            "courses_uuid": "3933"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360",
+            "courses_avg": 80.73,
+            "courses_uuid": "27408"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360",
+            "courses_avg": 80.73,
+            "courses_uuid": "27407"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 80.78,
+            "courses_uuid": "90148"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "316",
+            "courses_avg": 81.61,
+            "courses_uuid": "90129"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360",
+            "courses_avg": 81.67,
+            "courses_uuid": "3945"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "360",
+            "courses_avg": 81.67,
+            "courses_uuid": "3944"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 82.93,
+            "courses_uuid": "27398"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 82.93,
+            "courses_uuid": "27397"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 83.47,
+            "courses_uuid": "47188"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 83.85,
+            "courses_uuid": "5307"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 84.82,
+            "courses_uuid": "34138"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 84.82,
+            "courses_uuid": "34137"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 85.22,
+            "courses_uuid": "47185"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 85.49,
+            "courses_uuid": "73085"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 85.53,
+            "courses_uuid": "47186"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 85.67,
+            "courses_uuid": "5305"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "335",
+            "courses_avg": 85.92,
+            "courses_uuid": "73084"
+        }
+    ]
+}

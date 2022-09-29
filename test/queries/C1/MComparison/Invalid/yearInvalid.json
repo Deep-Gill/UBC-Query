@@ -1,0 +1,19 @@
+{
+    "title": "Invalid value type in EQ, should be number but is string",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_year": "2011"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_year"
+            ],
+            "ORDER": "courses_year"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,74 @@
+{
+    "title": "Valid, uses double Not's",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "NOT": {
+                        "NOT": {
+                            "IS": {
+                                "courses_dept": "math"
+                            }
+                        }
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "310"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 57.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 57.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 68.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 68.11
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 68.96
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 68.96
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 69.91
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "310",
+            "courses_avg": 69.91
+        }
+    ]
+}

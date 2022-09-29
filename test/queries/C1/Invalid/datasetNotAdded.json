@@ -1,0 +1,19 @@
+{
+    "title": "Referenced dataset not added yet",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "invalid_avg": 80
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "invalid_dept",
+                "invalid_avg"
+            ],
+            "ORDER": "invalid_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

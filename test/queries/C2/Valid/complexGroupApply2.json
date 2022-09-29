@@ -1,0 +1,3718 @@
+{
+    "title": "2 keys, 2 group, 2 applyTokens using COUNT and SUM",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_dept",
+                "countCourses",
+                "sumPass"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_dept",
+                    "courses_id"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "countCourses": {
+                        "COUNT": "courses_uuid"
+                    }
+                },
+                {
+                    "sumPass": {
+                        "SUM": "courses_pass"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_id": "549",
+            "courses_dept": "zool",
+            "countCourses": 4,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "zool",
+            "countCourses": 6,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "thtr",
+            "countCourses": 4,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "456",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "410",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "356",
+            "courses_dept": "thtr",
+            "countCourses": 4,
+            "sumPass": 88
+        },
+        {
+            "courses_id": "352",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "350",
+            "courses_dept": "thtr",
+            "countCourses": 4,
+            "sumPass": 66
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "308",
+            "courses_dept": "thtr",
+            "countCourses": 4,
+            "sumPass": 90
+        },
+        {
+            "courses_id": "150",
+            "courses_dept": "thtr",
+            "countCourses": 2,
+            "sumPass": 96
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "surg",
+            "countCourses": 12,
+            "sumPass": 84
+        },
+        {
+            "courses_id": "589",
+            "courses_dept": "stat",
+            "countCourses": 2,
+            "sumPass": 2
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "stat",
+            "countCourses": 4,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "stat",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "stat",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "460",
+            "courses_dept": "stat",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "spph",
+            "countCourses": 21,
+            "sumPass": 230
+        },
+        {
+            "courses_id": "543",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "spph",
+            "countCourses": 8,
+            "sumPass": 189
+        },
+        {
+            "courses_id": "537",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "536",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "spph",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "spph",
+            "countCourses": 3,
+            "sumPass": 47
+        },
+        {
+            "courses_id": "525",
+            "courses_dept": "spph",
+            "countCourses": 3,
+            "sumPass": 70
+        },
+        {
+            "courses_id": "524",
+            "courses_dept": "spph",
+            "countCourses": 5,
+            "sumPass": 83
+        },
+        {
+            "courses_id": "523",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "519",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "518",
+            "courses_dept": "spph",
+            "countCourses": 6,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "517",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "516",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "515",
+            "courses_dept": "spph",
+            "countCourses": 4,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "spph",
+            "countCourses": 4,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "spph",
+            "countCourses": 5,
+            "sumPass": 272
+        },
+        {
+            "courses_id": "410",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 98
+        },
+        {
+            "courses_id": "300",
+            "courses_dept": "spph",
+            "countCourses": 2,
+            "sumPass": 164
+        },
+        {
+            "courses_id": "200",
+            "courses_dept": "spph",
+            "countCourses": 3,
+            "sumPass": 184
+        },
+        {
+            "courses_id": "402",
+            "courses_dept": "span",
+            "countCourses": 4,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "sowk",
+            "countCourses": 5,
+            "sumPass": 71
+        },
+        {
+            "courses_id": "559",
+            "courses_dept": "sowk",
+            "countCourses": 6,
+            "sumPass": 107
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "sowk",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "sowk",
+            "countCourses": 4,
+            "sumPass": 93
+        },
+        {
+            "courses_id": "525",
+            "courses_dept": "sowk",
+            "countCourses": 7,
+            "sumPass": 71
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "sowk",
+            "countCourses": 4,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "sowk",
+            "countCourses": 4,
+            "sumPass": 84
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "sowk",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "451",
+            "courses_dept": "sowk",
+            "countCourses": 2,
+            "sumPass": 112
+        },
+        {
+            "courses_id": "425",
+            "courses_dept": "sowk",
+            "countCourses": 1,
+            "sumPass": 29
+        },
+        {
+            "courses_id": "416",
+            "courses_dept": "sowk",
+            "countCourses": 1,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "405",
+            "courses_dept": "sowk",
+            "countCourses": 1,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "400",
+            "courses_dept": "sowk",
+            "countCourses": 6,
+            "sumPass": 309
+        },
+        {
+            "courses_id": "316",
+            "courses_dept": "sowk",
+            "countCourses": 2,
+            "sumPass": 37
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "soil",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "soil",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "200",
+            "courses_dept": "sans",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "102",
+            "courses_dept": "sans",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "300",
+            "courses_dept": "russ",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "102",
+            "courses_dept": "russ",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "rsot",
+            "countCourses": 4,
+            "sumPass": 186
+        },
+        {
+            "courses_id": "587",
+            "courses_dept": "rhsc",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "509",
+            "courses_dept": "rhsc",
+            "countCourses": 4,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "rhsc",
+            "countCourses": 4,
+            "sumPass": 43
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "rhsc",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "rhsc",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "rhsc",
+            "countCourses": 2,
+            "sumPass": 11
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "rhsc",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "psyc",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "psyc",
+            "countCourses": 12,
+            "sumPass": 136
+        },
+        {
+            "courses_id": "542",
+            "courses_dept": "psyc",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "541",
+            "courses_dept": "psyc",
+            "countCourses": 10,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "537",
+            "courses_dept": "psyc",
+            "countCourses": 10,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "psyc",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "530",
+            "courses_dept": "psyc",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "psyc",
+            "countCourses": 1,
+            "sumPass": 9
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "psyc",
+            "countCourses": 10,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "psyc",
+            "countCourses": 4,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "349",
+            "courses_dept": "psyc",
+            "countCourses": 4,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "595",
+            "courses_dept": "plan",
+            "countCourses": 10,
+            "sumPass": 150
+        },
+        {
+            "courses_id": "592",
+            "courses_dept": "plan",
+            "countCourses": 4,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "580",
+            "courses_dept": "plan",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "561",
+            "courses_dept": "plan",
+            "countCourses": 18,
+            "sumPass": 318
+        },
+        {
+            "courses_id": "517",
+            "courses_dept": "plan",
+            "countCourses": 8,
+            "sumPass": 168
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "phys",
+            "countCourses": 10,
+            "sumPass": 164
+        },
+        {
+            "courses_id": "539",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "536",
+            "courses_dept": "phys",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "phys",
+            "countCourses": 12,
+            "sumPass": 98
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "phys",
+            "countCourses": 4,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "phys",
+            "countCourses": 2,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "109",
+            "courses_dept": "phys",
+            "countCourses": 1,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "566",
+            "courses_dept": "phth",
+            "countCourses": 4,
+            "sumPass": 318
+        },
+        {
+            "courses_id": "528",
+            "courses_dept": "phth",
+            "countCourses": 2,
+            "sumPass": 160
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "phth",
+            "countCourses": 2,
+            "sumPass": 160
+        },
+        {
+            "courses_id": "516",
+            "courses_dept": "phth",
+            "countCourses": 8,
+            "sumPass": 636
+        },
+        {
+            "courses_id": "161",
+            "courses_dept": "phrm",
+            "countCourses": 2,
+            "sumPass": 436
+        },
+        {
+            "courses_id": "141",
+            "courses_dept": "phrm",
+            "countCourses": 2,
+            "sumPass": 436
+        },
+        {
+            "courses_id": "487",
+            "courses_dept": "phil",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "485",
+            "courses_dept": "phil",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "120",
+            "courses_dept": "phil",
+            "countCourses": 2,
+            "sumPass": 3
+        },
+        {
+            "courses_id": "548",
+            "courses_dept": "phar",
+            "countCourses": 3,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "518",
+            "courses_dept": "phar",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "phar",
+            "countCourses": 12,
+            "sumPass": 142
+        },
+        {
+            "courses_id": "499",
+            "courses_dept": "phar",
+            "countCourses": 3,
+            "sumPass": 181
+        },
+        {
+            "courses_id": "457",
+            "courses_dept": "phar",
+            "countCourses": 7,
+            "sumPass": 142
+        },
+        {
+            "courses_id": "440",
+            "courses_dept": "phar",
+            "countCourses": 2,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "408",
+            "courses_dept": "phar",
+            "countCourses": 6,
+            "sumPass": 346
+        },
+        {
+            "courses_id": "406",
+            "courses_dept": "phar",
+            "countCourses": 10,
+            "sumPass": 520
+        },
+        {
+            "courses_id": "403",
+            "courses_dept": "phar",
+            "countCourses": 8,
+            "sumPass": 1081
+        },
+        {
+            "courses_id": "400",
+            "courses_dept": "phar",
+            "countCourses": 4,
+            "sumPass": 483
+        },
+        {
+            "courses_id": "321",
+            "courses_dept": "phar",
+            "countCourses": 2,
+            "sumPass": 310
+        },
+        {
+            "courses_id": "315",
+            "courses_dept": "phar",
+            "countCourses": 2,
+            "sumPass": 304
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "pcth",
+            "countCourses": 7,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "513",
+            "courses_dept": "pcth",
+            "countCourses": 6,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "pcth",
+            "countCourses": 6,
+            "sumPass": 68
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "pcth",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "402",
+            "courses_dept": "pcth",
+            "countCourses": 6,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "300",
+            "courses_dept": "pcth",
+            "countCourses": 2,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "635",
+            "courses_dept": "path",
+            "countCourses": 3,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "path",
+            "countCourses": 2,
+            "sumPass": 6
+        },
+        {
+            "courses_id": "547",
+            "courses_dept": "path",
+            "countCourses": 8,
+            "sumPass": 126
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "path",
+            "countCourses": 15,
+            "sumPass": 144
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "path",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "path",
+            "countCourses": 4,
+            "sumPass": 76
+        },
+        {
+            "courses_id": "407",
+            "courses_dept": "path",
+            "countCourses": 2,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "onco",
+            "countCourses": 12,
+            "sumPass": 200
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "obst",
+            "countCourses": 2,
+            "sumPass": 3
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "obst",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "obst",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "595",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 2
+        },
+        {
+            "courses_id": "591",
+            "courses_dept": "nurs",
+            "countCourses": 18,
+            "sumPass": 254
+        },
+        {
+            "courses_id": "578",
+            "courses_dept": "nurs",
+            "countCourses": 12,
+            "sumPass": 172
+        },
+        {
+            "courses_id": "572",
+            "courses_dept": "nurs",
+            "countCourses": 10,
+            "sumPass": 136
+        },
+        {
+            "courses_id": "571",
+            "courses_dept": "nurs",
+            "countCourses": 4,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "554",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "nurs",
+            "countCourses": 1,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "nurs",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "nurs",
+            "countCourses": 16,
+            "sumPass": 236
+        },
+        {
+            "courses_id": "509",
+            "courses_dept": "nurs",
+            "countCourses": 14,
+            "sumPass": 204
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "nurs",
+            "countCourses": 4,
+            "sumPass": 64
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "nurs",
+            "countCourses": 1,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "424",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "423",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "343",
+            "courses_dept": "nurs",
+            "countCourses": 6,
+            "sumPass": 640
+        },
+        {
+            "courses_id": "341",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 232
+        },
+        {
+            "courses_id": "338",
+            "courses_dept": "nurs",
+            "countCourses": 4,
+            "sumPass": 472
+        },
+        {
+            "courses_id": "336",
+            "courses_dept": "nurs",
+            "countCourses": 1,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "306",
+            "courses_dept": "nurs",
+            "countCourses": 2,
+            "sumPass": 240
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "nrsc",
+            "countCourses": 2,
+            "sumPass": 6
+        },
+        {
+            "courses_id": "524",
+            "courses_dept": "name",
+            "countCourses": 4,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "563",
+            "courses_dept": "musc",
+            "countCourses": 8,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "559",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "musc",
+            "countCourses": 12,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "musc",
+            "countCourses": 8,
+            "sumPass": 73
+        },
+        {
+            "courses_id": "441",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "323",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 296
+        },
+        {
+            "courses_id": "305",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "249",
+            "courses_dept": "musc",
+            "countCourses": 6,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "164",
+            "courses_dept": "musc",
+            "countCourses": 1,
+            "sumPass": 21
+        },
+        {
+            "courses_id": "163",
+            "courses_dept": "musc",
+            "countCourses": 4,
+            "sumPass": 68
+        },
+        {
+            "courses_id": "103",
+            "courses_dept": "musc",
+            "countCourses": 2,
+            "sumPass": 5
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "mtrl",
+            "countCourses": 1,
+            "sumPass": 1
+        },
+        {
+            "courses_id": "594",
+            "courses_dept": "mtrl",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "564",
+            "courses_dept": "mtrl",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "mtrl",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "515",
+            "courses_dept": "mtrl",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "698",
+            "courses_dept": "mine",
+            "countCourses": 6,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "555",
+            "courses_dept": "mine",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "554",
+            "courses_dept": "mine",
+            "countCourses": 2,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "mine",
+            "countCourses": 8,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "485",
+            "courses_dept": "mine",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "393",
+            "courses_dept": "mine",
+            "countCourses": 6,
+            "sumPass": 176
+        },
+        {
+            "courses_id": "405",
+            "courses_dept": "midw",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "221",
+            "courses_dept": "midw",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "215",
+            "courses_dept": "midw",
+            "countCourses": 6,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "110",
+            "courses_dept": "midw",
+            "countCourses": 2,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "103",
+            "courses_dept": "midw",
+            "countCourses": 6,
+            "sumPass": 98
+        },
+        {
+            "courses_id": "101",
+            "courses_dept": "midw",
+            "countCourses": 10,
+            "sumPass": 158
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "micb",
+            "countCourses": 8,
+            "sumPass": 74
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "micb",
+            "countCourses": 6,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "425",
+            "courses_dept": "micb",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "421",
+            "courses_dept": "micb",
+            "countCourses": 2,
+            "sumPass": 112
+        },
+        {
+            "courses_id": "407",
+            "courses_dept": "micb",
+            "countCourses": 2,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "medi",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "medi",
+            "countCourses": 6,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "medi",
+            "countCourses": 3,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "medi",
+            "countCourses": 1,
+            "sumPass": 5
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "medi",
+            "countCourses": 10,
+            "sumPass": 352
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "medi",
+            "countCourses": 2,
+            "sumPass": 76
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "medg",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "530",
+            "courses_dept": "medg",
+            "countCourses": 4,
+            "sumPass": 82
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "medg",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "medg",
+            "countCourses": 4,
+            "sumPass": 96
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "medg",
+            "countCourses": 14,
+            "sumPass": 242
+        },
+        {
+            "courses_id": "698",
+            "courses_dept": "mech",
+            "countCourses": 6,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "598",
+            "courses_dept": "mech",
+            "countCourses": 2,
+            "sumPass": 7
+        },
+        {
+            "courses_id": "597",
+            "courses_dept": "mech",
+            "countCourses": 2,
+            "sumPass": 2
+        },
+        {
+            "courses_id": "592",
+            "courses_dept": "mech",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "584",
+            "courses_dept": "mech",
+            "countCourses": 4,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "555",
+            "courses_dept": "mech",
+            "countCourses": 4,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "mech",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "536",
+            "courses_dept": "mech",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "529",
+            "courses_dept": "mech",
+            "countCourses": 4,
+            "sumPass": 84
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "mech",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "589",
+            "courses_dept": "math",
+            "countCourses": 12,
+            "sumPass": 49
+        },
+        {
+            "courses_id": "559",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "552",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "546",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "math",
+            "countCourses": 10,
+            "sumPass": 80
+        },
+        {
+            "courses_id": "544",
+            "courses_dept": "math",
+            "countCourses": 10,
+            "sumPass": 72
+        },
+        {
+            "courses_id": "541",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "539",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "537",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "534",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 68
+        },
+        {
+            "courses_id": "532",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "525",
+            "courses_dept": "math",
+            "countCourses": 12,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "523",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "516",
+            "courses_dept": "math",
+            "countCourses": 12,
+            "sumPass": 90
+        },
+        {
+            "courses_id": "515",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "math",
+            "countCourses": 8,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "math",
+            "countCourses": 8,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "math",
+            "countCourses": 6,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "440",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "425",
+            "courses_dept": "math",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "421",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "420",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "255",
+            "courses_dept": "math",
+            "countCourses": 1,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "217",
+            "courses_dept": "math",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "602",
+            "courses_dept": "lled",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "601",
+            "courses_dept": "lled",
+            "countCourses": 5,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "lled",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "lled",
+            "countCourses": 4,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "469",
+            "courses_dept": "lled",
+            "countCourses": 4,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "462",
+            "courses_dept": "lled",
+            "countCourses": 4,
+            "sumPass": 104
+        },
+        {
+            "courses_id": "450",
+            "courses_dept": "lled",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "441",
+            "courses_dept": "lled",
+            "countCourses": 1,
+            "sumPass": 15
+        },
+        {
+            "courses_id": "525",
+            "courses_dept": "ling",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "582",
+            "courses_dept": "libr",
+            "countCourses": 4,
+            "sumPass": 98
+        },
+        {
+            "courses_id": "581",
+            "courses_dept": "libr",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "libr",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "554",
+            "courses_dept": "libr",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "libr",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "467",
+            "courses_dept": "libe",
+            "countCourses": 4,
+            "sumPass": 127
+        },
+        {
+            "courses_id": "465",
+            "courses_dept": "libe",
+            "countCourses": 2,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "463",
+            "courses_dept": "libe",
+            "countCourses": 2,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "400",
+            "courses_dept": "lfs",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "larc",
+            "countCourses": 2,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "541",
+            "courses_dept": "larc",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "598",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "595",
+            "courses_dept": "kin",
+            "countCourses": 5,
+            "sumPass": 21
+        },
+        {
+            "courses_id": "586",
+            "courses_dept": "kin",
+            "countCourses": 1,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "568",
+            "courses_dept": "kin",
+            "countCourses": 4,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "565",
+            "courses_dept": "kin",
+            "countCourses": 8,
+            "sumPass": 110
+        },
+        {
+            "courses_id": "564",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "kin",
+            "countCourses": 4,
+            "sumPass": 60
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "kin",
+            "countCourses": 6,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "499",
+            "courses_dept": "kin",
+            "countCourses": 14,
+            "sumPass": 128
+        },
+        {
+            "courses_id": "471",
+            "courses_dept": "kin",
+            "countCourses": 6,
+            "sumPass": 542
+        },
+        {
+            "courses_id": "469",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 118
+        },
+        {
+            "courses_id": "461",
+            "courses_dept": "kin",
+            "countCourses": 4,
+            "sumPass": 480
+        },
+        {
+            "courses_id": "400",
+            "courses_dept": "kin",
+            "countCourses": 4,
+            "sumPass": 464
+        },
+        {
+            "courses_id": "375",
+            "courses_dept": "kin",
+            "countCourses": 1,
+            "sumPass": 27
+        },
+        {
+            "courses_id": "367",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 246
+        },
+        {
+            "courses_id": "366",
+            "courses_dept": "kin",
+            "countCourses": 2,
+            "sumPass": 194
+        },
+        {
+            "courses_id": "419",
+            "courses_dept": "itst",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "403",
+            "courses_dept": "ital",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "311",
+            "courses_dept": "isci",
+            "countCourses": 2,
+            "sumPass": 78
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "hunu",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "hist",
+            "countCourses": 2,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "102",
+            "courses_dept": "hinu",
+            "countCourses": 3,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "359",
+            "courses_dept": "hgse",
+            "countCourses": 4,
+            "sumPass": 70
+        },
+        {
+            "courses_id": "357",
+            "courses_dept": "hgse",
+            "countCourses": 8,
+            "sumPass": 150
+        },
+        {
+            "courses_id": "355",
+            "courses_dept": "hgse",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "352",
+            "courses_dept": "hgse",
+            "countCourses": 2,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "350",
+            "courses_dept": "hgse",
+            "countCourses": 2,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "gsat",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "591",
+            "courses_dept": "gpp",
+            "countCourses": 2,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "germ",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "590",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "544",
+            "courses_dept": "frst",
+            "countCourses": 5,
+            "sumPass": 68
+        },
+        {
+            "courses_id": "534",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "522",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "413",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "411",
+            "courses_dept": "frst",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "351",
+            "courses_dept": "frst",
+            "countCourses": 4,
+            "sumPass": 238
+        },
+        {
+            "courses_id": "459",
+            "courses_dept": "fopr",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "262",
+            "courses_dept": "fopr",
+            "countCourses": 1,
+            "sumPass": 3
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "food",
+            "countCourses": 2,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "490",
+            "courses_dept": "fnh",
+            "countCourses": 1,
+            "sumPass": 11
+        },
+        {
+            "courses_id": "460",
+            "courses_dept": "fnh",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "341",
+            "courses_dept": "fnh",
+            "countCourses": 12,
+            "sumPass": 320
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "fish",
+            "countCourses": 2,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "fish",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "fish",
+            "countCourses": 6,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "fish",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "333",
+            "courses_dept": "fipr",
+            "countCourses": 2,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "etec",
+            "countCourses": 7,
+            "sumPass": 162
+        },
+        {
+            "courses_id": "533",
+            "courses_dept": "etec",
+            "countCourses": 8,
+            "sumPass": 180
+        },
+        {
+            "courses_id": "532",
+            "courses_dept": "etec",
+            "countCourses": 14,
+            "sumPass": 349
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "etec",
+            "countCourses": 24,
+            "sumPass": 573
+        },
+        {
+            "courses_id": "530",
+            "courses_dept": "etec",
+            "countCourses": 19,
+            "sumPass": 481
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "etec",
+            "countCourses": 15,
+            "sumPass": 277
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "etec",
+            "countCourses": 11,
+            "sumPass": 258
+        },
+        {
+            "courses_id": "511",
+            "courses_dept": "etec",
+            "countCourses": 21,
+            "sumPass": 676
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "etec",
+            "countCourses": 28,
+            "sumPass": 933
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "etec",
+            "countCourses": 20,
+            "sumPass": 529
+        },
+        {
+            "courses_id": "684",
+            "courses_dept": "epse",
+            "countCourses": 4,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "683",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 120
+        },
+        {
+            "courses_id": "682",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 114
+        },
+        {
+            "courses_id": "606",
+            "courses_dept": "epse",
+            "countCourses": 16,
+            "sumPass": 182
+        },
+        {
+            "courses_id": "596",
+            "courses_dept": "epse",
+            "countCourses": 20,
+            "sumPass": 373
+        },
+        {
+            "courses_id": "595",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 162
+        },
+        {
+            "courses_id": "594",
+            "courses_dept": "epse",
+            "countCourses": 4,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "593",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "592",
+            "courses_dept": "epse",
+            "countCourses": 27,
+            "sumPass": 747
+        },
+        {
+            "courses_id": "591",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "586",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "584",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 142
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "574",
+            "courses_dept": "epse",
+            "countCourses": 5,
+            "sumPass": 124
+        },
+        {
+            "courses_id": "569",
+            "courses_dept": "epse",
+            "countCourses": 6,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "568",
+            "courses_dept": "epse",
+            "countCourses": 6,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "epse",
+            "countCourses": 19,
+            "sumPass": 270
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 74
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "epse",
+            "countCourses": 4,
+            "sumPass": 106
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "epse",
+            "countCourses": 6,
+            "sumPass": 64
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "epse",
+            "countCourses": 15,
+            "sumPass": 210
+        },
+        {
+            "courses_id": "534",
+            "courses_dept": "epse",
+            "countCourses": 14,
+            "sumPass": 158
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "epse",
+            "countCourses": 15,
+            "sumPass": 159
+        },
+        {
+            "courses_id": "529",
+            "courses_dept": "epse",
+            "countCourses": 6,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "528",
+            "courses_dept": "epse",
+            "countCourses": 20,
+            "sumPass": 360
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "epse",
+            "countCourses": 19,
+            "sumPass": 248
+        },
+        {
+            "courses_id": "525",
+            "courses_dept": "epse",
+            "countCourses": 4,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 82
+        },
+        {
+            "courses_id": "519",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "516",
+            "courses_dept": "epse",
+            "countCourses": 7,
+            "sumPass": 116
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "epse",
+            "countCourses": 29,
+            "sumPass": 548
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "epse",
+            "countCourses": 10,
+            "sumPass": 122
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 205
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "epse",
+            "countCourses": 6,
+            "sumPass": 88
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "epse",
+            "countCourses": 12,
+            "sumPass": 237
+        },
+        {
+            "courses_id": "482",
+            "courses_dept": "epse",
+            "countCourses": 12,
+            "sumPass": 223
+        },
+        {
+            "courses_id": "481",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "epse",
+            "countCourses": 25,
+            "sumPass": 1252
+        },
+        {
+            "courses_id": "437",
+            "courses_dept": "epse",
+            "countCourses": 10,
+            "sumPass": 222
+        },
+        {
+            "courses_id": "436",
+            "courses_dept": "epse",
+            "countCourses": 30,
+            "sumPass": 914
+        },
+        {
+            "courses_id": "432",
+            "courses_dept": "epse",
+            "countCourses": 23,
+            "sumPass": 698
+        },
+        {
+            "courses_id": "431",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 139
+        },
+        {
+            "courses_id": "421",
+            "courses_dept": "epse",
+            "countCourses": 20,
+            "sumPass": 380
+        },
+        {
+            "courses_id": "415",
+            "courses_dept": "epse",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "411",
+            "courses_dept": "epse",
+            "countCourses": 5,
+            "sumPass": 95
+        },
+        {
+            "courses_id": "408",
+            "courses_dept": "epse",
+            "countCourses": 15,
+            "sumPass": 308
+        },
+        {
+            "courses_id": "406",
+            "courses_dept": "epse",
+            "countCourses": 26,
+            "sumPass": 1454
+        },
+        {
+            "courses_id": "403",
+            "courses_dept": "epse",
+            "countCourses": 7,
+            "sumPass": 350
+        },
+        {
+            "courses_id": "320",
+            "courses_dept": "epse",
+            "countCourses": 8,
+            "sumPass": 310
+        },
+        {
+            "courses_id": "316",
+            "courses_dept": "epse",
+            "countCourses": 14,
+            "sumPass": 437
+        },
+        {
+            "courses_id": "312",
+            "courses_dept": "epse",
+            "countCourses": 16,
+            "sumPass": 554
+        },
+        {
+            "courses_id": "303",
+            "courses_dept": "epse",
+            "countCourses": 18,
+            "sumPass": 386
+        },
+        {
+            "courses_id": "598",
+            "courses_dept": "eosc",
+            "countCourses": 1,
+            "sumPass": 2
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "eosc",
+            "countCourses": 4,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "546",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "543",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "542",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "536",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "eosc",
+            "countCourses": 10,
+            "sumPass": 102
+        },
+        {
+            "courses_id": "529",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "522",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 6
+        },
+        {
+            "courses_id": "513",
+            "courses_dept": "eosc",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "511",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "eosc",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "111",
+            "courses_dept": "eosc",
+            "countCourses": 3,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "271",
+            "courses_dept": "elec",
+            "countCourses": 2,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "205",
+            "courses_dept": "elec",
+            "countCourses": 3,
+            "sumPass": 106
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "eece",
+            "countCourses": 3,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "597",
+            "courses_dept": "eece",
+            "countCourses": 3,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "592",
+            "courses_dept": "eece",
+            "countCourses": 8,
+            "sumPass": 182
+        },
+        {
+            "courses_id": "583",
+            "courses_dept": "eece",
+            "countCourses": 8,
+            "sumPass": 66
+        },
+        {
+            "courses_id": "579",
+            "courses_dept": "eece",
+            "countCourses": 2,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "576",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "574",
+            "courses_dept": "eece",
+            "countCourses": 6,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "565",
+            "courses_dept": "eece",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "554",
+            "courses_dept": "eece",
+            "countCourses": 6,
+            "sumPass": 84
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "eece",
+            "countCourses": 1,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "549",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "541",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "534",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "531",
+            "courses_dept": "eece",
+            "countCourses": 4,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "eece",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "509",
+            "courses_dept": "eece",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "educ",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "educ",
+            "countCourses": 31,
+            "sumPass": 754
+        },
+        {
+            "courses_id": "597",
+            "courses_dept": "edst",
+            "countCourses": 4,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "588",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "582",
+            "courses_dept": "edst",
+            "countCourses": 6,
+            "sumPass": 133
+        },
+        {
+            "courses_id": "581",
+            "courses_dept": "edst",
+            "countCourses": 1,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "577",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "edst",
+            "countCourses": 1,
+            "sumPass": 9
+        },
+        {
+            "courses_id": "571",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "edst",
+            "countCourses": 12,
+            "sumPass": 90
+        },
+        {
+            "courses_id": "532",
+            "courses_dept": "edst",
+            "countCourses": 8,
+            "sumPass": 147
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "edst",
+            "countCourses": 4,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "518",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "514",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "511",
+            "courses_dept": "edst",
+            "countCourses": 4,
+            "sumPass": 60
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "edst",
+            "countCourses": 12,
+            "sumPass": 112
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "edst",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "edst",
+            "countCourses": 4,
+            "sumPass": 83
+        },
+        {
+            "courses_id": "568",
+            "courses_dept": "edcp",
+            "countCourses": 4,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "564",
+            "courses_dept": "edcp",
+            "countCourses": 6,
+            "sumPass": 80
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "edcp",
+            "countCourses": 23,
+            "sumPass": 650
+        },
+        {
+            "courses_id": "559",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "556",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "555",
+            "courses_dept": "edcp",
+            "countCourses": 4,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "513",
+            "courses_dept": "edcp",
+            "countCourses": 1,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "510",
+            "courses_dept": "edcp",
+            "countCourses": 4,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "edcp",
+            "countCourses": 12,
+            "sumPass": 254
+        },
+        {
+            "courses_id": "491",
+            "courses_dept": "edcp",
+            "countCourses": 7,
+            "sumPass": 181
+        },
+        {
+            "courses_id": "473",
+            "courses_dept": "edcp",
+            "countCourses": 6,
+            "sumPass": 116
+        },
+        {
+            "courses_id": "410",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "377",
+            "courses_dept": "edcp",
+            "countCourses": 6,
+            "sumPass": 114
+        },
+        {
+            "courses_id": "343",
+            "courses_dept": "edcp",
+            "countCourses": 4,
+            "sumPass": 96
+        },
+        {
+            "courses_id": "305",
+            "courses_dept": "edcp",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "640",
+            "courses_dept": "econ",
+            "countCourses": 7,
+            "sumPass": 97
+        },
+        {
+            "courses_id": "628",
+            "courses_dept": "econ",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "627",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 72
+        },
+        {
+            "courses_id": "603",
+            "courses_dept": "econ",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "580",
+            "courses_dept": "econ",
+            "countCourses": 8,
+            "sumPass": 168
+        },
+        {
+            "courses_id": "565",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "560",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "546",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 84
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 240
+        },
+        {
+            "courses_id": "523",
+            "courses_dept": "econ",
+            "countCourses": 2,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "516",
+            "courses_dept": "econ",
+            "countCourses": 10,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "495",
+            "courses_dept": "econ",
+            "countCourses": 4,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "425",
+            "courses_dept": "econ",
+            "countCourses": 2,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "407",
+            "courses_dept": "econ",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "442",
+            "courses_dept": "eced",
+            "countCourses": 2,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "439",
+            "courses_dept": "eced",
+            "countCourses": 6,
+            "sumPass": 182
+        },
+        {
+            "courses_id": "438",
+            "courses_dept": "eced",
+            "countCourses": 2,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "421",
+            "courses_dept": "eced",
+            "countCourses": 1,
+            "sumPass": 15
+        },
+        {
+            "courses_id": "416",
+            "courses_dept": "eced",
+            "countCourses": 2,
+            "sumPass": 64
+        },
+        {
+            "courses_id": "462",
+            "courses_dept": "dhyg",
+            "countCourses": 4,
+            "sumPass": 54
+        },
+        {
+            "courses_id": "461",
+            "courses_dept": "dhyg",
+            "countCourses": 3,
+            "sumPass": 52
+        },
+        {
+            "courses_id": "412",
+            "courses_dept": "dhyg",
+            "countCourses": 3,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "402",
+            "courses_dept": "dhyg",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "400",
+            "courses_dept": "dhyg",
+            "countCourses": 2,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "722",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "584",
+            "courses_dept": "dent",
+            "countCourses": 4,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "578",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "dent",
+            "countCourses": 3,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "555",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "544",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "dent",
+            "countCourses": 4,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "539",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "524",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "dent",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "crwr",
+            "countCourses": 45,
+            "sumPass": 276
+        },
+        {
+            "courses_id": "530",
+            "courses_dept": "crwr",
+            "countCourses": 8,
+            "sumPass": 72
+        },
+        {
+            "courses_id": "430",
+            "courses_dept": "crwr",
+            "countCourses": 6,
+            "sumPass": 78
+        },
+        {
+            "courses_id": "589",
+            "courses_dept": "cpsc",
+            "countCourses": 2,
+            "sumPass": 2
+        },
+        {
+            "courses_id": "540",
+            "courses_dept": "cpsc",
+            "countCourses": 4,
+            "sumPass": 226
+        },
+        {
+            "courses_id": "527",
+            "courses_dept": "cpsc",
+            "countCourses": 4,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "522",
+            "courses_dept": "cpsc",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "cpsc",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "cpsc",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "cpsc",
+            "countCourses": 8,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "490",
+            "courses_dept": "cpsc",
+            "countCourses": 8,
+            "sumPass": 99
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "cpsc",
+            "countCourses": 10,
+            "sumPass": 64
+        },
+        {
+            "courses_id": "445",
+            "courses_dept": "cpsc",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "370",
+            "courses_dept": "cons",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "101",
+            "courses_dept": "cons",
+            "countCourses": 4,
+            "sumPass": 480
+        },
+        {
+            "courses_id": "581",
+            "courses_dept": "comm",
+            "countCourses": 8,
+            "sumPass": 114
+        },
+        {
+            "courses_id": "305",
+            "courses_dept": "cohr",
+            "countCourses": 2,
+            "sumPass": 78
+        },
+        {
+            "courses_id": "632",
+            "courses_dept": "cnps",
+            "countCourses": 16,
+            "sumPass": 96
+        },
+        {
+            "courses_id": "594",
+            "courses_dept": "cnps",
+            "countCourses": 14,
+            "sumPass": 114
+        },
+        {
+            "courses_id": "586",
+            "courses_dept": "cnps",
+            "countCourses": 36,
+            "sumPass": 729
+        },
+        {
+            "courses_id": "584",
+            "courses_dept": "cnps",
+            "countCourses": 17,
+            "sumPass": 346
+        },
+        {
+            "courses_id": "579",
+            "courses_dept": "cnps",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "574",
+            "courses_dept": "cnps",
+            "countCourses": 21,
+            "sumPass": 390
+        },
+        {
+            "courses_id": "564",
+            "courses_dept": "cnps",
+            "countCourses": 7,
+            "sumPass": 131
+        },
+        {
+            "courses_id": "545",
+            "courses_dept": "cnps",
+            "countCourses": 14,
+            "sumPass": 172
+        },
+        {
+            "courses_id": "535",
+            "courses_dept": "cnps",
+            "countCourses": 6,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "524",
+            "courses_dept": "cnps",
+            "countCourses": 8,
+            "sumPass": 108
+        },
+        {
+            "courses_id": "514",
+            "courses_dept": "cnps",
+            "countCourses": 8,
+            "sumPass": 112
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "cnps",
+            "countCourses": 4,
+            "sumPass": 36
+        },
+        {
+            "courses_id": "433",
+            "courses_dept": "cnps",
+            "countCourses": 5,
+            "sumPass": 470
+        },
+        {
+            "courses_id": "426",
+            "courses_dept": "cnps",
+            "countCourses": 7,
+            "sumPass": 195
+        },
+        {
+            "courses_id": "365",
+            "courses_dept": "cnps",
+            "countCourses": 3,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "363",
+            "courses_dept": "cnps",
+            "countCourses": 10,
+            "sumPass": 389
+        },
+        {
+            "courses_id": "362",
+            "courses_dept": "cnps",
+            "countCourses": 6,
+            "sumPass": 85
+        },
+        {
+            "courses_id": "586",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "583",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "581",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "555",
+            "courses_dept": "civl",
+            "countCourses": 4,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "civl",
+            "countCourses": 1,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "517",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 38
+        },
+        {
+            "courses_id": "511",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "508",
+            "courses_dept": "civl",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "civl",
+            "countCourses": 4,
+            "sumPass": 76
+        },
+        {
+            "courses_id": "446",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 280
+        },
+        {
+            "courses_id": "441",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 56
+        },
+        {
+            "courses_id": "440",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 62
+        },
+        {
+            "courses_id": "436",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "432",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 100
+        },
+        {
+            "courses_id": "407",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "301",
+            "courses_dept": "civl",
+            "countCourses": 2,
+            "sumPass": 264
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "chil",
+            "countCourses": 9,
+            "sumPass": 21
+        },
+        {
+            "courses_id": "534",
+            "courses_dept": "chem",
+            "countCourses": 4,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "533",
+            "courses_dept": "chem",
+            "countCourses": 4,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "514",
+            "courses_dept": "chem",
+            "countCourses": 4,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "chem",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "chbe",
+            "countCourses": 3,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "597",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "583",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 24
+        },
+        {
+            "courses_id": "563",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "chbe",
+            "countCourses": 12,
+            "sumPass": 182
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "chbe",
+            "countCourses": 4,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "496",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "495",
+            "courses_dept": "chbe",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "cell",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "507",
+            "courses_dept": "cell",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "506",
+            "courses_dept": "cell",
+            "countCourses": 16,
+            "sumPass": 156
+        },
+        {
+            "courses_id": "505",
+            "courses_dept": "cell",
+            "countCourses": 10,
+            "sumPass": 58
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "cell",
+            "countCourses": 4,
+            "sumPass": 30
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "cell",
+            "countCourses": 2,
+            "sumPass": 14
+        },
+        {
+            "courses_id": "596",
+            "courses_dept": "ceen",
+            "countCourses": 7,
+            "sumPass": 77
+        },
+        {
+            "courses_id": "503",
+            "courses_dept": "ccst",
+            "countCourses": 2,
+            "sumPass": 6
+        },
+        {
+            "courses_id": "544",
+            "courses_dept": "bota",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "528",
+            "courses_dept": "bota",
+            "countCourses": 2,
+            "sumPass": 6
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "bota",
+            "countCourses": 2,
+            "sumPass": 28
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "bmeg",
+            "countCourses": 3,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "597",
+            "courses_dept": "bmeg",
+            "countCourses": 2,
+            "sumPass": 4
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "bmeg",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "464",
+            "courses_dept": "biol",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "462",
+            "courses_dept": "biol",
+            "countCourses": 6,
+            "sumPass": 154
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "biol",
+            "countCourses": 12,
+            "sumPass": 174
+        },
+        {
+            "courses_id": "440",
+            "courses_dept": "biol",
+            "countCourses": 2,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "347",
+            "courses_dept": "biol",
+            "countCourses": 4,
+            "sumPass": 110
+        },
+        {
+            "courses_id": "520",
+            "courses_dept": "biof",
+            "countCourses": 8,
+            "sumPass": 68
+        },
+        {
+            "courses_id": "521",
+            "courses_dept": "bioc",
+            "countCourses": 4,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "509",
+            "courses_dept": "bioc",
+            "countCourses": 4,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "501",
+            "courses_dept": "bams",
+            "countCourses": 2,
+            "sumPass": 34
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "bams",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "502",
+            "courses_dept": "babs",
+            "countCourses": 2,
+            "sumPass": 16
+        },
+        {
+            "courses_id": "593",
+            "courses_dept": "audi",
+            "countCourses": 8,
+            "sumPass": 172
+        },
+        {
+            "courses_id": "585",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 70
+        },
+        {
+            "courses_id": "583",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "577",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 96
+        },
+        {
+            "courses_id": "576",
+            "courses_dept": "audi",
+            "countCourses": 6,
+            "sumPass": 152
+        },
+        {
+            "courses_id": "575",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "568",
+            "courses_dept": "audi",
+            "countCourses": 16,
+            "sumPass": 161
+        },
+        {
+            "courses_id": "567",
+            "courses_dept": "audi",
+            "countCourses": 12,
+            "sumPass": 122
+        },
+        {
+            "courses_id": "562",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 46
+        },
+        {
+            "courses_id": "558",
+            "courses_dept": "audi",
+            "countCourses": 8,
+            "sumPass": 92
+        },
+        {
+            "courses_id": "557",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 22
+        },
+        {
+            "courses_id": "553",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 40
+        },
+        {
+            "courses_id": "551",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 44
+        },
+        {
+            "courses_id": "528",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 50
+        },
+        {
+            "courses_id": "526",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 108
+        },
+        {
+            "courses_id": "524",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 48
+        },
+        {
+            "courses_id": "522",
+            "courses_dept": "audi",
+            "countCourses": 4,
+            "sumPass": 86
+        },
+        {
+            "courses_id": "515",
+            "courses_dept": "audi",
+            "countCourses": 10,
+            "sumPass": 116
+        },
+        {
+            "courses_id": "513",
+            "courses_dept": "audi",
+            "countCourses": 2,
+            "sumPass": 20
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "atsc",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "449",
+            "courses_dept": "astr",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "405",
+            "courses_dept": "astr",
+            "countCourses": 2,
+            "sumPass": 10
+        },
+        {
+            "courses_id": "599",
+            "courses_dept": "arth",
+            "countCourses": 7,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "620",
+            "courses_dept": "arst",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "570",
+            "courses_dept": "arst",
+            "countCourses": 2,
+            "sumPass": 17
+        },
+        {
+            "courses_id": "550",
+            "courses_dept": "arst",
+            "countCourses": 2,
+            "sumPass": 32
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "arst",
+            "countCourses": 6,
+            "sumPass": 64
+        },
+        {
+            "courses_id": "279",
+            "courses_dept": "apsc",
+            "countCourses": 22,
+            "sumPass": 418
+        },
+        {
+            "courses_id": "490",
+            "courses_dept": "apbi",
+            "countCourses": 1,
+            "sumPass": 21
+        },
+        {
+            "courses_id": "519",
+            "courses_dept": "anth",
+            "countCourses": 3,
+            "sumPass": 18
+        },
+        {
+            "courses_id": "500",
+            "courses_dept": "anth",
+            "countCourses": 2,
+            "sumPass": 26
+        },
+        {
+            "courses_id": "512",
+            "courses_dept": "anat",
+            "countCourses": 2,
+            "sumPass": 12
+        },
+        {
+            "courses_id": "511",
+            "courses_dept": "anat",
+            "countCourses": 2,
+            "sumPass": 8
+        },
+        {
+            "courses_id": "412",
+            "courses_dept": "adhe",
+            "countCourses": 2,
+            "sumPass": 42
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe",
+            "countCourses": 8,
+            "sumPass": 193
+        },
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe",
+            "countCourses": 5,
+            "sumPass": 181
+        },
+        {
+            "courses_id": "504",
+            "courses_dept": "aanb",
+            "countCourses": 2,
+            "sumPass": 18
+        }
+    ]
+}
