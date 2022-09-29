@@ -1,11 +1,11 @@
-import Server from "../../../Desktop/project_team192/src/rest/Server";
+import Server from "../src/rest/Server";
 
-import InsightFacade from "../../../Desktop/project_team192/src/controller/InsightFacade";
+import InsightFacade from "../src/controller/InsightFacade";
 import chai = require("chai");
 import chaiHttp = require("chai-http");
 import Response = ChaiHttp.Response;
 import {expect} from "chai";
-import Log from "../../../Desktop/project_team192/src/Util";
+import Log from "../src/Util";
 
 describe("Facade D3", function () {
 

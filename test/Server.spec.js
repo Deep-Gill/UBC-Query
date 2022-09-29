@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Server_1 = require("../../../Desktop/project_team192/src/rest/Server");
-const InsightFacade_1 = require("../../../Desktop/project_team192/src/controller/InsightFacade");
+const Server_1 = require("../src/rest/Server");
+const InsightFacade_1 = require("../src/controller/InsightFacade");
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const chai_1 = require("chai");
-const Util_1 = require("../../../Desktop/project_team192/src/Util");
+const Util_1 = require("../src/Util");
 describe("Facade D3", function () {
     let facade = null;
     let server = null;

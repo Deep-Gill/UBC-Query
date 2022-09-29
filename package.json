@@ -51,14 +51,15 @@
         "typescript": "3.7.4"
     },
     "scripts": {
-        "postinstall": "git config core.hooksPath ../../Desktop/project_team192/.githooks",
-        "cover": "../../Desktop/project_team192/node_modules/.bin/nyc --reporter text --reporter html yarn run test",
-        "build": "../../Desktop/project_team192/node_modules/.bin/tsc && yarn lint",
-        "test": "../../Desktop/project_team192/node_modules/.bin/mocha --require ts-node/register --timeout 35000",
-        "pretty": "../../Desktop/project_team192/node_modules/.bin/prettier --config ./.prettierrc.json --write \\\"./**/*.ts\\\" && yarn fix",
-        "lint": "../../Desktop/project_team192/node_modules/.bin/eslint . --ext .ts",
+        "postinstall": "git config core.hooksPath ./.githooks",
+        "cover": "./node_modules/.bin/nyc --reporter text --reporter html yarn run test",
+        "build": "./node_modules/.bin/tsc && yarn lint",
+        "test": "./node_modules/.bin/mocha --require ts-node/register --timeout 35000",
+        "pretty": "./node_modules/.bin/prettier --config ./.prettierrc.json --write \\\"./**/*.ts\\\" && yarn fix",
+        "lint": "./node_modules/.bin/eslint . --ext .ts",
         "fix": "yarn lint --fix",
-        "test:frontend": "../../Desktop/project_team192/node_modules/.bin/karma start",
-        "start": "node ../../Desktop/project_team192/src/App.js"
+        "test:frontend": "./node_modules/.bin/karma start",
+        "start": "node ./src/App.js"
     }
 }
+

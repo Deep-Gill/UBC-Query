@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("fs");
-const Util_1 = require("../../../Desktop/project_team192/src/Util");
+const Util_1 = require("../src/Util");
 const chai_1 = require("chai");
-const IInsightFacade_1 = require("../../../Desktop/project_team192/src/controller/IInsightFacade");
+const IInsightFacade_1 = require("../src/controller/IInsightFacade");
 class TestUtil {
     static verifyQueryResult(futureResult, test) {
         let expectation;

@@ -1,11 +1,11 @@
 import * as fs from "fs";
-import Log from "../../../Desktop/project_team192/src/Util";
+import Log from "../src/Util";
 import { ITestQuery } from "./InsightFacade.spec";
 import { expect } from "chai";
 import {
     InsightError,
     ResultTooLargeError,
-} from "../../../Desktop/project_team192/src/controller/IInsightFacade";
+} from "../src/controller/IInsightFacade";
 import PromisedAssertion = Chai.PromisedAssertion;
 
 export default class TestUtil {

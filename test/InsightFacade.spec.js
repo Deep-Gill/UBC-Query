@@ -4,9 +4,9 @@ const chai = require("chai");
 const chai_1 = require("chai");
 const fs = require("fs-extra");
 const chaiAsPromised = require("chai-as-promised");
-const IInsightFacade_1 = require("../../../Desktop/project_team192/src/controller/IInsightFacade");
-const InsightFacade_1 = require("../../../Desktop/project_team192/src/controller/InsightFacade");
-const Util_1 = require("../../../Desktop/project_team192/src/Util");
+const IInsightFacade_1 = require("../src/controller/IInsightFacade");
+const InsightFacade_1 = require("../src/controller/InsightFacade");
+const Util_1 = require("../src/Util");
 const TestUtil_1 = require("./TestUtil");
 chai.use(chaiAsPromised);
 describe("InsightFacade Add/Remove/List Dataset", function () {
